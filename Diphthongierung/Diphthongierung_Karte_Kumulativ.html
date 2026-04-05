@@ -8,37 +8,20 @@
         body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         #map { height: 100vh; width: 100%; }
         
-        /* Design für die Legenden und Infoboxen */
-        .info-box { 
-            background: white; 
-            padding: 10px 15px; 
-            border-radius: 5px; 
-            box-shadow: 0 0 15px rgba(0,0,0,0.2); 
-            line-height: 1.5;
-            color: #333;
-        }
+        .info-box { background: white; padding: 10px 15px; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.2); line-height: 1.5; color: #333; }
         .info-box h4 { margin: 0 0 8px 0; font-size: 14px; color: #111; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
         .info-box i { width: 18px; height: 18px; float: left; margin-right: 8px; border-radius: 50%; }
         
-        /* Design für den Zeit-Slider */
         .slider-container {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
-            background: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-            text-align: center;
-            width: 300px;
+            position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: white; padding: 15px 25px; border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3); text-align: center; width: 320px;
         }
         .slider-container h3 { margin: 0 0 10px 0; font-size: 16px; color: #333; }
         #yearSlider { width: 100%; cursor: pointer; }
-        #yearDisplay { font-weight: bold; color: #5e3c99; font-size: 1.2em; } /* Lila für Wein */
         
-        /* Hervorhebung der Zahlen in der Statistik */
+        /* Lila Akzente passend zum Wein-Schema */
+        #yearDisplay { font-weight: bold; color: #5e3c99; font-size: 1.2em; }
         .stat-number { font-weight: bold; color: #5e3c99; }
     </style>
 </head>
@@ -47,8 +30,8 @@
 <div id="map"></div>
 
 <div class="slider-container">
-    <h3>Entwicklung bis Jahr: <span id="yearDisplay">1650</span></h3>
-    <input type="range" id="yearSlider" min="1200" max="1700" step="10" value="1650">
+    <h3>Entwicklung bis Jahr: <span id="yearDisplay">Lädt...</span></h3>
+    <input type="range" id="yearSlider" min="1000" max="2000" step="1" value="2000">
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -58,30 +41,26 @@
     var map = L.map('map').setView([50.5, 10.0], 6);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap &copy; CARTO',
-        subdomains: 'abcd',
-        maxZoom: 20
+        subdomains: 'abcd', maxZoom: 20
     }).addTo(map);
 
-    // Farbschema passend zu "Wein"
+    // Farben für "Wein"
     function getColor(variante) {
         if(variante === 'i') return '#5e3c99';    // Dunkles Lila
         if(variante === 'i_ei') return '#b2abd2'; // Helles Lila
         if(variante === 'ei') return '#e66101';   // Orange
-        return '#808080'; // Grau
+        return '#808080'; // Grau für Sonstiges
     }
 
     var markerLayer = L.layerGroup().addTo(map);
     var allData = []; 
-    
-    // Variablen für unsere Statistik
-    var statsMapped = 0;
-    var statsMissing = 0;
+    var statsMapped = 0, statsMissing = 0;
 
-    // 1. Statistik-Box (oben links) initialisieren
+    // Statistik-Box initialisieren
     var statsControl = L.control({position: 'topleft'});
-    statsControl.onAdd = function (map) {
+    statsControl.onAdd = function () {
         this._div = L.DomUtil.create('div', 'info-box');
-        this.update(0, 0); // Startwerte
+        this.update(0, 0);
         return this._div;
     };
     statsControl.update = function (mapped, missing) {
@@ -93,7 +72,7 @@
     };
     statsControl.addTo(map);
 
-    // 2. CSV einlesen und zählen
+    // CSV laden und dynamische Slider-Werte berechnen
     Papa.parse("Diphthongierung.csv", {
         download: true,
         header: true,
@@ -101,15 +80,20 @@
         skipEmptyLines: true,
         complete: function(results) {
             allData = results.data;
-            
-            // Statistik berechnen
+            var validYears = [];
+
             allData.forEach(function(row) {
-                if(row.Wein) { // Nur Zeilen zählen, die einen Eintrag für "Wein" haben
+                // Wir betrachten nur Zeilen, die einen Eintrag für Wein haben
+                if(row.Wein) {
+                    var y = parseInt(row['Jahr eigene'], 10);
+                    
                     if(row.Y && row.X) {
                         var lat = parseFloat(row.Y.replace(',', '.'));
                         var lon = parseFloat(row.X.replace(',', '.'));
                         if(!isNaN(lat) && !isNaN(lon)) {
                             statsMapped++;
+                            // Jahr nur in die Liste aufnehmen, wenn es eine echte Zahl ist
+                            if(!isNaN(y)) validYears.push(y);
                         } else {
                             statsMissing++;
                         }
@@ -119,69 +103,68 @@
                 }
             });
             
-            // Box updaten
             statsControl.update(statsMapped, statsMissing);
 
-            // Slider-Grenzen setzen
-            var years = allData.map(r => parseInt(r['Jahr eigene'])).filter(y => !isNaN(y));
-            var minYear = Math.min(...years) || 1200;
-            var maxYear = Math.max(...years) || 1700;
-            
+            // 1. Frühestes und spätestes Jahr aus den Wein-Belegen ermitteln
+            var minYear = Math.min.apply(null, validYears);
+            var maxYear = Math.max.apply(null, validYears);
+
+            // 2. Den HTML-Slider an die ermittelten Jahre anpassen
             var slider = document.getElementById('yearSlider');
-            slider.min = minYear - 10;
+            slider.min = minYear;
             slider.max = maxYear;
-            slider.value = maxYear;
-            
+            slider.value = maxYear; // Regler ganz nach rechts setzen
+
+            // 3. Karte direkt mit dem Endstand laden
             updateMap(maxYear);
         }
     });
 
-    // 3. Karte updaten (Slider)
-    function updateMap(maxYear) {
+    // Karte aktualisieren
+    function updateMap(currentYearStr) {
+        var yearLimit = parseInt(currentYearStr, 10);
         markerLayer.clearLayers(); 
-        document.getElementById('yearDisplay').innerText = maxYear; 
+        document.getElementById('yearDisplay').innerText = yearLimit; 
 
         allData.forEach(function(row) {
-            var rowYear = parseInt(row['Jahr eigene']);
-            
-            // Auf 'row.Wein' prüfen!
-            if(row.Y && row.X && row.Wein && !isNaN(rowYear)) {
-                if (rowYear <= maxYear) {
-                    var lat = parseFloat(row.Y.replace(',', '.'));
-                    var lon = parseFloat(row.X.replace(',', '.'));
-                    
-                    if(!isNaN(lat) && !isNaN(lon)) {
-                        var marker = L.circleMarker([lat, lon], {
-                            radius: 6,
-                            fillColor: getColor(row.Wein),
-                            color: "#fff", weight: 1, opacity: 1, fillOpacity: 0.8
-                        });
-
-                        var popupText = "<b>Ort:</b> " + (row['Ort Grimm'] || 'Unbekannt') + "<br>" +
-                                        "<b>Variante (Wein):</b> " + row.Wein + "<br>" +
-                                        "<b>Jahr:</b> " + row['Jahr eigene'];
-                        marker.bindPopup(popupText);
-                        markerLayer.addLayer(marker);
+            if(row.Wein) {
+                var rowYear = parseInt(row['Jahr eigene'], 10);
+                
+                if(!isNaN(rowYear) && rowYear <= yearLimit) {
+                    if(row.Y && row.X) {
+                        var lat = parseFloat(row.Y.replace(',', '.'));
+                        var lon = parseFloat(row.X.replace(',', '.'));
+                        
+                        if(!isNaN(lat) && !isNaN(lon)) {
+                            var marker = L.circleMarker([lat, lon], {
+                                radius: 6, fillColor: getColor(row.Wein), 
+                                color: "#fff", weight: 1, opacity: 1, fillOpacity: 0.8
+                            });
+                            var popupText = "<b>Ort:</b> " + (row['Ort Grimm'] || 'Unbekannt') + 
+                                            "<br><b>Variante (Wein):</b> " + row.Wein + 
+                                            "<br><b>Jahr:</b> " + rowYear;
+                            marker.bindPopup(popupText);
+                            markerLayer.addLayer(marker);
+                        }
                     }
                 }
             }
         });
     }
 
+    // Eventlistener: Wenn der Regler geschoben wird
     document.getElementById('yearSlider').addEventListener('input', function(e) {
         updateMap(e.target.value);
     });
 
-    // 4. Farblegende (unten rechts)
+    // Legende für Wein
     var legend = L.control({position: 'bottomright'});
-    legend.onAdd = function (map) {
+    legend.onAdd = function () {
         var div = L.DomUtil.create('div', 'info-box');
-        var grades = ['i', 'i_ei', 'ei'];
-        var labels = ['mhd. î [i]', 'Mischform [i_ei]', 'nhd. ei [ei]'];
-        div.innerHTML += '<h4>Legende (Wein)</h4>';
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += '<i style="background:' + getColor(grades[i]) + '"></i> ' + labels[i] + '<br>';
-        }
+        div.innerHTML += '<h4>Legende (Wein)</h4>' +
+                         '<i style="background:#5e3c99"></i> mhd. î [i]<br>' +
+                         '<i style="background:#b2abd2"></i> Mischform [i_ei]<br>' +
+                         '<i style="background:#e66101"></i> nhd. ei [ei]<br>';
         return div;
     };
     legend.addTo(map);
