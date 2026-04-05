@@ -104,18 +104,23 @@
             
             <div class="stats-footer">
                 <div class="stats-block">
-                    <h4>Datenvalidität (Räumliche Konsistenz)</h4>
-                    <div class="stats-content">
-                        <p>Zur Prüfung der Datenqualität wurde ein <i>Spatial Neighbor Consistency Test</i> (k=5) durchgeführt. Er misst die Wahrscheinlichkeit, dass benachbarte Orte dieselbe Sprachvariante verwenden.</p>
-                        <div style="display: flex; align-items: center; margin-top: 15px;">
-                            <span class="validity-score">66.2%</span>
-                            <div>
-                                <strong>Bewertung: Hoch (Klare Areale)</strong><br>
-                                <span style="color: grey; font-size: 0.9em;">Ein hoher Wert indiziert valide Sprachräume (Isoglossen) statt zufälliger Streuung.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <h4>Räumliche Analyse: Spatial Neighbor Consistency Test</h4>
+    <div class="stats-content">
+        <p>Untersuchung der georeferenzierten Belege (N=553) auf räumliche Clusterbildung beim Lautwandel von mhd. <i>î</i>.</p>
+        <table style="width:100%; font-size: 0.9em; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="padding-bottom: 5px;">Anzahl Nachbarn (k)</th>
+                <th style="padding-bottom: 5px;">Übereinstimmung</th>
+            </tr>
+            <tr><td style="padding: 5px 0;">k = 1 (direkter Nachbar)</td><td><span class="sig-value">74,50 %</span></td></tr>
+            <tr><td style="padding: 5px 0;">k = 3 (3 nächste Nachbarn)</td><td><span class="sig-value">67,93 %</span></td></tr>
+            <tr><td style="padding: 5px 0;">k = 5 (5 nächste Nachbarn)</td><td><span class="sig-value">67,05 %</span></td></tr>
+        </table>
+        <p style="font-size: 0.85em; color: #555;">
+            <i><b>Interpretation:</b> Starke lokale Konsistenz (k=1), die bei größerem Radius (k=3, k=5) jedoch spürbar abfällt. Dies weist darauf hin, dass die räumliche Verteilung bei "Wein" kleinräumiger zersplittert ist und breitere, stärker durchmischte Übergangszonen aufweist als bei "Haus".</i>
+        </p>
+    </div>
+</div>
                 
                 <div class="stats-block">
                     <h4>Morphologie: Genitiv-Analyse</h4>
