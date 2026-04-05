@@ -62,10 +62,10 @@
     };
     statsControl.update = function (mapped, missing) {
         var total = mapped + missing;
-        this._div.innerHTML = '<h4>Datensatz: <em>Haus</em></h4>' +
-                              'Belege gesamt: <b>' + total + '</b><br>' +
-                              'Kartiert: <span class="stat-number">' + mapped + '</span><br>' +
-                              'Ohne Koordinaten: <b>' + missing + '</b>';
+     this._div.innerHTML = '<h4>Datensatz: <em>Haus</em></h4>' +
+                      'Belege gesamt: <b>' + total + '</b><br>' +
+                      'Kartiert: <span class="stat-number">' + mapped + '</span><br>' +
+                      'Ohne Koordinaten: <b>' + missing + '</b>';
     };
     statsControl.addTo(map);
 
