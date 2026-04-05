@@ -86,19 +86,24 @@
         </div>
         
         <div class="stats-footer">
-            <div class="stats-block">
-                <h4>Datenvalidität (Räumliche Konsistenz)</h4>
-                <div class="stats-content">
-                    <p>Zur Prüfung der Datenqualität wurde ein <i>Spatial Neighbor Consistency Test</i> (k=5) durchgeführt. Er misst die Wahrscheinlichkeit, dass benachbarte Orte dieselbe Variante verwenden.</p>
-                    <div style="display: flex; align-items: center; margin-top: 15px;">
-                        <span class="validity-score">80.4%</span>
-                        <div>
-                            <strong>Bewertung: Hoch (Klare Areale)</strong><br>
-                            <span style="color: grey; font-size: 0.9em;">Ein hoher Wert indiziert valide Sprachräume statt zufälliger Streuung.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="stats-block">
+    <h4>Räumliche Analyse: Spatial Neighbor Consistency Test</h4>
+    <div class="stats-content">
+        <p>Untersuchung der georeferenzierten Belege (N=298) auf räumliche Clusterbildung beim Lautwandel von mhd. <i>û</i>.</p>
+        <table style="width:100%; font-size: 0.9em; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="padding-bottom: 5px;">Anzahl Nachbarn (k)</th>
+                <th style="padding-bottom: 5px;">Übereinstimmung</th>
+            </tr>
+            <tr><td style="padding: 5px 0;">k = 1 (direkter Nachbar)</td><td><span class="sig-value">73,15 %</span></td></tr>
+            <tr><td style="padding: 5px 0;">k = 3 (3 nächste Nachbarn)</td><td><span class="sig-value">76,17 %</span></td></tr>
+            <tr><td style="padding: 5px 0;">k = 5 (5 nächste Nachbarn)</td><td><span class="sig-value">75,97 %</span></td></tr>
+        </table>
+        <p style="font-size: 0.85em; color: #555;">
+            <i><b>Interpretation:</b> Sehr starke räumliche Konsistenz. Die Übereinstimmung bleibt auch bei einer Erweiterung des Radius (k=3 und k=5) extrem stabil. Dies deutet auf scharf abgegrenzte Areale (kompakte Isoglossen) und eine starke Clusterbildung der Varianten hin.</i>
+        </p>
+    </div>
+</div>
             
             <div class="stats-block">
                 <h4>Morphologie: Genitiv-Analyse</h4>
