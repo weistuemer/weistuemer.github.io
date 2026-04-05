@@ -12,10 +12,17 @@
         .info-box h4 { margin: 0 0 8px 0; font-size: 14px; color: #111; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
         .info-box i { width: 18px; height: 18px; float: left; margin-right: 8px; border-radius: 50%; }
         
-        .slider-container {
-            position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
-            z-index: 1000; background: white; padding: 15px 25px; border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3); text-align: center; width: 320px;
+.slider-container {
+            position: absolute; 
+            top: 20px;      /* Verschiebt den Regler an den oberen Rand */
+            right: 20px;    /* Verschiebt den Regler an den rechten Rand */
+            z-index: 1000; 
+            background: white; 
+            padding: 15px 25px; 
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+            text-align: center; 
+            width: 320px;
         }
         .slider-container h3 { margin: 0 0 10px 0; font-size: 16px; color: #333; }
         #yearSlider { width: 100%; cursor: pointer; }
