@@ -3,7 +3,7 @@
     <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Diphthongierung von mhd. î</title>
+        <title>Poster: Diphthongierung von mhd. î</title>
         <style>
             body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; color: #333; margin: 0; padding: 20px; }
             .container { max-width: 1250px; margin: 0 auto; background: white; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; }
@@ -60,8 +60,8 @@
             <div class="data-header">DATENBASIS & BELEGZAHLEN</div>
             <div class="data-box">
                 <div class="stat-card">
-                    <span class="stat-val" style="color: #2c3e50">759</span>
-                    <span class="stat-label">Weistümer mit<br>Lexem <em>Wein</em></span>
+                    <span class="stat-val" style="color: #2c3e50">757</span>
+                    <span class="stat-label">Weistümer mit<br>Lexem "Wein"</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-val" style="color: #e66101">280</span>
@@ -72,12 +72,12 @@
                     <span class="stat-label">Übergangsform /<br>Nebeneinander</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-val" style="color: #5e3c99">450</span>
+                    <span class="stat-val" style="color: #5e3c99">447</span>
                     <span class="stat-label">Diphthong<br>[ei]</span>
                 </div>
             </div>
 
-            <h3 class="section-title">Kumulative Verlaufskarte</h3>
+            <h3 class="section-title">Interaktive Verlaufskarte</h3>
             <div class="map-container">
                 <iframe src="Diphthongierung_Karte_Kumulativ.html"></iframe>
             </div>
@@ -85,47 +85,42 @@
             <h3 class="section-title">Quantitative Auswertung</h3>
             
             <div class="diagram-grid">
-    <div class="card"><h4>Relative Häufigkeit (Gesamt)</h4><img src="Diagramme/00_Gesamt_Verteilung.png"></div><div class="card"><h4>Verlauf der Datendichte</h4><img src="Diagramme/00_Verlaufskurve_Datendichte.png"></div></div>
+    </div>
         <div class="full-width-card">
             <div style="text-align:center;">
                 <h4 style="color:#34495e; margin-bottom:15px; text-align:left;">Validierung: Korrelations-Check</h4>
                 <img src="Korrelation_Check.png">
             </div>
             <div class="corr-box">
-                <b>Analyse über 31 Jahrzehnte:</b><br><br>
-                Pearson r:    <span class="corr-val">0.1137</span> (p=0.5424)<br>
-                Spearman rho: <span class="corr-val">0.1503</span> (p=0.4195)<br>
+                <b>Analyse über 32 Jahrzehnte:</b><br><br>
+                Pearson r:    <span class="corr-val">0.0885</span> (p=0.6300)<br>
+                Spearman rho: <span class="corr-val">0.1219</span> (p=0.5062)<br>
                 <hr style="border:0; border-top:1px dashed #ccc; margin:15px 0;">
-                <span class="interp">>> INTERPRETATION:<br>Kein oder sehr schwacher Zusammenhang.<br>Die Zunahme vom Diphthong /ei/ ist NICHT nur ein Effekt der höheren Belegzahl.</span>
+                <span class="interp">Interpretation:<br>Kein oder sehr schwacher Zusammenhang.<br>Die Zunahme von 'ei' ist NICHT nur ein Effekt der höheren Belegzahl.</span>
             </div>
         </div>
-        <h3 class="section-title">Regionale Differenzierung</h3><div class="diagram-grid"><div class="card"><h4>CH</h4><img src="Diagramme/Region_CH.png"></div><div class="card"><h4>Elsass</h4><img src="Diagramme/Region_Elsass.png"></div><div class="card"><h4>WOD</h4><img src="Diagramme/Region_WOD.png"></div><div class="card"><h4>MDT</h4><img src="Diagramme/Region_MDT.png"></div><div class="card"><h4>WMD</h4><img src="Diagramme/Region_WMD.png"></div><div class="card"><h4>NDT</h4><img src="Diagramme/Region_NDT.png"></div><div class="card"><h4>OOD</h4><img src="Diagramme/Region_OOD.png"></div>
+        <h3 class="section-title">Regionale Differenzierung</h3><div class="diagram-grid">
             </div>
             
             <div class="stats-footer">
                 <div class="stats-block">
-    <h4>Räumliche Analyse: Spatial Neighbor Consistency Test</h4>
-    <div class="stats-content">
-        <p>Untersuchung der georeferenzierten Belege (N=553) auf räumliche Clusterbildung beim Lautwandel von mhd. <i>î</i>.</p>
-        <table style="width:100%; font-size: 0.9em; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="padding-bottom: 5px;">Anzahl Nachbarn (k)</th>
-                <th style="padding-bottom: 5px;">Übereinstimmung</th>
-            </tr>
-            <tr><td style="padding: 5px 0;">k = 1 (direkter Nachbar)</td><td><span class="sig-value">74,50 %</span></td></tr>
-            <tr><td style="padding: 5px 0;">k = 3 (3 nächste Nachbarn)</td><td><span class="sig-value">67,93 %</span></td></tr>
-            <tr><td style="padding: 5px 0;">k = 5 (5 nächste Nachbarn)</td><td><span class="sig-value">67,05 %</span></td></tr>
-        </table>
-        <p style="font-size: 0.85em; color: #555;">
-            <b>Interpretation:</b> Starke lokale Konsistenz (k=1), die bei größerem Radius (k=3, k=5) jedoch spürbar abfällt. Dies weist darauf hin, dass die räumliche Verteilung bei <i>Wein</i> kleinräumiger zersplittert ist und breitere, stärker durchmischte Übergangszonen aufweist als bei <i>Haus</i>.
-        </p>
-    </div>
-</div>
+                    <h4>Datenvalidität (Räumliche Konsistenz)</h4>
+                    <div class="stats-content">
+                        <p>Zur Prüfung der Datenqualität wurde ein <i>Spatial Neighbor Consistency Test</i> (k=5) durchgeführt. Er misst die Wahrscheinlichkeit, dass benachbarte Orte dieselbe Variante verwenden.</p>
+                        <div style="display: flex; align-items: center; margin-top: 15px;">
+                            <span class="validity-score">70.9%</span>
+                            <div>
+                                <strong>Bewertung: Hoch (Klare Areale)</strong><br>
+                                <span style="color: grey; font-size: 0.9em;">Ein hoher Wert indiziert valide Sprachräume statt zufälliger Streuung.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="stats-block">
                     <h4>Morphologie: Genitiv-Analyse</h4>
                     <div class="stats-content">
-                        <p>Untersuchung des Gesamtkorpus (N=2147) auf Zusammenhang zwischen Genitivform (<i>-es</i>) und Lautwandel.</p>
+                        <p>Untersuchung des Gesamtkorpus (N=2147) auf Zusammenhang zwischen Genitivform und Lautwandel.</p>
                         <table style="width:100%; font-size: 0.9em; border-collapse: collapse; margin-bottom: 15px;">
                             <tr style="border-bottom: 1px solid #ddd;"><td><b>Variante</b></td><td><b>Genitiv</b></td><td><b>Kein Genitiv</b></td></tr>
                             <tr><td>[i]</td><td>339</td><td>545</td></tr>
@@ -142,7 +137,7 @@
             </div>
 
             <footer class="footer">
-                <p>letzte Änderung 05.04.2026 | Software: Python (Pandas, Plotly, SciPy) | © Lea Schäfer</p>
+                <p>Erstellt am 06.06.2026 | Software: Python (Pandas, Plotly, SciPy) | © Lea Schäfer</p>
                 <a href="Diphthongierung.csv" class="btn-csv">📥 Rohdaten (CSV)</a>
             </footer>
         </div>
