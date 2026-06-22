@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reproduktionsskripte: Diphthongierung in den Grimmschen Weistümern</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.25rem;
+    }
+
+    code {
+      background: #eee;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul.script-list {
+      padding-left: 1.2rem;
+    }
+
+    ul.script-list li {
+      margin-bottom: 0.75rem;
+    }
+
+    .note {
+      background: #f1f5f9;
+      border-left: 4px solid #9ab;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Reproduktionsskripte: Diphthongierung in den Grimmschen Weistümern</h1>
+    <p>
+      Diese Seite dokumentiert die Skripte zur quantitativen Auswertung der
+      Diphthongierung von mhd. <em>î</em> und <em>û</em> in den
+      <span style="font-variant: small-caps;">Grimm</span>schen Weistümern.
+    </p>
+    <p>
+      Zur Projektseite mit interaktiven Karten:
+      <a href="https://weistuemer.github.io/Diphthongierung/">https://weistuemer.github.io/Diphthongierung/</a>
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Daten</h2>
+      <p>
+        Die Basisdaten liegen in der Datei <code>Diphthongierung.csv</code>
+        im Ordner <code>data/</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Python-Pakete</h2>
+      <pre><code>pip install pandas numpy matplotlib scipy scikit-learn</code></pre>
+    </section>
+
+    <section>
+      <h2>R-Pakete</h2>
+      <pre><code>install.packages(c("tidyverse", "mgcv", "viridisLite"))</code></pre>
+    </section>
+
+    <section>
+      <h2>Skripte</h2>
+      <ul class="script-list">
+        <li>
+          <a href="01_descriptive_gtests_lindgren.py"><code>01_descriptive_gtests_lindgren.py</code></a><br>
+          Bereinigung, Variantenkodierung, Aggregation nach Region und 50-Jahres-Intervallen,
+          Linienplots, Heatmaps, Log-Likelihood/G-Tests und explorativer Lindgren-Abgleich.
+        </li>
+
+        <li>
+          <a href="02_spatiotemporal_snct.py"><code>02_spatiotemporal_snct.py</code></a><br>
+          Spatio-temporaler Spatial Neighbor Consistency Test (SNCT) für <em>Wein</em>
+          und <em>Haus</em>, mit <code>k = 5</code>.
+        </li>
+
+        <li>
+          <a href="03_compare_wein_haus.py"><code>03_compare_wein_haus.py</code></a><br>
+          Makrovergleich von <em>Wein</em> und <em>Haus</em>: Zeitverlauf und regionale Kopplung.
+        </li>
+
+        <li>
+          <a href="04_separate_gams_wein_haus.R"><code>04_separate_gams_wein_haus.R</code></a><br>
+          Getrennte binomiale GAMs für <em>Wein</em> und <em>Haus</em>;
+          Mischformen werden ausgeschlossen.
+        </li>
+
+        <li>
+          <a href="05_combined_gam_wein_haus.R"><code>05_combined_gam_wein_haus.R</code></a><br>
+          Kombiniertes binomiales GAM mit lexemspezifischen raumzeitlichen Smooths;
+          Mischformen werden ausgeschlossen.
+        </li>
+
+        <li>
+          <a href="06_gam_effectplots_mgcv.R"><code>06_gam_effectplots_mgcv.R</code></a><br>
+          Effektplots aus den R/mgcv-Modellen für ausgewählte Zeitschnitte.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hinweis zur Kodierung</h2>
+      <p>
+        Für inferenzstatistische binomiale Modelle werden nur eindeutige Varianten genutzt:
+      </p>
+      <ul>
+        <li><em>Wein</em>: <code>i = 0</code>, <code>ei = 1</code>; Mischformen wie <code>i_ei</code> ausgeschlossen.</li>
+        <li><em>Haus</em>: <code>u = 0</code>, <code>au = 1</code>; Mischformen wie <code>u_au</code> ausgeschlossen.</li>
+      </ul>
+      <p>
+        Für deskriptive Aggregationen werden Mischformen anteilig als <code>0.5</code> gewertet.
+      </p>
+    </section>
+
+    <section class="note">
+      <h2>Zitation und Reproduzierbarkeit</h2>
+      <p>
+        Die Skripte dienen der Reproduktion der im Aufsatz berichteten quantitativen Analysen.
+        Der vollständige OCR-Volltext der <span style="font-variant: small-caps;">Grimm</span>schen Edition
+        wird hier nicht als eigenständige Textausgabe reproduziert; dokumentiert werden die
+        extrahierten Metadaten, Variantenkodierungen und Analyseentscheidungen.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Stand: 2026. Projekt: Diphthongierung in den
+      <span style="font-variant: small-caps;">Grimm</span>schen Weistümern.
+    </p>
+  </footer>
+</body>
+</html>
