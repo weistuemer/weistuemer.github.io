@@ -1,0 +1,23 @@
+
+Family: binomial 
+Link function: logit 
+
+Formula:
+Diph_Bin ~ Lexem_fac + te(X_num, Y_num, Jahr_num, by = Lexem_fac)
+
+Parametric coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept)     1.8346     0.5652   3.246  0.00117 **
+Lexem_facWein  -0.7243     0.6486  -1.117  0.26413   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                                         edf Ref.df Chi.sq p-value    
+te(X_num,Y_num,Jahr_num):Lexem_facHaus 14.70  17.89  64.59 1.1e-06 ***
+te(X_num,Y_num,Jahr_num):Lexem_facWein 16.05  19.90 108.90 < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.535   Deviance explained = 50.4%
+-REML = 191.12  Scale est. = 1         n = 649
