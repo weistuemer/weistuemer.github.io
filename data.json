@@ -12253,11 +12253,14 @@
     "titel": "DINGHOF ZU WERENTZHAUSEN",
     "edition": {
       "stelle": "Grimm Bd. 4, S. 1–3",
-      "notizen": "Titel und Datierung laut Überschrift 'DINGHOF ZU WERENTZHAUSEN 1). 1420.' Laufende Kopfzeile nennt 'ELSASZ | WERENTZHAUSEN. RIESPACH', was auf einen benachbarten Ortsnamen (Riespach) in Grimms Kapiteleinteilung hindeutet, im Haupttext selbst aber nicht erscheint. Fußnote 1 verortet Werentzhausen 'an der Ill, südöstlich von Altkirch'. Fußnote 2 identifiziert das im Text genannte 'Spechbach' als 'Ober-Spechbach, canton Altkirch'. Fußnote 3 identifiziert 'Bůswilre' als 'Buxwiller, canton Pfirt'. Der Text betrifft den Dinghof zu Werentzhausen und Enschingen (Ensingen), verbunden mit dem Priorat St. Morand; Rechte, Zinsen, Hubenrecht, Fälle, Bußgelder und Gerichtsordnung werden aufgeführt. Quellenvermerk am Ende: 'archiv der praefectur des Ober-Rheins. fonds: Prieuré de St. Morand. ein band in papier, von 1420 bis 1541.' – dies deutet auf eine Sammelhandschrift mit mehreren Weistümern hin, aus der dieser Text stammt. Verortungshinweise: an der Ill; südöstlich von Altkirch; Priorat St. Morand (sant Morand); im Zusammenhang mit Enschingen/Ensingen und Spechbach (Ober-Spechbach) sowie Bůswilre (Buxwiller, canton Pfirt). Koordinaten entfernt: fälschliche automatische Zuordnung zu 'Hausen' (Franken, 49.9/11.03) aufgrund generischer Namens-Endung '-hausen' -- korrekte Koordinaten noch offen, bitte manuell recherchieren."
+      "notizen": "Titel und Datierung laut Überschrift 'DINGHOF ZU WERENTZHAUSEN 1). 1420.' Laufende Kopfzeile nennt 'ELSASZ | WERENTZHAUSEN. RIESPACH', was auf einen benachbarten Ortsnamen (Riespach) in Grimms Kapiteleinteilung hindeutet, im Haupttext selbst aber nicht erscheint. Fußnote 1 verortet Werentzhausen 'an der Ill, südöstlich von Altkirch'. Fußnote 2 identifiziert das im Text genannte 'Spechbach' als 'Ober-Spechbach, canton Altkirch'. Fußnote 3 identifiziert 'Bůswilre' als 'Buxwiller, canton Pfirt'. Der Text betrifft den Dinghof zu Werentzhausen und Enschingen (Ensingen), verbunden mit dem Priorat St. Morand; Rechte, Zinsen, Hubenrecht, Fälle, Bußgelder und Gerichtsordnung werden aufgeführt. Quellenvermerk am Ende: 'archiv der praefectur des Ober-Rheins. fonds: Prieuré de St. Morand. ein band in papier, von 1420 bis 1541.' – dies deutet auf eine Sammelhandschrift mit mehreren Weistümern hin, aus der dieser Text stammt. Verortungshinweise: an der Ill; südöstlich von Altkirch; Priorat St. Morand (sant Morand); im Zusammenhang mit Enschingen/Ensingen und Spechbach (Ober-Spechbach) sowie Bůswilre (Buxwiller, canton Pfirt). Koordinaten recherchiert und korrigiert: Werentzhausen = heute Werentzhouse, Haut-Rhin (SO von Altkirch, an der Ill)."
     },
     "original_link": "",
     "ort": "Werentzhausen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 47.516,
+      "lng": 7.357
+    },
     "zeit": "1420",
     "typ": "Weistum (Dinghofrecht)",
     "schreiberinfo": "",
@@ -16682,11 +16685,14 @@
     "titel": "WEISTHUM ZU GREBENHAUSEN",
     "edition": {
       "stelle": "Grimm Bd. 1, S. 175–176",
-      "notizen": "Fußnote 1 gibt nur knapp die Lage an: 'bei Darmstadt'. Der Haupttext ist offenbar eine Wiedergabe/Paraphrase eines Instruments von 1413 mit Weistum-Charakter, in dem die Rechte der Herren von Heusenstein und der Ulner (Eulner) am Gericht/Dorf Grebenhausen (und teils Weitersstadt) festgehalten werden. Grimm scheint den Text stellenweise zu paraphrasieren (z.B. 'wie die im instrument mit namen genennet'), die einzelnen Punkte 1-10 wirken wie eine originalnahe Aufzählung der Weistumsartikel. Verortungshinweise: bei Darmstadt; im Text genannt: Weitersstadt (Nachbarort). Koordinaten entfernt: fälschliche automatische Zuordnung zu 'Hausen' (Franken, 49.9/11.03) aufgrund generischer Namens-Endung '-hausen' -- korrekte Koordinaten noch offen, bitte manuell recherchieren."
+      "notizen": "Fußnote 1 gibt nur knapp die Lage an: 'bei Darmstadt'. Der Haupttext ist offenbar eine Wiedergabe/Paraphrase eines Instruments von 1413 mit Weistum-Charakter, in dem die Rechte der Herren von Heusenstein und der Ulner (Eulner) am Gericht/Dorf Grebenhausen (und teils Weitersstadt) festgehalten werden. Grimm scheint den Text stellenweise zu paraphrasieren (z.B. 'wie die im instrument mit namen genennet'), die einzelnen Punkte 1-10 wirken wie eine originalnahe Aufzählung der Weistumsartikel. Verortungshinweise: bei Darmstadt; im Text genannt: Weitersstadt (Nachbarort). Koordinaten recherchiert und korrigiert: Grebenhausen = heute Gräfenhausen, Weiterstadt bei Darmstadt (histor. Schreibung 'Grebenhaussen' 1780 belegt; Familie von Heusenstamm passt zu 'Heusenstein' im Text)."
     },
     "original_link": "",
     "ort": "Grebenhausen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 49.9355,
+      "lng": 8.6051
+    },
     "zeit": "1413",
     "typ": "Weisthum",
     "schreiberinfo": "",
@@ -20165,11 +20171,14 @@
     "titel": "MARODT",
     "edition": {
       "stelle": "Grimm Bd. 1, S. 189–191",
-      "notizen": "Titel von Grimm mit Fußnotenzeichen 1) versehen. Laut Fußnote: Urkunde auf Pergament; auf der Außenseite steht fälschlich 'gericht zu Mergenthausen', die richtige Stätte ist aber Marodt. Die genannten Orte liegen sämtlich in der Nähe von Dierdorf gegen Norden und Osten. Ein späteres trierisches Instrument von 1606 hat die korrekte Überschrift 'Marodt'. Der Haupttext ist ein Notariatsinstrument (Weistum) über das isenburgisch-hammersteinische Gericht zu Marodt, datiert auf Donnerstag, den 15. September 1575, ausgefertigt vom Notar Arndt Knopeus von Opoteren (Kleriker des Bistums Lüttich). Genannte Herrschaften: Erzbischof/Kurfürst von Köln, Graf zu Isenburg und Grenzau (Grundherr); Erzbischof/Kurfürst von Trier (Pfandherr). Verortungshinweise: in der Nähe von Dierdorf gegen Norden und Osten gelegen; Hamersterhoff (Hammersteiner Hof) bei Marodt; Grafschaft Isenburg und Grenzau; Grafschaft Wied grenzt an; Genannte Nachbarorte: Hersbach, Frienrachtorff (Fernthal?), Martrachtorff, Hartefels, Husen, Mergenhausen. Koordinaten entfernt: fälschliche automatische Zuordnung zu 'Hausen' (Franken, 49.9/11.03) aufgrund generischer Namens-Endung '-hausen' -- korrekte Koordinaten noch offen, bitte manuell recherchieren."
+      "notizen": "Titel von Grimm mit Fußnotenzeichen 1) versehen. Laut Fußnote: Urkunde auf Pergament; auf der Außenseite steht fälschlich 'gericht zu Mergenthausen', die richtige Stätte ist aber Marodt. Die genannten Orte liegen sämtlich in der Nähe von Dierdorf gegen Norden und Osten. Ein späteres trierisches Instrument von 1606 hat die korrekte Überschrift 'Marodt'. Der Haupttext ist ein Notariatsinstrument (Weistum) über das isenburgisch-hammersteinische Gericht zu Marodt, datiert auf Donnerstag, den 15. September 1575, ausgefertigt vom Notar Arndt Knopeus von Opoteren (Kleriker des Bistums Lüttich). Genannte Herrschaften: Erzbischof/Kurfürst von Köln, Graf zu Isenburg und Grenzau (Grundherr); Erzbischof/Kurfürst von Trier (Pfandherr). Verortungshinweise: in der Nähe von Dierdorf gegen Norden und Osten gelegen; Hamersterhoff (Hammersteiner Hof) bei Marodt; Grafschaft Isenburg und Grenzau; Grafschaft Wied grenzt an; Genannte Nachbarorte: Hersbach, Frienrachtorff (Fernthal?), Martrachtorff, Hartefels, Husen, Mergenhausen. Koordinaten recherchiert und korrigiert: Marodt = heute Maroth, Westerwaldkreis (VG Selters, nahe Dierdorf)."
     },
     "original_link": "",
     "ort": "Marodt",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.5772,
+      "lng": 7.6897
+    },
     "zeit": "1575",
     "typ": "Weistum (Notariatsinstrument)",
     "schreiberinfo": "Ausgefertigt von Arndt Knopeus von Opoteren, Kleriker des Bistums Lüttich, Notar",
