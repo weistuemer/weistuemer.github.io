@@ -20690,7 +20690,7 @@
     "titel": "HOMER MARK",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 161",
-      "notizen": "Grimm überschreibt das Stück \"HOMER MARK 1).\" mit Fußnotenverweis \"1)\", jedoch ist im vorliegenden Auszug keine Fußnote (kein Fußnotentext) mitgeliefert. Die laufende Kopfzeile der Seite lautet \"HOME. WERNE UND SEPERADE\", was auf eine Sammelregion mit mehreren benachbarten Weistümern (Home, Werne, Seperade) hindeutet, die im Corpus aufeinanderfolgen. Der Haupttext ist ein direktes Zitat eines Holtinge-Protokolls (Rechtsweisung) vom Montag nach St. Matthäus 1490, in dem die Erbexen der Homer Mark die Rechte des Herrn von Gemen und Wevelkoven bezüglich der Mark und des Holzgerichts anerkennen. Verortungshinweise: Herrschaft Gemen (Haus/Herren zu Gemen); Wevelkoven (Wevelinghoven?) als weiterer Herrschaftssitz der Herren zu Gemen; Haus zu Rede (Reede) genannt; Ort/Amt Rheinen (Rhede?) erwähnt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Homer') — bitte manuell prüfen."
+      "notizen": "Grimm überschreibt das Stück \"HOMER MARK 1).\" mit Fußnotenverweis \"1)\", jedoch ist im vorliegenden Auszug keine Fußnote (kein Fußnotentext) mitgeliefert. Die laufende Kopfzeile der Seite lautet \"HOME. WERNE UND SEPERADE\", was auf eine Sammelregion mit mehreren benachbarten Weistümern (Home, Werne, Seperade) hindeutet, die im Corpus aufeinanderfolgen. Der Haupttext ist ein direktes Zitat eines Holtinge-Protokolls (Rechtsweisung) vom Montag nach St. Matthäus 1490, in dem die Erbexen der Homer Mark die Rechte des Herrn von Gemen und Wevelkoven bezüglich der Mark und des Holzgerichts anerkennen. Verortungshinweise: Herrschaft Gemen (Haus/Herren zu Gemen); Wevelkoven (Wevelinghoven?) als weiterer Herrschaftssitz der Herren zu Gemen; Haus zu Rede (Reede) genannt; Ort/Amt Rheinen (Rhede?) erwähnt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Homer') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 51.782125, 'lng': 6.76852} -> (51.782125, 6.76852); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Homer_(Raesfeld)&language=de&params=51.782125_N_6.76852_E_dim:10000_region:DE-NW_type:city(189))."
     },
     "original_link": "",
     "ort": "Homer Mark",
@@ -20728,11 +20728,14 @@
     "titel": "Hofsrechte von Dorsten (Instrumentum de juribus curtis de Dursten)",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 163–168",
-      "notizen": "Quelle laut Fußnote: Rive, Bauerngüterwesen, Cöln 1824, S. 449-456. Grimm verortet Dorsten am rechten Ufer der Lippe, östlich von Wesel. Der Haupttext ist ein lateinisches Notariatsinstrument (Weistum-Protokoll) über die Rechte des Hofes (curtis) von Dorsten, der dem Stift St. Viktor in Xanten (Dekan und Kapitel der ecclesia xantensis) gehörte. Enthält 13 durchnummerierte Fragen (articuli) mit Antworten der Hofgenossen (curtiales/jurati) zu Rechtsverhältnissen, Eidespflicht, Erbrecht (Hergewäte/Gerade), Vogteirechten des Grafen von Cleve bzw. Theodoricus de Marca, Abgaben (vaightbede, vastauens hoyn), Fuhrdiensten nach Götterswyck u.a. Laufende Kopfzeile auf den Seiten wechselt zwischen 'HOME. WERNE UND SEPERADE. DORSTEN' und 'DORSTEN', was auf mehrere benachbarte Weistümer in Grimms Abschnitt zu Westfalen hindeutet (Home, Werne und Seperade als vorangehende Orte). Verortungshinweise: am rechten Ufer der Lippe; östlich von Wesel; Kirche der Stadt Xanten (ecclesia xantensis) als Grundherrin; in der freiheit de Dorsten (Stadtfreiheit Dorsten genannt); Bezug zu Nachbarhöfen: curtis de Recklinghuisen und curtis de Oer; Vogtei durch den Grafen von Cleve bzw. domicellus Theodoricus de Marca; Kornlieferung zum Speicher in Götterswyck."
+      "notizen": "Quelle laut Fußnote: Rive, Bauerngüterwesen, Cöln 1824, S. 449-456. Grimm verortet Dorsten am rechten Ufer der Lippe, östlich von Wesel. Der Haupttext ist ein lateinisches Notariatsinstrument (Weistum-Protokoll) über die Rechte des Hofes (curtis) von Dorsten, der dem Stift St. Viktor in Xanten (Dekan und Kapitel der ecclesia xantensis) gehörte. Enthält 13 durchnummerierte Fragen (articuli) mit Antworten der Hofgenossen (curtiales/jurati) zu Rechtsverhältnissen, Eidespflicht, Erbrecht (Hergewäte/Gerade), Vogteirechten des Grafen von Cleve bzw. Theodoricus de Marca, Abgaben (vaightbede, vastauens hoyn), Fuhrdiensten nach Götterswyck u.a. Laufende Kopfzeile auf den Seiten wechselt zwischen 'HOME. WERNE UND SEPERADE. DORSTEN' und 'DORSTEN', was auf mehrere benachbarte Weistümer in Grimms Abschnitt zu Westfalen hindeutet (Home, Werne und Seperade als vorangehende Orte). Verortungshinweise: am rechten Ufer der Lippe; östlich von Wesel; Kirche der Stadt Xanten (ecclesia xantensis) als Grundherrin; in der freiheit de Dorsten (Stadtfreiheit Dorsten genannt); Bezug zu Nachbarhöfen: curtis de Recklinghuisen und curtis de Oer; Vogtei durch den Grafen von Cleve bzw. domicellus Theodoricus de Marca; Kornlieferung zum Speicher in Götterswyck. Koordinate am 2026-08-19 korrigiert (vorher: None -> (51.6604071, 6.9647431); Quelle: Nominatim AUTO_PLAUSIBEL; Dorsten, Kreis Recklinghausen, Nordrhein-Westfalen, Deutschland)."
     },
     "original_link": "",
     "ort": "Dorsten",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 51.6604071,
+      "lng": 6.9647431
+    },
     "zeit": "1401 (Instrument datiert), Überschrift 1402",
     "typ": "Instrumentum (notarielles Weistumsprotokoll, Hofsrecht)",
     "schreiberinfo": "Aufgezeichnet durch einen öffentlichen Notar im Auftrag der Richter Goswinus de Wynga (Kanoniker von St. Viktor Xanten) und Goswinus, Pfarrer zu Gladbeck, als Officiat der Dekane und des Kapitels von Xanten; Zeugen: Bruno Pelegrini, Priester zu Dorsten, und Joannes de Levyt, Laie aus Xanten.",
@@ -20801,13 +20804,13 @@
     "titel": "OSTERWALDER MARK",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 176",
-      "notizen": "Keine Fußnoten zu diesem Weistum überliefert. Titel trägt eine Fußnotenmarkierung (¹), jedoch ist der zugehörige Fußnotentext im vorgelegten Ausschnitt nicht enthalten, sodass keine näheren Verortungsangaben zum Osterwald verfügbar sind. Haupttext behandelt Rechte des Holzgrafen (holtgreve) und der Markgenossen (Erbherren) am Osterwald: Weisung über Holznutzung, Mastrechte (Schweinemast), Bauholzansprüche bei Brandschäden u.ä. Koordinaten-Zuordnung unsicher (Score 0.84, CSV-Eintrag 'Westerwald') — bitte manuell prüfen."
+      "notizen": "Keine Fußnoten zu diesem Weistum überliefert. Titel trägt eine Fußnotenmarkierung (¹), jedoch ist der zugehörige Fußnotentext im vorgelegten Ausschnitt nicht enthalten, sodass keine näheren Verortungsangaben zum Osterwald verfügbar sind. Haupttext behandelt Rechte des Holzgrafen (holtgreve) und der Markgenossen (Erbherren) am Osterwald: Weisung über Holznutzung, Mastrechte (Schweinemast), Bauholzansprüche bei Brandschäden u.ä. Koordinaten-Zuordnung unsicher (Score 0.84, CSV-Eintrag 'Westerwald') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.661139, 'lng': 8.101472} -> (52.5301571, 7.0065276); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=ja; Osterwald, Samtgemeinde Neuenhaus, Landkreis Grafschaft Bentheim, Niedersachsen, 49828, Deutschland)."
     },
     "original_link": "",
     "ort": "Osterwald",
     "koordinaten": {
-      "lat": 50.661139,
-      "lng": 8.101472
+      "lat": 52.5301571,
+      "lng": 7.0065276
     },
     "zeit": "1557",
     "typ": "",
@@ -20820,11 +20823,14 @@
     "titel": "OSTBEVERNSCHE MARK",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 176–180",
-      "notizen": "Aus Kindlingers münsterischen Beiträgen 3. no. 142. Text nach einer Abschrift des 16. Jahrhunderts, datiert auf St. Lucientag 1339. Die Fußnote lokalisiert Ostbevern am Flüsschen Bever, nordöstlich von Münster. Im Haupttext werden zahlreiche Personen genannt (Schweder de gogreve, Holtgreve, Schulten verschiedener Höfe, Scharmänner), die als Zeugen/Rechtsprecher der Mark Ostbevern fungieren. Der Text bricht am Ende (Datierung/Siegelvermerk) mit einer technischen Textstörung ab (verzerrte Buchstabenfolge mit Leerzeichen, vermutlich OCR-/Encoding-Artefakt), gefolgt unmittelbar von einem weiteren, eigenständigen Dokument ('JURA LITONUM IN MEPPEN', 1348) im selben Fußnotenapparat, das im Auftrag der Abtei Corvey verfasst wurde. Dieses zweite Stück gehört nicht mehr zur Ostbevernschen Mark, sondern behandelt Rechte der Liten (Höriger) in Meppen im Emsland, wo die Ems und Hase zusammenfließen; die Äbte von Corvei waren dort von alters her berechtigt (nach Falke, trad. p. 358). Verortungshinweise: am Flüsschen Bever; nordöstlich von Münster; Münsterland."
+      "notizen": "Aus Kindlingers münsterischen Beiträgen 3. no. 142. Text nach einer Abschrift des 16. Jahrhunderts, datiert auf St. Lucientag 1339. Die Fußnote lokalisiert Ostbevern am Flüsschen Bever, nordöstlich von Münster. Im Haupttext werden zahlreiche Personen genannt (Schweder de gogreve, Holtgreve, Schulten verschiedener Höfe, Scharmänner), die als Zeugen/Rechtsprecher der Mark Ostbevern fungieren. Der Text bricht am Ende (Datierung/Siegelvermerk) mit einer technischen Textstörung ab (verzerrte Buchstabenfolge mit Leerzeichen, vermutlich OCR-/Encoding-Artefakt), gefolgt unmittelbar von einem weiteren, eigenständigen Dokument ('JURA LITONUM IN MEPPEN', 1348) im selben Fußnotenapparat, das im Auftrag der Abtei Corvey verfasst wurde. Dieses zweite Stück gehört nicht mehr zur Ostbevernschen Mark, sondern behandelt Rechte der Liten (Höriger) in Meppen im Emsland, wo die Ems und Hase zusammenfließen; die Äbte von Corvei waren dort von alters her berechtigt (nach Falke, trad. p. 358). Verortungshinweise: am Flüsschen Bever; nordöstlich von Münster; Münsterland. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.0362198, 7.8400336); Quelle: Nominatim AUTO_PLAUSIBEL; Ostbevern, Kreis Warendorf, Nordrhein-Westfalen, 48346, Deutschland)."
     },
     "original_link": "",
     "ort": "Ostbevern",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.0362198,
+      "lng": 7.8400336
+    },
     "zeit": "1339",
     "typ": "Weistum",
     "schreiberinfo": "Schweder der Gogreve, zu der Zeit ein Holtgreve über die Mark zu Ostbevern von Gerlages wegen von Beveren, geschworener, besetzter und gehegter Richter zu Ostbevern",
@@ -20836,11 +20842,14 @@
     "titel": "SPELLER WOLDE ORDELE UND RECHTWISONGE",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 180–184",
-      "notizen": "Text nach Piper, Markenrecht, Halle 1763, S. 157-166 (laut Grimms Fußnote). Grimm lokalisiert den Speller Wald in der Grafschaft Tecklenburg zwischen Rheine und Lingen. Der Haupttext ist ein wörtliches Zitat eines Holzgerichtsprotokolls (Weistum) vom Donnerstag nach Matthaei apostoli 1465, mit einem eingefügten Zusatzbeschluss vom Montag nach Luciae virginis desselben Jahres (1465) über die Nutzung des Waldes durch die 'Dustwar'-Berechtigten. Genannt werden u.a. Roleff van Langen, der Gograf Berend die Schipper im Auftrag des Grafen Clauwes von Tecklenburg, sowie zahlreiche Markgenossen/Höfe (Segebert, Auekink, Husink, Bodeckerink, Johannink, Bartoldink, Visherdinck, Roberdink, Butmeyer, Venhüsz, Hermelink, Hof zu Lünne, Bramschulte, Schulte zu Schapen). Der Abt von Werden erscheint als Oberherr/Eigentümer des Waldes, der Schulte von Schapen bzw. der vom Abt belehnte Hofinhaber als Holzrichter. Verortungshinweise: Speller Wald liegt in der Grafschaft Tecklenburg; zwischen Rheine und Lingen; Abt des Stiftes Werden als Grundherr des Waldes; Höfe Schapen, Lünne, Hellmerink, Braemhoue in der Umgebung genannt."
+      "notizen": "Text nach Piper, Markenrecht, Halle 1763, S. 157-166 (laut Grimms Fußnote). Grimm lokalisiert den Speller Wald in der Grafschaft Tecklenburg zwischen Rheine und Lingen. Der Haupttext ist ein wörtliches Zitat eines Holzgerichtsprotokolls (Weistum) vom Donnerstag nach Matthaei apostoli 1465, mit einem eingefügten Zusatzbeschluss vom Montag nach Luciae virginis desselben Jahres (1465) über die Nutzung des Waldes durch die 'Dustwar'-Berechtigten. Genannt werden u.a. Roleff van Langen, der Gograf Berend die Schipper im Auftrag des Grafen Clauwes von Tecklenburg, sowie zahlreiche Markgenossen/Höfe (Segebert, Auekink, Husink, Bodeckerink, Johannink, Bartoldink, Visherdinck, Roberdink, Butmeyer, Venhüsz, Hermelink, Hof zu Lünne, Bramschulte, Schulte zu Schapen). Der Abt von Werden erscheint als Oberherr/Eigentümer des Waldes, der Schulte von Schapen bzw. der vom Abt belehnte Hofinhaber als Holzrichter. Verortungshinweise: Speller Wald liegt in der Grafschaft Tecklenburg; zwischen Rheine und Lingen; Abt des Stiftes Werden als Grundherr des Waldes; Höfe Schapen, Lünne, Hellmerink, Braemhoue in der Umgebung genannt. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.3647228, 7.4737526); Quelle: Nominatim AUTO_PLAUSIBEL; Spelle, Samtgemeinde Spelle, Landkreis Emsland, Niedersachsen, 48480, Deutschland)."
     },
     "original_link": "",
     "ort": "Spelle",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.3647228,
+      "lng": 7.4737526
+    },
     "zeit": "1465",
     "typ": "Weistum (Holzgerichtsordnung/Markenrecht)",
     "schreiberinfo": "",
@@ -20957,13 +20966,13 @@
     "titel": "UPHUSEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 193–194",
-      "notizen": "Fußnote 1 lokalisiert Uphusen südöstlich von Osnabrück, unweit Osede und Bissendorf, mit Verweis auf Bd. III, S. 13 (Parallelstelle/weiterer Beleg im selben Band). Haupttext berichtet von Huisgenossenrecht (Hofrecht) des Meierhofs zu Uphusen, festgehalten 1571 am Sonntag vor Michaelis; enthält Regelungen zu Hergewäte (Heergewäte) des Mannes, Gerade der Frau, Erbteilung bei Tod beider Ehegatten, Verlust des Huisgenossenrechts bei dreimaligem Versäumnis, Abgaben bei Ein-/Austritt aus dem Huisgenossenrecht, Schuldenregelung bis Andreas, Schuldschwein-Abgabe. Ergänzender Beschluss von 1578 regelt Abgaben (je 1 Schilling an Huisgenossen, Vogt, Meier) auch für nicht auf den Erben Geborene. Kopfzeile nennt zusätzlich 'SCHLEDEHAUSEN' als übergeordnete Zuordnung. Verortungshinweise: südöstlich von Osnabrück; unweit Osede; unweit Bissendorf. Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Hausen') — bitte manuell prüfen."
+      "notizen": "Fußnote 1 lokalisiert Uphusen südöstlich von Osnabrück, unweit Osede und Bissendorf, mit Verweis auf Bd. III, S. 13 (Parallelstelle/weiterer Beleg im selben Band). Haupttext berichtet von Huisgenossenrecht (Hofrecht) des Meierhofs zu Uphusen, festgehalten 1571 am Sonntag vor Michaelis; enthält Regelungen zu Hergewäte (Heergewäte) des Mannes, Gerade der Frau, Erbteilung bei Tod beider Ehegatten, Verlust des Huisgenossenrechts bei dreimaligem Versäumnis, Abgaben bei Ein-/Austritt aus dem Huisgenossenrecht, Schuldenregelung bis Andreas, Schuldschwein-Abgabe. Ergänzender Beschluss von 1578 regelt Abgaben (je 1 Schilling an Huisgenossen, Vogt, Meier) auch für nicht auf den Erben Geborene. Kopfzeile nennt zusätzlich 'SCHLEDEHAUSEN' als übergeordnete Zuordnung. Verortungshinweise: südöstlich von Osnabrück; unweit Osede; unweit Bissendorf. Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Hausen') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.9, 'lng': 11.03} -> (52.1941, 8.21113); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Uphöfen&language=de&params=52.1941_N_8.21113_E_dim:10000_region:DE-NI_type:city(201))."
     },
     "original_link": "",
     "ort": "Uphusen",
     "koordinaten": {
-      "lat": 49.9,
-      "lng": 11.03
+      "lat": 52.1941,
+      "lng": 8.21113
     },
     "zeit": "1571",
     "typ": "Huisgenossenrecht (Hofrecht/Weistum des Meierhofs)",
@@ -20976,13 +20985,13 @@
     "titel": "HAUSGENOSSEN ZU BELM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 195–196",
-      "notizen": "Titel und Fußnote laut Grimm: 'früher Belhem, Belehem, östlich von Osnabrück.' Im Haupttext erscheint der Ort auch als 'Bellm'. Genannt wird zudem 'Iborg' (Iburg) als Bezugspunkt für Abgaben und Amtsleute ('de ambtlüde von Iborgh'), was auf eine Zugehörigkeit zum Kloster/Amt Iburg hindeutet. Der Text listet detailliert Abgaben, Rechte und Pflichten der 'Hufsgenaten' (Hausgenossen) gegenüber dem Landesherrn ('minen gnedigen fürsten und herren') sowie Dienste gegenüber dem Meyer zu Belm. Mehrere Meierhöfe/Personen werden namentlich mit ihren Spanndiensten aufgeführt (z.B. Meyer van Bellm und Meckinghufs, Vincke und Glösenkampff, Kuilman und Schamel, u.a.). Verortungshinweise: östlich von Osnabrück; Iborg (Kloster Iburg) als Amtssitz genannt. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Bellheim') — bitte manuell prüfen."
+      "notizen": "Titel und Fußnote laut Grimm: 'früher Belhem, Belehem, östlich von Osnabrück.' Im Haupttext erscheint der Ort auch als 'Bellm'. Genannt wird zudem 'Iborg' (Iburg) als Bezugspunkt für Abgaben und Amtsleute ('de ambtlüde von Iborgh'), was auf eine Zugehörigkeit zum Kloster/Amt Iburg hindeutet. Der Text listet detailliert Abgaben, Rechte und Pflichten der 'Hufsgenaten' (Hausgenossen) gegenüber dem Landesherrn ('minen gnedigen fürsten und herren') sowie Dienste gegenüber dem Meyer zu Belm. Mehrere Meierhöfe/Personen werden namentlich mit ihren Spanndiensten aufgeführt (z.B. Meyer van Bellm und Meckinghufs, Vincke und Glösenkampff, Kuilman und Schamel, u.a.). Verortungshinweise: östlich von Osnabrück; Iborg (Kloster Iburg) als Amtssitz genannt. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Bellheim') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.19805556, 'lng': 8.279166667} -> (52.3029003, 8.1247011); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=ja; Belm, Landkreis Osnabrück, Niedersachsen, 49191, Deutschland)."
     },
     "original_link": "",
     "ort": "Belm",
     "koordinaten": {
-      "lat": 49.19805556,
-      "lng": 8.279166667
+      "lat": 52.3029003,
+      "lng": 8.1247011
     },
     "zeit": "",
     "typ": "",
@@ -21065,11 +21074,14 @@
     "titel": "HAUSSPRACHE ZU CAPPELEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 202–203",
-      "notizen": "Fußnote 1 gibt nur die Lageangabe \"nordöstlich von Osnabrück\" zur Identifikation von Cappelen. Kopfzeile der Grimm-Ausgabe lautet \"WESTFALEN | CAPPELEN. WALSEM\", was auf einen benachbarten Abschnitt zu Walsem in derselben Sammlung/Region hindeutet. Der Haupttext ist ein Zitat der Weistum-Aufzeichnung (\"Hausspraike\") vom Michaelistag 1570, gehalten \"in Monnickes hone\" (im Hof des Propstes/Mönchshof), betrifft Rechte der Propstei St. Johann (sanct Johan) bezüglich Hergewäte, Gerade, Leibzucht und Hofrecht. Keine weiteren Hinweise auf beschädigte Quelle oder Sammelhandschrift im vorliegenden Auszug. Verortungshinweise: nordöstlich von Osnabrück."
+      "notizen": "Fußnote 1 gibt nur die Lageangabe \"nordöstlich von Osnabrück\" zur Identifikation von Cappelen. Kopfzeile der Grimm-Ausgabe lautet \"WESTFALEN | CAPPELEN. WALSEM\", was auf einen benachbarten Abschnitt zu Walsem in derselben Sammlung/Region hindeutet. Der Haupttext ist ein Zitat der Weistum-Aufzeichnung (\"Hausspraike\") vom Michaelistag 1570, gehalten \"in Monnickes hone\" (im Hof des Propstes/Mönchshof), betrifft Rechte der Propstei St. Johann (sanct Johan) bezüglich Hergewäte, Gerade, Leibzucht und Hofrecht. Keine weiteren Hinweise auf beschädigte Quelle oder Sammelhandschrift im vorliegenden Auszug. Verortungshinweise: nordöstlich von Osnabrück. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.8104892, 8.1141402); Quelle: Nominatim AUTO_PLAUSIBEL; Cappeln (Oldenburg), Landkreis Cloppenburg, Niedersachsen, 49692, Deutschland)."
     },
     "original_link": "",
     "ort": "Cappeln",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.8104892,
+      "lng": 8.1141402
+    },
     "zeit": "1570",
     "typ": "Hausspraike (Weistum)",
     "schreiberinfo": "",
@@ -21097,13 +21109,13 @@
     "titel": "HERINGHAUSER MARK.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 204",
-      "notizen": "Keine Fußnoten im vorliegenden Auszug. Haupttext ist ein Weistum bzw. Protokoll eines Holtings (Holzgerichts) zu Heringhausen vom Tag nach Mathei apostoli 1543, betreffend Markenrechte (Schweinemast, Plaggenmahd, Kottensetzen, Strafgelder). Text scheint wörtliches Zitat der Quelle (Grimm gibt Originalsprache/Dialekt wieder), keine erkennbare Paraphrase Grimms. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Hainhausen') — bitte manuell prüfen."
+      "notizen": "Keine Fußnoten im vorliegenden Auszug. Haupttext ist ein Weistum bzw. Protokoll eines Holtings (Holzgerichts) zu Heringhausen vom Tag nach Mathei apostoli 1543, betreffend Markenrechte (Schweinemast, Plaggenmahd, Kottensetzen, Strafgelder). Text scheint wörtliches Zitat der Quelle (Grimm gibt Originalsprache/Dialekt wieder), keine erkennbare Paraphrase Grimms. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Hainhausen') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.043223, 'lng': 8.880816} -> (52.351, 8.242); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Herringhausen_(Bohmte)&language=de&params=52.351_N_8.242_E_dim:10000_region:DE-NI_type:city(1329))."
     },
     "original_link": "",
     "ort": "Heringhausen",
     "koordinaten": {
-      "lat": 50.043223,
-      "lng": 8.880816
+      "lat": 52.351,
+      "lng": 8.242
     },
     "zeit": "1543",
     "typ": "Weistum (Holting-Protokoll)",
@@ -21116,11 +21128,14 @@
     "titel": "URTHEILE DES GAUGERICHTS OSTERCAPPELN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 204–206",
-      "notizen": "Quelle laut Grimms Fußnote: Wigands Archiv 3, 226. Text ist ein wörtliches Zitat eines Gaugerichtsurteils (Gogericht Ostercappeln), betrifft Zehntrecht (Getreidezehnt) und dessen ordnungsgemäße Einbringung; Streitpartei ist der Propst des Klosters Leveren durch seinen Diener Hinrich Hedemann, vertreten durch Vorsprecher Gert Becker, Bürgermeister zu Cappelen. Gogreve (Gerichtsvorsteher) war Gerdt Beckerinck im Auftrag des Fürstbischofs Johann von Osnabrück. Haupttext bricht am Seitenende mitten im Satz ab ('Wider ist ock vor'), Fortsetzung vermutlich auf Folgeseite nicht im vorliegenden Ausschnitt enthalten. Verortungshinweise: Stift Osnabrück (Bistum Osnabrück, Fürstbischof Johann); Propstei Leveren (Loevern) genannt; Cappelen (Stadt/Ort) mit Bürgermeister Gert Becker erwähnt."
+      "notizen": "Quelle laut Grimms Fußnote: Wigands Archiv 3, 226. Text ist ein wörtliches Zitat eines Gaugerichtsurteils (Gogericht Ostercappeln), betrifft Zehntrecht (Getreidezehnt) und dessen ordnungsgemäße Einbringung; Streitpartei ist der Propst des Klosters Leveren durch seinen Diener Hinrich Hedemann, vertreten durch Vorsprecher Gert Becker, Bürgermeister zu Cappelen. Gogreve (Gerichtsvorsteher) war Gerdt Beckerinck im Auftrag des Fürstbischofs Johann von Osnabrück. Haupttext bricht am Seitenende mitten im Satz ab ('Wider ist ock vor'), Fortsetzung vermutlich auf Folgeseite nicht im vorliegenden Ausschnitt enthalten. Verortungshinweise: Stift Osnabrück (Bistum Osnabrück, Fürstbischof Johann); Propstei Leveren (Loevern) genannt; Cappelen (Stadt/Ort) mit Bürgermeister Gert Becker erwähnt. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.3447853, 8.2268006); Quelle: Nominatim AUTO_PLAUSIBEL; Ostercappeln, Landkreis Osnabrück, Niedersachsen, 49179, Deutschland)."
     },
     "original_link": "",
     "ort": "Ostercappeln",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.3447853,
+      "lng": 8.2268006
+    },
     "zeit": "1555",
     "typ": "Urtheil (Gaugerichtsurteil / Weistum)",
     "schreiberinfo": "Gerdt Beckerinck, geschworener Gogreve zu Ostercappeln im Auftrag des Fürstbischofs Johann von Osnabrück",
@@ -21132,11 +21147,14 @@
     "titel": "NIENHUS ZU GEHRDE",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 206–207",
-      "notizen": "Text nach einer späteren Abschrift überliefert. Fußnote 1 vermerkt eine abweichende Lesart einer anderen Niederschrift: 'twölf sellen, twölf perde' (statt 'sefs sellen ... sefs besten perden' im Haupttext). Kopfzeile der Grimm-Ausgabe: WESTFALEN | NIENHUS ZU GEHRDE. BERSENBRÜCK. Verortungshinweise: Bersenbrück; Vogt zum Gröneberge (Grönenberg)."
+      "notizen": "Text nach einer späteren Abschrift überliefert. Fußnote 1 vermerkt eine abweichende Lesart einer anderen Niederschrift: 'twölf sellen, twölf perde' (statt 'sefs sellen ... sefs besten perden' im Haupttext). Kopfzeile der Grimm-Ausgabe: WESTFALEN | NIENHUS ZU GEHRDE. BERSENBRÜCK. Verortungshinweise: Bersenbrück; Vogt zum Gröneberge (Grönenberg). Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.5762404, 8.0063725); Quelle: Nominatim AUTO_PLAUSIBEL; Gehrde, Samtgemeinde Bersenbrück, Landkreis Osnabrück, Niedersachsen, 49596, Deutschland)."
     },
     "original_link": "",
     "ort": "Gehrde",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.5762404,
+      "lng": 8.0063725
+    },
     "zeit": "",
     "typ": "Weistum (Hofrecht der Huisgenoten des Nienhuser Hofes)",
     "schreiberinfo": "",
@@ -21148,11 +21166,14 @@
     "titel": "Bersenbrück",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 207–208",
-      "notizen": "Titel mit Fußnotenverweis 1) versehen; Fußnote lokalisiert den Ort als 'südlich von Quakenbrück'. Laufende Kopfzeile nennt zusätzlich 'NIENHUS ZU GEHRDE' als benachbartes Kapitel/Weistum im selben Abschnitt, was auf eine Sammlung benachbarter Weistümer aus derselben Region hindeutet. Haupttext ist ein Hofrecht/Hofsprake mit Regelungen zu Erbteilung, Herwede (Heergewäte) und Gerade (Frauenerbe) sowie Dienstpflichten der Hausgenossen. Verortungshinweise: südlich von Quakenbrück."
+      "notizen": "Titel mit Fußnotenverweis 1) versehen; Fußnote lokalisiert den Ort als 'südlich von Quakenbrück'. Laufende Kopfzeile nennt zusätzlich 'NIENHUS ZU GEHRDE' als benachbartes Kapitel/Weistum im selben Abschnitt, was auf eine Sammlung benachbarter Weistümer aus derselben Region hindeutet. Haupttext ist ein Hofrecht/Hofsprake mit Regelungen zu Erbteilung, Herwede (Heergewäte) und Gerade (Frauenerbe) sowie Dienstpflichten der Hausgenossen. Verortungshinweise: südlich von Quakenbrück. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.5553293, 7.9471842); Quelle: Nominatim AUTO_PLAUSIBEL; Bersenbrück, Samtgemeinde Bersenbrück, Landkreis Osnabrück, Niedersachsen, 49593, Deutschland)."
     },
     "original_link": "",
     "ort": "Bersenbrück",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.5553293,
+      "lng": 7.9471842
+    },
     "zeit": "1503",
     "typ": "Hoffsprake",
     "schreiberinfo": "",
@@ -21307,11 +21328,14 @@
     "titel": "AUS EINEM MARSCHRECHT PROTOCOLL",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 222",
-      "notizen": "Titel trägt Fußnotenverweis (1) im Haupttext, jedoch ist im vorgelegten Ausschnitt kein Fußnotentext überliefert/angegeben. Ebenso verweist der Schlusssatz auf eine Fußnote (2), deren Inhalt hier nicht vorliegt. Der Text schildert einen konkreten Rechtsfall (Hundeerschießung) samt Urteilsspruch der Gerichtsleute; Datum 16. April 1602 laut Überschrift. Verortungshinweise: Oldershausen als Wohnort des Klägers erwähnt."
+      "notizen": "Titel trägt Fußnotenverweis (1) im Haupttext, jedoch ist im vorgelegten Ausschnitt kein Fußnotentext überliefert/angegeben. Ebenso verweist der Schlusssatz auf eine Fußnote (2), deren Inhalt hier nicht vorliegt. Der Text schildert einen konkreten Rechtsfall (Hundeerschießung) samt Urteilsspruch der Gerichtsleute; Datum 16. April 1602 laut Überschrift. Verortungshinweise: Oldershausen als Wohnort des Klägers erwähnt. Koordinate am 2026-08-19 korrigiert (vorher: None -> (53.2932786, 10.3890725); Quelle: Nominatim AUTO_PLAUSIBEL; Bardowick, Samtgemeinde Bardowick, Landkreis Lüneburg, Niedersachsen, Deutschland)."
     },
     "original_link": "",
     "ort": "Bardowick",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 53.2932786,
+      "lng": 10.3890725
+    },
     "zeit": "1602",
     "typ": "Marschrecht Protocoll",
     "schreiberinfo": "",
@@ -21616,13 +21640,13 @@
     "titel": "MEIERDING ZU VOLKERSEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 252–254",
-      "notizen": "Grimm zitiert aus Nolten, de praed. rust. p. 130. 131. Fußnote 2 vermerkt: amts Springe im Hildesheimschen, und stellt die Frage, ob der Ort identisch mit dem an anderer Stelle (S. 244) behandelten Volkersheim sei - also eine Unsicherheit in der Ortsidentifikation. Zusätzlich enthält Fußnote 1 einen umfangreichen, davon inhaltlich unabhängigen Auszug (Schluss eines älteren Probstdings von 1527, ebenfalls nach Nolten, p. 146-147) über den Ort Ölseborch (Oelsburg?), der Kirchen-, Probstei- und Erbrechte behandelt - dies scheint ein separates, nur lose zugeordnetes Dokument aus derselben Quelle zu sein und wurde hier nicht als eigenständiges Weistum, sondern nur als Fußnotenzitat verzeichnet. Verortungshinweise: amts Springe im Hildesheimschen; möglicherweise identisch mit Volkersheim (s. 244); Bezug zu Kloster St. Michaelis in Hildesheim als Grund- und Gerichtsherr."
+      "notizen": "Grimm zitiert aus Nolten, de praed. rust. p. 130. 131. Fußnote 2 vermerkt: amts Springe im Hildesheimschen, und stellt die Frage, ob der Ort identisch mit dem an anderer Stelle (S. 244) behandelten Volkersheim sei - also eine Unsicherheit in der Ortsidentifikation. Zusätzlich enthält Fußnote 1 einen umfangreichen, davon inhaltlich unabhängigen Auszug (Schluss eines älteren Probstdings von 1527, ebenfalls nach Nolten, p. 146-147) über den Ort Ölseborch (Oelsburg?), der Kirchen-, Probstei- und Erbrechte behandelt - dies scheint ein separates, nur lose zugeordnetes Dokument aus derselben Quelle zu sein und wurde hier nicht als eigenständiges Weistum, sondern nur als Fußnotenzitat verzeichnet. Verortungshinweise: amts Springe im Hildesheimschen; möglicherweise identisch mit Volkersheim (s. 244); Bezug zu Kloster St. Michaelis in Hildesheim als Grund- und Gerichtsherr. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 53.005, 'lng': 9.229167} -> (53.0017921, 9.2306999); Quelle: Nominatim AUTO_PLAUSIBEL; Völkersen, Dahlbrügge, Langwedel, Landkreis Verden, Niedersachsen, Deutschland)."
     },
     "original_link": "",
     "ort": "Volkersen",
     "koordinaten": {
-      "lat": 53.005,
-      "lng": 9.229167
+      "lat": 53.0017921,
+      "lng": 9.2306999
     },
     "zeit": "",
     "typ": "Meierding (Weistum)",
@@ -21902,11 +21926,14 @@
     "titel": "HOLTING ZU DOETHEBERGEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 291",
-      "notizen": "Fußnote 1 nennt nur knapp die Lage 'bei Blumenau und Almhorst' zur Unterscheidung des Ortes. Der Haupttext ist ein Frage-Antwort-Protokoll ('Holting') vom 5. September 1605 über Holzungsrechte, Mastgerechtigkeit und Zuständigkeiten (Voigt zu Blumenau, Pastor und Küster zu Seeltze). Datum steht explizit im Text ('5 sept. 1605'). Die laufende Kopfzeile lautet 'DÖTHEBERGEN', abweichend von der Titelschreibung 'DOETHEBERGEN' - beides dieselbe Ortsbezeichnung in unterschiedlicher Schreibweise Grimms. Verortungshinweise: bei Blumenau; bei Almhorst; nahe Seelze (Pastor und Küster zu Seeltze genannt)."
+      "notizen": "Fußnote 1 nennt nur knapp die Lage 'bei Blumenau und Almhorst' zur Unterscheidung des Ortes. Der Haupttext ist ein Frage-Antwort-Protokoll ('Holting') vom 5. September 1605 über Holzungsrechte, Mastgerechtigkeit und Zuständigkeiten (Voigt zu Blumenau, Pastor und Küster zu Seeltze). Datum steht explizit im Text ('5 sept. 1605'). Die laufende Kopfzeile lautet 'DÖTHEBERGEN', abweichend von der Titelschreibung 'DOETHEBERGEN' - beides dieselbe Ortsbezeichnung in unterschiedlicher Schreibweise Grimms. Verortungshinweise: bei Blumenau; bei Almhorst; nahe Seelze (Pastor und Küster zu Seeltze genannt). Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.3720206, 9.5918514); Quelle: Nominatim AUTO_PLAUSIBEL; Döteberg, Seelze, Region Hannover, Niedersachsen, 30926, Deutschland)."
     },
     "original_link": "",
     "ort": "Döteberg",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.3720206,
+      "lng": 9.5918514
+    },
     "zeit": "1605",
     "typ": "Holting (Weistum)",
     "schreiberinfo": "",
@@ -21969,11 +21996,14 @@
     "titel": "Aus dem Holting zu Wölpe über den Grinderwald",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 295–296",
-      "notizen": "Grimm datiert auf \"1540\" laut Überschrift; Fußnote 1 lokalisiert Wölpe \"im südosten von Nienburg, im nordwesten von Wunstorf\". Haupttext schildert ein Holting (Holzgericht) zu Wölpe über die Nutzungsrechte am Grinderwald, mit Aussprüchen der Männer (Weistumsträger) unter ihrem Achtmann Bartoldt Homeier. Genannt werden Rechte des Herzogs von Braunschweig (als Inhaber/Drost des Hauses Wölpe), des Grafen von der Hoya (Schweinemast, Holzfuhren), des Klosters Mariensehe (Holznutzung, Mastrecht) sowie der Äbtissin zu Wunstorf (Meierhof Boekhoff, Schweinemast, Handwerksrechte). Am Ende Regelung der \"Seelwort\"-Reiterei des Drosten/Vogts zur Wölpe und dessen Verpflegung. Kopfzeile der Druckseiten: STEMMEN | NIEDERSACHSEN, was auf Grimms übergeordnete Kapiteleinteilung \"Stemmen\" hinweist. Verortungshinweise: im südosten von Nienburg; im nordwesten von Wunstorf; Grinderwald (Wald); Kloster Mariensehe; Wunstorf (Ebbesche/Äbtissin zu Wunstorf); Graf von der Hoya; Herzog von Braunschweig."
+      "notizen": "Grimm datiert auf \"1540\" laut Überschrift; Fußnote 1 lokalisiert Wölpe \"im südosten von Nienburg, im nordwesten von Wunstorf\". Haupttext schildert ein Holting (Holzgericht) zu Wölpe über die Nutzungsrechte am Grinderwald, mit Aussprüchen der Männer (Weistumsträger) unter ihrem Achtmann Bartoldt Homeier. Genannt werden Rechte des Herzogs von Braunschweig (als Inhaber/Drost des Hauses Wölpe), des Grafen von der Hoya (Schweinemast, Holzfuhren), des Klosters Mariensehe (Holznutzung, Mastrecht) sowie der Äbtissin zu Wunstorf (Meierhof Boekhoff, Schweinemast, Handwerksrechte). Am Ende Regelung der \"Seelwort\"-Reiterei des Drosten/Vogts zur Wölpe und dessen Verpflegung. Kopfzeile der Druckseiten: STEMMEN | NIEDERSACHSEN, was auf Grimms übergeordnete Kapiteleinteilung \"Stemmen\" hinweist. Verortungshinweise: im südosten von Nienburg; im nordwesten von Wunstorf; Grinderwald (Wald); Kloster Mariensehe; Wunstorf (Ebbesche/Äbtissin zu Wunstorf); Graf von der Hoya; Herzog von Braunschweig. Koordinate am 2026-08-19 korrigiert (vorher: None -> (52.7181586, 9.3046365); Quelle: Nominatim AUTO_PLAUSIBEL; Wölpe, Heemsen, Samtgemeinde Heemsen, Landkreis Nienburg/Weser, Niedersachsen, Deutschland)."
     },
     "original_link": "",
     "ort": "Wölpe",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 52.7181586,
+      "lng": 9.3046365
+    },
     "zeit": "1540",
     "typ": "Weistum (Holting)",
     "schreiberinfo": "",
@@ -22106,7 +22136,7 @@
     "titel": "WEISTHUM ÜBER DIE ELBERMARK",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 321–324",
-      "notizen": "Fußnote 1 (Grimm) erläutert den historischen Streitkontext: Werner von Elben und Reinhard d. ä. von Dalwigk gerieten wegen mehrerer Wälder und der Wüstung Todenhausen in Streit; die Entscheidung wurde an Landgraf Ludwig von Hessen und Graf Johann von Ziegenhain gestellt. Werner beanspruchte die Güter für sich und stützte sein Recht auf Briefe der Männer zu Beltershausen, Altendorf und Elben; Reinhard behauptete, die Wälder gehörten zur Naumburg und Werner habe nur das Recht eines Försters, gestützt auf Briefe der von Naumburg; zudem beanspruchte er die Wüstung Todenhausen für sich und seinen Neffen Friedrich von Hertingshausen. Auf einem Tag zu Homberg erkannten die Austrägalrichter, dass die Männer und Märker von Elben, Altendorf und Beltershausen zum alten Herkommen vernommen werden sollten; diese wurden nach Obermöllrich vorgeboten und sagten dort auf ihren Eid aus (Haupttext = wörtliche Wiedergabe ihrer Aussage). Der Haupttext ist somit eine Zeugenaussage (Weisung) der Märker, kein direktes Urteil. Diplomatische Transkription mit zahlreichen orthographischen Eigenheiten des Originals (z.B. 'hayn' für 'haben', 'vnd' für 'und'). Kopfzeile auf den Seiten wechselt zwischen 'LEERBECK. ELBERMARK', 'HESSEN', 'ELBERMARK'. Verortungshinweise: in Niederhessen zwischen Wolfhagen und Fritzlar; Nachbarorte/Marktorte: Elben, Altendorf, Beltershausen; Vorgeboten nach Obermöllrich; Bezug zur Naumburg (Nuweburgk) als benachbarter Herrschaft/Burg; Wüstung Todenhausen als Streitgegenstand; Homberg als Ort des Schiedstages der Austrägalrichter."
+      "notizen": "Fußnote 1 (Grimm) erläutert den historischen Streitkontext: Werner von Elben und Reinhard d. ä. von Dalwigk gerieten wegen mehrerer Wälder und der Wüstung Todenhausen in Streit; die Entscheidung wurde an Landgraf Ludwig von Hessen und Graf Johann von Ziegenhain gestellt. Werner beanspruchte die Güter für sich und stützte sein Recht auf Briefe der Männer zu Beltershausen, Altendorf und Elben; Reinhard behauptete, die Wälder gehörten zur Naumburg und Werner habe nur das Recht eines Försters, gestützt auf Briefe der von Naumburg; zudem beanspruchte er die Wüstung Todenhausen für sich und seinen Neffen Friedrich von Hertingshausen. Auf einem Tag zu Homberg erkannten die Austrägalrichter, dass die Männer und Märker von Elben, Altendorf und Beltershausen zum alten Herkommen vernommen werden sollten; diese wurden nach Obermöllrich vorgeboten und sagten dort auf ihren Eid aus (Haupttext = wörtliche Wiedergabe ihrer Aussage). Der Haupttext ist somit eine Zeugenaussage (Weisung) der Märker, kein direktes Urteil. Diplomatische Transkription mit zahlreichen orthographischen Eigenheiten des Originals (z.B. 'hayn' für 'haben', 'vnd' für 'und'). Kopfzeile auf den Seiten wechselt zwischen 'LEERBECK. ELBERMARK', 'HESSEN', 'ELBERMARK'. Verortungshinweise: in Niederhessen zwischen Wolfhagen und Fritzlar; Nachbarorte/Marktorte: Elben, Altendorf, Beltershausen; Vorgeboten nach Obermöllrich; Bezug zur Naumburg (Nuweburgk) als benachbarter Herrschaft/Burg; Wüstung Todenhausen als Streitgegenstand; Homberg als Ort des Schiedstages der Austrägalrichter. Koordinate am 2026-08-19 geprueft (alte Koordinate bestaetigt korrekt; geocode_pruefliste_ECHT_band3.csv)."
     },
     "original_link": "",
     "ort": "Elben",
@@ -22144,11 +22174,14 @@
     "titel": "GERECHTIGKEIT DES RINGKES ZU SUNTRA",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 325–327",
-      "notizen": "Fußnote 1: „diese stelle ist verderbt und mangelhaft.“ Fußnote 2: Text stammt aus einem Copialbuch des 15. Jahrhunderts, ediert in der Zeitschrift für hessische Geschichte 2, 247. Die Lücke im Text (Berneburg-Passage: „Eghart Fungke vnd ......“) deutet auf eine beschädigte/unvollständige Vorlage hin. Der Ringk (Zentgerichtsbezirk) von Suntra umfasst mehrere Ortsteile (Harnal, Berneburg, Rogkinsufse, Hergenrade, Wellingerade, Heygenrade), deren Grenzbeschreibungen und Rechtsgewohnheiten (Zentgericht, Landfolge, Herfahrt) im Text detailliert aufgeführt werden. Verortungshinweise: Grofsen Bursla (Groß Burschla) und Niddawitzhausen in der Kopfzeile genannt; Nennung von Ortsteilen/Nachbarorten: Harnal, Berneburg, Rogkinsufse (Rockensüß), Hergenrade, Wellingerade, Heygenrade (Heygenrad/Heigenrode), Dymerade, Wegesufse, Bleche; Flurnamen: Santberg, Heidentail, Enginraid, Wynthusen, Heldirholcz, Bubenraid, Buwenstruch, Monchehospach, Hasela (Fluss), Wuetslahe, Slechtenberg, Rodingberg, Kornberg, Dortentail, Hohenaspen, Gnyppes, Aspenborne, Heyberg, Begetail, Hüttenberg, Swinforte."
+      "notizen": "Fußnote 1: „diese stelle ist verderbt und mangelhaft.“ Fußnote 2: Text stammt aus einem Copialbuch des 15. Jahrhunderts, ediert in der Zeitschrift für hessische Geschichte 2, 247. Die Lücke im Text (Berneburg-Passage: „Eghart Fungke vnd ......“) deutet auf eine beschädigte/unvollständige Vorlage hin. Der Ringk (Zentgerichtsbezirk) von Suntra umfasst mehrere Ortsteile (Harnal, Berneburg, Rogkinsufse, Hergenrade, Wellingerade, Heygenrade), deren Grenzbeschreibungen und Rechtsgewohnheiten (Zentgericht, Landfolge, Herfahrt) im Text detailliert aufgeführt werden. Verortungshinweise: Grofsen Bursla (Groß Burschla) und Niddawitzhausen in der Kopfzeile genannt; Nennung von Ortsteilen/Nachbarorten: Harnal, Berneburg, Rogkinsufse (Rockensüß), Hergenrade, Wellingerade, Heygenrade (Heygenrad/Heigenrode), Dymerade, Wegesufse, Bleche; Flurnamen: Santberg, Heidentail, Enginraid, Wynthusen, Heldirholcz, Bubenraid, Buwenstruch, Monchehospach, Hasela (Fluss), Wuetslahe, Slechtenberg, Rodingberg, Kornberg, Dortentail, Hohenaspen, Gnyppes, Aspenborne, Heyberg, Begetail, Hüttenberg, Swinforte. Koordinate am 2026-08-19 korrigiert (vorher: None -> (51.0676201, 9.9354246); Quelle: GeoHack-Link (geocode_pruefliste_ECHT.csv, richtigerOrt); Suntra = historische Schreibung von Sontra (Werra-Meissner-Kreis, Hessen). Nominatim-AUTO_PLAUSIBEL-Vorschlag war falsch (Suntra bei Recoaro Terme, Venetien/Italien) -- einziger Treffer, kein alter Koordinatenwert zum Abgleich vorhanden, daher faelschlich automatisch akzeptiert. Bestaetigt durch: LAGIS Hessen (Ersterwaehnung 1232) und PLZ-Gebiet 36205 Sontra, das u.a. die im Text genannten Nachbarorte Berneburg und Wellingerode (hist. Wellingerade) umfasst -- exakte Uebereinstimmung mit den im Weistum genannten Ortsteilen des Suntra-Ringks.)."
     },
     "original_link": "",
     "ort": "Suntra",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 51.0676201,
+      "lng": 9.9354246
+    },
     "zeit": "15. Jh. (Copialbuch)",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -22160,11 +22193,14 @@
     "titel": "WEISTHUM ZU NIDDAWITZHAUSEN. 1436.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 327",
-      "notizen": "Fußnoten im vorliegenden Ausschnitt leer bzw. nicht mitgeliefert (Fußnotenmarker 1) im Titel und 2) bei 'Diette' im Text ohne zugehörigen Fußnotentext). Haupttext ist ein wörtliches Zitat der Urkunde (Weistum), datiert 'montag nach sanct Margriethen tag ... anno domini 1436'. Besiegelt durch Curdes Steinmetzen, Pfarrer, im Auftrag der Männer der Gemeinde."
+      "notizen": "Fußnoten im vorliegenden Ausschnitt leer bzw. nicht mitgeliefert (Fußnotenmarker 1) im Titel und 2) bei 'Diette' im Text ohne zugehörigen Fußnotentext). Haupttext ist ein wörtliches Zitat der Urkunde (Weistum), datiert 'montag nach sanct Margriethen tag ... anno domini 1436'. Besiegelt durch Curdes Steinmetzen, Pfarrer, im Auftrag der Männer der Gemeinde. Koordinate am 2026-08-19 korrigiert (vorher: None -> (51.1787905, 9.9858496); Quelle: Nominatim AUTO_PLAUSIBEL; Niddawitzhausen, Eschwege, Werra-Meißner-Kreis, Hessen, Deutschland)."
     },
     "original_link": "",
     "ort": "Niddawitzhausen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 51.1787905,
+      "lng": 9.9858496
+    },
     "zeit": "1436",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -22214,11 +22250,14 @@
     "titel": "WEISTHUM ÜBER REILOS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 330–331",
-      "notizen": "Titel und Ortsname aus Grimms Überschrift ('REILOS'); laut Fußnote 1 liegt der Ort bei Rohrbach, Quelle: Wenck, Hessische Geschichte, Bd. 2, Nr. 460. Es handelt sich laut Kopfzeile um 'Auszug' (1478 auszug), d.h. Grimm gibt nur einen Auszug des Originaltextes wieder, nicht den vollständigen Wortlaut. Im Text werden mehrere Personen und Ämter genannt: Abt Ludwig (von Hersfeld), Schultheiß Wygand Moller zu Aula (Rotenburg an der Fulda?), die 'Ratzebergen' (Adelsfamilie von Ratzenberg) mit Rechten über Männer und Hubener zu Reilos, sowie Zeugen Eberth von Waldenstein (Marschall zu Hersfeld), Bernhardus Struß (Schreiber), Syman Gerewig, Curd Ratzenberg und Adolff von Bydenfelt. Verortungshinweise: bei Rohrbach; gehört zum Stift Hersfeld; an der Fulda gelegen (Schöffen sitzen 'uff der Fulda')."
+      "notizen": "Titel und Ortsname aus Grimms Überschrift ('REILOS'); laut Fußnote 1 liegt der Ort bei Rohrbach, Quelle: Wenck, Hessische Geschichte, Bd. 2, Nr. 460. Es handelt sich laut Kopfzeile um 'Auszug' (1478 auszug), d.h. Grimm gibt nur einen Auszug des Originaltextes wieder, nicht den vollständigen Wortlaut. Im Text werden mehrere Personen und Ämter genannt: Abt Ludwig (von Hersfeld), Schultheiß Wygand Moller zu Aula (Rotenburg an der Fulda?), die 'Ratzebergen' (Adelsfamilie von Ratzenberg) mit Rechten über Männer und Hubener zu Reilos, sowie Zeugen Eberth von Waldenstein (Marschall zu Hersfeld), Bernhardus Struß (Schreiber), Syman Gerewig, Curd Ratzenberg und Adolff von Bydenfelt. Verortungshinweise: bei Rohrbach; gehört zum Stift Hersfeld; an der Fulda gelegen (Schöffen sitzen 'uff der Fulda'). Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.9087586, 9.7413937); Quelle: Nominatim AUTO_PLAUSIBEL; Reilos, Ludwigsau, Landkreis Hersfeld-Rotenburg, Hessen, 36251, Deutschland)."
     },
     "original_link": "",
     "ort": "Reilos",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.9087586,
+      "lng": 9.7413937
+    },
     "zeit": "1478",
     "typ": "Weisthum (Auszug)",
     "schreiberinfo": "Bernhardus Strufs (Schreiber, im Text als Zeuge genannt)",
@@ -22284,11 +22323,14 @@
     "titel": "WEISTHUM ÜBER WAHLSHAUSEN. 1467.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 338–339",
-      "notizen": "Fußnote 1 zum Titel: 'dicht bei Obernaula, gegen osten.' Der Text ist ein notarielles Instrument (Urkunde) über eine Unterwerfungs-/Gehorsamserklärung der Männer von Walshusen gegenüber Junker Hans von Doringeberg, Hofmeister des Landgrafen Heinrich von Hessen, im Auftrag des Erzbischofs von Mainz; kein klassisches Weistum im engeren Sinne, sondern eine notariell beglaubigte Bekundung (instrumentum publicum), verfasst von Wigandus Otensassen, öffentlicher Schreiber (Notar) Mainzer Bistums. Datum: 24. Oktober 1467 (im Text als 'veirhundert ... seben unde sessigesten iare' = 1467), Ort der Beurkundung: Neustadt (Nuwestat), Mainzer Bistum. Genannte Zeugen: Eysenbah, Wynthusen (Burgmann zu Neustadt), Hinrich Frutwin (Schultheiß), Herman Clar (Schöffe). Verortungshinweise: dicht bei Obernaula, gegen Osten."
+      "notizen": "Fußnote 1 zum Titel: 'dicht bei Obernaula, gegen osten.' Der Text ist ein notarielles Instrument (Urkunde) über eine Unterwerfungs-/Gehorsamserklärung der Männer von Walshusen gegenüber Junker Hans von Doringeberg, Hofmeister des Landgrafen Heinrich von Hessen, im Auftrag des Erzbischofs von Mainz; kein klassisches Weistum im engeren Sinne, sondern eine notariell beglaubigte Bekundung (instrumentum publicum), verfasst von Wigandus Otensassen, öffentlicher Schreiber (Notar) Mainzer Bistums. Datum: 24. Oktober 1467 (im Text als 'veirhundert ... seben unde sessigesten iare' = 1467), Ort der Beurkundung: Neustadt (Nuwestat), Mainzer Bistum. Genannte Zeugen: Eysenbah, Wynthusen (Burgmann zu Neustadt), Hinrich Frutwin (Schultheiß), Herman Clar (Schöffe). Verortungshinweise: dicht bei Obernaula, gegen Osten. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.8528814, 9.4895179); Quelle: Nominatim AUTO_PLAUSIBEL; Wahlshausen, Oberaula, Schwalm-Eder-Kreis, Hessen, Deutschland)."
     },
     "original_link": "",
     "ort": "Wahlshausen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.8528814,
+      "lng": 9.4895179
+    },
     "zeit": "1467",
     "typ": "Notarielles Instrument (uffenbar instrument)",
     "schreiberinfo": "Wigandus Otensassen, clericus Mentzer bysthums, von keyserlicher gewalt uffenbar schryber (öffentlicher Notar)",
@@ -22472,13 +22514,13 @@
     "titel": "WEISTHUM ZU BREITENBACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 352–357",
-      "notizen": "Fußnote 1: Ort liegt am Flüsschen Antreffe, zwischen Romrod, Lauterbach und Ulrichstein. Bereits gedruckt bei Endemann, de scabinis, Marburg 1840, S. 41–48; Grimm lag zusätzlich eine weitere Abschrift vor. Der Haupttext ist ein vollständiges Notariatsinstrument (datiert 6. November 1467, 15. Indiktion, Pontifikat Papst Pauls II. im 4. Jahr) über ein Weistum des Gerichts Breitenbach, das je zur Hälfte dem Erzstift Mainz (ursprünglich Stift Fulda) und der Landgrafschaft Hessen zustand. Genannt werden zahlreiche Schöffen, Amtleute und Zeugen; der Notar ist Henrich Wilmershusen von Witzenhausen, Mainzer Bistum. Kopfzeile variiert zwischen 'BREITENBAH' und 'BREITENBACH' sowie 'BREITENBACH. SCHWARZ' (vermutlich Hinweis auf einen weiteren, direkt folgenden Ort/Weistum 'Schwarz' im selben Abschnitt bei Grimm). Verortungshinweise: am Flüsschen Antreffe; zwischen Romrod, Lauterbach und Ulrichstein; Mainzer Bistum; Gericht geteilt zwischen Stift Fulda/Mainz und Landgraf von Hessen. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen."
+      "notizen": "Fußnote 1: Ort liegt am Flüsschen Antreffe, zwischen Romrod, Lauterbach und Ulrichstein. Bereits gedruckt bei Endemann, de scabinis, Marburg 1840, S. 41–48; Grimm lag zusätzlich eine weitere Abschrift vor. Der Haupttext ist ein vollständiges Notariatsinstrument (datiert 6. November 1467, 15. Indiktion, Pontifikat Papst Pauls II. im 4. Jahr) über ein Weistum des Gerichts Breitenbach, das je zur Hälfte dem Erzstift Mainz (ursprünglich Stift Fulda) und der Landgrafschaft Hessen zustand. Genannt werden zahlreiche Schöffen, Amtleute und Zeugen; der Notar ist Henrich Wilmershusen von Witzenhausen, Mainzer Bistum. Kopfzeile variiert zwischen 'BREITENBAH' und 'BREITENBACH' sowie 'BREITENBACH. SCHWARZ' (vermutlich Hinweis auf einen weiteren, direkt folgenden Ort/Weistum 'Schwarz' im selben Abschnitt bei Grimm). Verortungshinweise: am Flüsschen Antreffe; zwischen Romrod, Lauterbach und Ulrichstein; Mainzer Bistum; Gericht geteilt zwischen Stift Fulda/Mainz und Landgraf von Hessen. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.98472222, 'lng': 9.511111111} -> (50.678055555556, 9.2302777777778); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Ober-Breidenbach&language=de&params=50.678055555556_N_9.2302777777778_E_dim:10000_region:DE-HE_type:city(324))."
     },
     "original_link": "",
     "ort": "Breitenbach",
     "koordinaten": {
-      "lat": 49.98472222,
-      "lng": 9.511111111
+      "lat": 50.678055555556,
+      "lng": 9.2302777777778
     },
     "zeit": "1467",
     "typ": "Weisthum (Notariatsinstrument)",
@@ -22491,13 +22533,13 @@
     "titel": "FREIHEIT DES GERICHTES SCHWARZ. 1449.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 357–358",
-      "notizen": "Fußnote 1: 'zwischen Alsfeld, Grebenau und Lauterbach. aus der zeitschr. für hess. gesch. 2, 250.' Die laufende Kopfzeile lautet 'BREITENBACH. SCHWARZ | HESSEN', was auf zwei benachbarte Weistümer im selben Abschnitt hindeutet (Breitenbach und Schwarz); hier dokumentiert ist das Weistum zu Schwarz. Datierung im Text: 'anno dni millesimo quadragentesimo quadragesimo nono feria secunda post festum Andree apostoli' = Montag nach Andreas 1449. Der Text nennt weitere Ortsnamen 'Reynrode' und 'Bruerswende' sowie 'Eysebachs gude', die möglicherweise mit einem Ritter Herman Rydesel (Erbmarschall zu Hessen) verbunden sind; diese könnten für die Lokalisierung relevant sein, sind aber nicht eindeutig identifiziert. Verortungshinweise: zwischen Alsfeld, Grebenau und Lauterbach; genannt: Reynrode (Reinrode) und Bruerswende (Brauerschwend?) als freie Güter; Bezug zu Alsfeld (Schultheiß, Bürgermeister, Schöffen und Rat von Alsfeld). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Schwarzach') — bitte manuell prüfen."
+      "notizen": "Fußnote 1: 'zwischen Alsfeld, Grebenau und Lauterbach. aus der zeitschr. für hess. gesch. 2, 250.' Die laufende Kopfzeile lautet 'BREITENBACH. SCHWARZ | HESSEN', was auf zwei benachbarte Weistümer im selben Abschnitt hindeutet (Breitenbach und Schwarz); hier dokumentiert ist das Weistum zu Schwarz. Datierung im Text: 'anno dni millesimo quadragentesimo quadragesimo nono feria secunda post festum Andree apostoli' = Montag nach Andreas 1449. Der Text nennt weitere Ortsnamen 'Reynrode' und 'Bruerswende' sowie 'Eysebachs gude', die möglicherweise mit einem Ritter Herman Rydesel (Erbmarschall zu Hessen) verbunden sind; diese könnten für die Lokalisierung relevant sein, sind aber nicht eindeutig identifiziert. Verortungshinweise: zwischen Alsfeld, Grebenau und Lauterbach; genannt: Reynrode (Reinrode) und Bruerswende (Brauerschwend?) als freie Güter; Bezug zu Alsfeld (Schultheiß, Bürgermeister, Schöffen und Rat von Alsfeld). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Schwarzach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 48.745833, 'lng': 8.047778} -> (50.720913888889, 9.4208222222222); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Schwarz_(Grebenau)&language=de&params=50.720913888889_N_9.4208222222222_E_dim:10000_region:DE-HE_type:city(654))."
     },
     "original_link": "",
     "ort": "Schwarz",
     "koordinaten": {
-      "lat": 48.745833,
-      "lng": 8.047778
+      "lat": 50.720913888889,
+      "lng": 9.4208222222222
     },
     "zeit": "1449",
     "typ": "Weistum (Freiheitsweistum)",
@@ -22824,13 +22866,13 @@
     "titel": "WEISTHUM ZU REICHENBACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 398–399",
-      "notizen": "Fußnote 1 lokalisiert Reichenbach bei Birstein (Birsenstein), südlich von Ulmbach. Datierung im Text: 'anno domini millesimo tricentesimo nonagesimo quarto in crastino octave Michaelis archangeli' (1394). Genannt werden mehrere Herrschaften: der Abt von Fulda als Richter über Hals und Haupt sowie Lehnsherr der fuldischen Güter, Johann Herr zu Isenburg und zu Büdingen sowie Junker Heinrich von Wilnau als Gerichtsherren. Als Siegler fungieren Johann Sure, Pfarrer zu Reichenbach, und Johann von Langenstein, Amtmann zu Birstein (Birsenstein), da die Gemeinde selbst kein eigenes Siegel besaß. Der Text ist eine wörtliche Wiedergabe des Weistums (Ich-Form der Schöffen, Ältesten und Gemeinde), keine Paraphrase Grimms. Verortungshinweise: bei Birstein (Birsenstein); südlich von Ulmbach. Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen."
+      "notizen": "Fußnote 1 lokalisiert Reichenbach bei Birstein (Birsenstein), südlich von Ulmbach. Datierung im Text: 'anno domini millesimo tricentesimo nonagesimo quarto in crastino octave Michaelis archangeli' (1394). Genannt werden mehrere Herrschaften: der Abt von Fulda als Richter über Hals und Haupt sowie Lehnsherr der fuldischen Güter, Johann Herr zu Isenburg und zu Büdingen sowie Junker Heinrich von Wilnau als Gerichtsherren. Als Siegler fungieren Johann Sure, Pfarrer zu Reichenbach, und Johann von Langenstein, Amtmann zu Birstein (Birsenstein), da die Gemeinde selbst kein eigenes Siegel besaß. Der Text ist eine wörtliche Wiedergabe des Weistums (Ich-Form der Schöffen, Ältesten und Gemeinde), keine Paraphrase Grimms. Verortungshinweise: bei Birstein (Birsenstein); südlich von Ulmbach. Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.98472222, 'lng': 9.511111111} -> (50.381111111111, 9.3272222222222); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Oberreichenbach_(Birstein)&language=de&params=50.381111111111_N_9.3272222222222_E_dim:10000_region:DE-HE_type:city(195))."
     },
     "original_link": "",
     "ort": "Reichenbach",
     "koordinaten": {
-      "lat": 49.98472222,
-      "lng": 9.511111111
+      "lat": 50.381111111111,
+      "lng": 9.3272222222222
     },
     "zeit": "1394",
     "typ": "Weisthum",
@@ -22843,13 +22885,13 @@
     "titel": "FERNER REICHENBACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 399–400",
-      "notizen": "Haupttext ohne Fußnoten überliefert. Es handelt sich um eine Fortsetzung/weiteres Weistum zu Reichenbach (Titel \"FERNER REICHENBACH\"), was auf einen weiteren Text zum selben Ort im Corpus hinweist, vermutlich aus derselben Quelle/Sammelhandschrift wie ein vorangehendes Reichenbach-Weistum. Genannt werden Diether von Isenburg, Herr zu Büdingen, und Ludwig von Hutten, Ritter, sowie deren Rechte im Landgericht zu Reichenbach unter der Linde; Bezug auf Rechte des Abtes/Herrn von Fulda. Verortungshinweise: Büdingen (Herrschaft des Diether von Isenburg); Stolzenberg; Fulda (Abt/Herr von Fulda); Birstein (Turm/Burg); Friedberg (Burg); Gelnhausen (Burg); Sotzbach; Ober-Reichenbach. Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen."
+      "notizen": "Haupttext ohne Fußnoten überliefert. Es handelt sich um eine Fortsetzung/weiteres Weistum zu Reichenbach (Titel \"FERNER REICHENBACH\"), was auf einen weiteren Text zum selben Ort im Corpus hinweist, vermutlich aus derselben Quelle/Sammelhandschrift wie ein vorangehendes Reichenbach-Weistum. Genannt werden Diether von Isenburg, Herr zu Büdingen, und Ludwig von Hutten, Ritter, sowie deren Rechte im Landgericht zu Reichenbach unter der Linde; Bezug auf Rechte des Abtes/Herrn von Fulda. Verortungshinweise: Büdingen (Herrschaft des Diether von Isenburg); Stolzenberg; Fulda (Abt/Herr von Fulda); Birstein (Turm/Burg); Friedberg (Burg); Gelnhausen (Burg); Sotzbach; Ober-Reichenbach. Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Rechtenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.98472222, 'lng': 9.511111111} -> (50.381111111111, 9.3272222222222); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Oberreichenbach_(Birstein)&language=de&params=50.381111111111_N_9.3272222222222_E_dim:10000_region:DE-HE_type:city(195))."
     },
     "original_link": "",
     "ort": "Reichenbach",
     "koordinaten": {
-      "lat": 49.98472222,
-      "lng": 9.511111111
+      "lat": 50.381111111111,
+      "lng": 9.3272222222222
     },
     "zeit": "1443",
     "typ": "Weistum (Landgerichtsweistum)",
@@ -22935,13 +22977,13 @@
     "titel": "LANDGERICHT ZU CROMBACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 406–410",
-      "notizen": "Grimms Fußnote 1 lokalisiert Crombach zwischen Alzenau und Bieber; Hüttengesäfs (im Text als 'Hüdelngeses'/'Hudelngesefs' erwähnt) liegt zwischen Alzenau und Krombach an der Kahl (in der Urkunde 'Kalda' genannt). Der Haupttext beschreibt ausführlich die Grenzen des Landgerichts Crombach (Gebiets-/Grenzbeschreibung entlang Kalda, Geiselbach, Nesselbach, Hohenberg etc.) sowie die verschiedenen Untergerichte (Geiselbach, Königshoven, Kalda, Schneppenbach) und ihre jeweiligen Gerichtsherren (u.a. Herren von Selgenstadt, von Ryneck, von Praunheim, die Ulner, von Hutten und Schwalbach, Grofsroden von Aschaffenburg). Der Text datiert eine spätere Ergänzung/neue Ordnung auf den Dienstag nach Mariae Himmelfahrt (praesentationis) 1496. Kopfzeile der Druckausgabe: WETTERAU | CROMBACH. Verortungshinweise: zwischen Alzenau und Bieber; Hüttengesäfs zwischen Alzenau und Krombach an der Kahl (Kalda). Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Karbach') — bitte manuell prüfen."
+      "notizen": "Grimms Fußnote 1 lokalisiert Crombach zwischen Alzenau und Bieber; Hüttengesäfs (im Text als 'Hüdelngeses'/'Hudelngesefs' erwähnt) liegt zwischen Alzenau und Krombach an der Kahl (in der Urkunde 'Kalda' genannt). Der Haupttext beschreibt ausführlich die Grenzen des Landgerichts Crombach (Gebiets-/Grenzbeschreibung entlang Kalda, Geiselbach, Nesselbach, Hohenberg etc.) sowie die verschiedenen Untergerichte (Geiselbach, Königshoven, Kalda, Schneppenbach) und ihre jeweiligen Gerichtsherren (u.a. Herren von Selgenstadt, von Ryneck, von Praunheim, die Ulner, von Hutten und Schwalbach, Grofsroden von Aschaffenburg). Der Text datiert eine spätere Ergänzung/neue Ordnung auf den Dienstag nach Mariae Himmelfahrt (praesentationis) 1496. Kopfzeile der Druckausgabe: WETTERAU | CROMBACH. Verortungshinweise: zwischen Alzenau und Bieber; Hüttengesäfs zwischen Alzenau und Krombach an der Kahl (Kalda). Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Karbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.866667, 'lng': 9.633333} -> (50.355833333333, 9.0552777777778); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Ortenberg_(Hessen)&language=de&params=50.355833333333_N_9.0552777777778_E_region:DE-HE_type:city(8351))."
     },
     "original_link": "",
     "ort": "Krombach",
     "koordinaten": {
-      "lat": 49.866667,
-      "lng": 9.633333
+      "lat": 50.355833333333,
+      "lng": 9.0552777777778
     },
     "zeit": "1496",
     "typ": "Weistum (Landgerichtsweisung)",
@@ -22992,13 +23034,13 @@
     "titel": "SELBOLDER MARKWEISTHUM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 418–422",
-      "notizen": "Grimm datiert den Titel auf 1366 (im Haupttext: \"sechs vnd sechtzigistein yare\" = 1366, Verhandlung im Spilhuse zu Selbult). Das vorliegende Instrument wurde jedoch erst 1383 in Aschaffenburg von Heynrich von Gonsroden vorgelegt und von einem öffentlichen Notar (Hermannus dictus Sultzhayn de Uteleuben) abschriftlich beglaubigt; ein zweiter Notar (Johannes Heraldi de Aschaffinburg) bezeugt zusätzlich die Transkription. Fußnote 1 identifiziert Selbold als Langenselbold zwischen Gelnhausen und Hanau, Meraldes als Meerholz (zwischen Selbold und Gelnhausen) und Ranburg als Ronneburg; zudem wird auf ein 'merchirdinge' bei Selbolt von 1300 in Böhmers cod. moenofrancof. 1, 333 verwiesen. Der Text nennt zahlreiche Zeugen (Ritter, Geistliche, Schöffen) und beschreibt detailliert Markrecht, Cingrafenamt, Schweinehut und Schafferei-Rechte (u.a. Kloster Selbold zu Bruderdieppach, Kloster zu Meraldes/Miela, von Gonsrode). Verortungshinweise: zwischen Gelnhausen und Hanau; Meraldes ist Meerholz zwischen Selbold und Gelnhausen; Ranburg ist Ronneburg; in Mentzer ertzbisthum gelegen (Mainzer Erzbistum)."
+      "notizen": "Grimm datiert den Titel auf 1366 (im Haupttext: \"sechs vnd sechtzigistein yare\" = 1366, Verhandlung im Spilhuse zu Selbult). Das vorliegende Instrument wurde jedoch erst 1383 in Aschaffenburg von Heynrich von Gonsroden vorgelegt und von einem öffentlichen Notar (Hermannus dictus Sultzhayn de Uteleuben) abschriftlich beglaubigt; ein zweiter Notar (Johannes Heraldi de Aschaffinburg) bezeugt zusätzlich die Transkription. Fußnote 1 identifiziert Selbold als Langenselbold zwischen Gelnhausen und Hanau, Meraldes als Meerholz (zwischen Selbold und Gelnhausen) und Ranburg als Ronneburg; zudem wird auf ein 'merchirdinge' bei Selbolt von 1300 in Böhmers cod. moenofrancof. 1, 333 verwiesen. Der Text nennt zahlreiche Zeugen (Ritter, Geistliche, Schöffen) und beschreibt detailliert Markrecht, Cingrafenamt, Schweinehut und Schafferei-Rechte (u.a. Kloster Selbold zu Bruderdieppach, Kloster zu Meraldes/Miela, von Gonsrode). Verortungshinweise: zwischen Gelnhausen und Hanau; Meraldes ist Meerholz zwischen Selbold und Gelnhausen; Ranburg ist Ronneburg; in Mentzer ertzbisthum gelegen (Mainzer Erzbistum). Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.18, 'lng': 9.04} -> (50.1780814, 9.04333); Quelle: Nominatim AUTO_PLAUSIBEL; Langenselbold, Main-Kinzig-Kreis, Hessen, 63505, Deutschland)."
     },
     "original_link": "",
     "ort": "Langenselbold",
     "koordinaten": {
-      "lat": 50.18,
-      "lng": 9.04
+      "lat": 50.1780814,
+      "lng": 9.04333
     },
     "zeit": "1366 (Haupttext), 1383 (Ausfertigung/Abschrift)",
     "typ": "Markweisthum",
@@ -23030,11 +23072,14 @@
     "titel": "WEISTHUM VON HÜTTENGESÄSS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 424–426",
-      "notizen": "Fußnote 1 lokalisiert den Ort: ostwärts von Selbold, ausdrücklich unterschieden von einem gleichnamigen Hüttengesäß im Crombacher Wald (Verwechslungsgefahr bei Gazetteer-Abgleich). Haupttext ist ein direktes Zitat der Weisung (Mertinsgericht/Martinsding) zu Hüttengesäß vom Vorabend des Sebastianstags 1426, betreffend Rechte des Herrn von Hanau bzw. seines Amtmanns auf Schloss Ronneburg. Erwähnt werden Bußgelder für Schlägereien, Fischereirechte am Wasser der Dieppach (zwischen Rodenfurt und Meydensfurt), Gebotsrechte des Amtmanns im Dorf, Beziehung zum Gericht Selbold und zur Herrschaft Isenburg, sowie ungeklärte Frage der Schultheißen-Einsetzung (Uneinigkeit der Nachbarn, drei oder vier Meinungen). Verortungshinweise: ostwärts von Selbold; verschieden von dem Hüttengesäfs im Crombacher w.; zugehörig zum Schloss Ronneburg; Herrschaft Isenburg; Gericht zu Selbold."
+      "notizen": "Fußnote 1 lokalisiert den Ort: ostwärts von Selbold, ausdrücklich unterschieden von einem gleichnamigen Hüttengesäß im Crombacher Wald (Verwechslungsgefahr bei Gazetteer-Abgleich). Haupttext ist ein direktes Zitat der Weisung (Mertinsgericht/Martinsding) zu Hüttengesäß vom Vorabend des Sebastianstags 1426, betreffend Rechte des Herrn von Hanau bzw. seines Amtmanns auf Schloss Ronneburg. Erwähnt werden Bußgelder für Schlägereien, Fischereirechte am Wasser der Dieppach (zwischen Rodenfurt und Meydensfurt), Gebotsrechte des Amtmanns im Dorf, Beziehung zum Gericht Selbold und zur Herrschaft Isenburg, sowie ungeklärte Frage der Schultheißen-Einsetzung (Uneinigkeit der Nachbarn, drei oder vier Meinungen). Verortungshinweise: ostwärts von Selbold; verschieden von dem Hüttengesäfs im Crombacher w.; zugehörig zum Schloss Ronneburg; Herrschaft Isenburg; Gericht zu Selbold. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2165801, 9.040196); Quelle: Nominatim AUTO_PLAUSIBEL; Hüttengesäß, Ronneburg, Main-Kinzig-Kreis, Hessen, 63549, Deutschland)."
     },
     "original_link": "",
     "ort": "Hüttengesäß",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2165801,
+      "lng": 9.040196
+    },
     "zeit": "1426",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -23211,13 +23256,13 @@
     "titel": "WEISTHUM ZU KEUCHEN. 1439.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 459–460",
-      "notizen": "Quelle laut Fußnote: Orths Rechtshändel p. 709–711. Grimm gibt den Text der Urkunde von 1439 (Landrecht des freien Keucher Gerichts) offenbar vollständig bzw. weitgehend wörtlich wieder; am Ende bricht die Aufzählung der geistlichen Lehensherren ab mit Grimms eigenem Klammerzusatz '(folgen viele andere namen mehr)', d.h. die vollständige Namensliste wurde von Grimm nicht abgedruckt, sondern paraphrasiert/gekürzt. Genannte Personen: Henne von Stochheim (oberster Greve), Ewerhard Lewe von Steinfurt (Ritter, Burggrave zu Friedberg, der das Urteil verkündete), Wirnher Lesche (Probst zu Ilbenstadt). Verortungshinweise: Wetterau; Assenheim (Aſsenheim), wohin man Übeltäter in den Turm führte; Friedberg (Fridberg), Burggrafschaft; Ilbenstadt (Ilwenstad), Propstei mit Wald im Gericht gelegen; Nieder-/Nauheim? – Nuenburg, Propstei mit Wald im Gericht gelegen; Helbergen, Ort im Gericht; Carben, Ort im Gericht."
+      "notizen": "Quelle laut Fußnote: Orths Rechtshändel p. 709–711. Grimm gibt den Text der Urkunde von 1439 (Landrecht des freien Keucher Gerichts) offenbar vollständig bzw. weitgehend wörtlich wieder; am Ende bricht die Aufzählung der geistlichen Lehensherren ab mit Grimms eigenem Klammerzusatz '(folgen viele andere namen mehr)', d.h. die vollständige Namensliste wurde von Grimm nicht abgedruckt, sondern paraphrasiert/gekürzt. Genannte Personen: Henne von Stochheim (oberster Greve), Ewerhard Lewe von Steinfurt (Ritter, Burggrave zu Friedberg, der das Urteil verkündete), Wirnher Lesche (Probst zu Ilbenstadt). Verortungshinweise: Wetterau; Assenheim (Aſsenheim), wohin man Übeltäter in den Turm führte; Friedberg (Fridberg), Burggrafschaft; Ilbenstadt (Ilwenstad), Propstei mit Wald im Gericht gelegen; Nieder-/Nauheim? – Nuenburg, Propstei mit Wald im Gericht gelegen; Helbergen, Ort im Gericht; Carben, Ort im Gericht. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.26, 'lng': 8.84} -> (50.2545363, 8.8379659); Quelle: Nominatim AUTO_PLAUSIBEL; Kaichen, Niddatal, Wetteraukreis, Hessen, Deutschland)."
     },
     "original_link": "",
     "ort": "Kaichen",
     "koordinaten": {
-      "lat": 50.26,
-      "lng": 8.84
+      "lat": 50.2545363,
+      "lng": 8.8379659
     },
     "zeit": "1439",
     "typ": "Weisthum (Landrecht des freien Gerichts)",
@@ -23268,13 +23313,13 @@
     "titel": "WEISTHUM DER CARBER MARK. 1499.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 462–463",
-      "notizen": "Titel laut Überschrift mit Fußnotenverweis '1)'. Fußnote 1 (zu Titel): das Weistum umfasste die Dörfer Großencarben, Kleinencarben und Burggrevenrode (zwischen Assenheim und Windecken); Maders Friedberg 2, 101–106 liefert die 13 Artikel des Weistums nur im Auszug, doch mit Einschaltung einzelner Stellen. Im Haupttext eine weitere Fußnote (unnumeriert, '1)') zu Artikel 10, deren Inhalt hier nicht mitgeteilt ist. Zu beachten: die Zählung der Artikel im Haupttext ist fehlerhaft/verspringt - Artikel 10 kommt zweimal vor (der zweite dürfte eigentlich Artikel 11 sein), Grimms Vorlage bzw. Druck weist hier eine Unstimmigkeit auf. Verortungshinweise: umfasste die Dörfer Großencarben, Kleinencarben und Burggrefenrode; zwischen Assenheim und Windecken gelegen."
+      "notizen": "Titel laut Überschrift mit Fußnotenverweis '1)'. Fußnote 1 (zu Titel): das Weistum umfasste die Dörfer Großencarben, Kleinencarben und Burggrevenrode (zwischen Assenheim und Windecken); Maders Friedberg 2, 101–106 liefert die 13 Artikel des Weistums nur im Auszug, doch mit Einschaltung einzelner Stellen. Im Haupttext eine weitere Fußnote (unnumeriert, '1)') zu Artikel 10, deren Inhalt hier nicht mitgeteilt ist. Zu beachten: die Zählung der Artikel im Haupttext ist fehlerhaft/verspringt - Artikel 10 kommt zweimal vor (der zweite dürfte eigentlich Artikel 11 sein), Grimms Vorlage bzw. Druck weist hier eine Unstimmigkeit auf. Verortungshinweise: umfasste die Dörfer Großencarben, Kleinencarben und Burggrefenrode; zwischen Assenheim und Windecken gelegen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.230191, 'lng': 8.77297} -> (50.2313417, 8.7717673); Quelle: Nominatim AUTO_PLAUSIBEL; Karben, Wetteraukreis, Hessen, 61184, Deutschland)."
     },
     "original_link": "",
     "ort": "Karben",
     "koordinaten": {
-      "lat": 50.230191,
-      "lng": 8.77297
+      "lat": 50.2313417,
+      "lng": 8.7717673
     },
     "zeit": "1499",
     "typ": "Weistum",
@@ -23487,11 +23532,14 @@
     "titel": "WEISTHUM VON OBERURSEL. 1401.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 488–490",
-      "notizen": "Fußnote 1: Oberursel liegt am Taunus, unweit Homburg. Text nach Fichards Wetteravia p. 139–143, nach einer späteren Fassung in einem Notariatsinstrument von 1484, enthalten in der Deduktion Ingelheim gegen Hessen-Homburg (betrifft die Seulberger Mark), gedruckt Gießen 1653; danach auch anderwärts verschiedentlich abgedruckt. Die Mark heißt auch 'die hohe mark'. Im Haupttext werden zahlreiche Nachbarorte/Höfe der Mark aufgezählt (u.a. Nydern Orsel, Mittelnvrsel, Eschersheym, Hedernheym, Prunheym, Bonamese, Vilwil u.v.a.), die als Merker/Dörfer der gemeinsamen Mark fungieren. Verortungshinweise: am Taunus; unweit Homburg."
+      "notizen": "Fußnote 1: Oberursel liegt am Taunus, unweit Homburg. Text nach Fichards Wetteravia p. 139–143, nach einer späteren Fassung in einem Notariatsinstrument von 1484, enthalten in der Deduktion Ingelheim gegen Hessen-Homburg (betrifft die Seulberger Mark), gedruckt Gießen 1653; danach auch anderwärts verschiedentlich abgedruckt. Die Mark heißt auch 'die hohe mark'. Im Haupttext werden zahlreiche Nachbarorte/Höfe der Mark aufgezählt (u.a. Nydern Orsel, Mittelnvrsel, Eschersheym, Hedernheym, Prunheym, Bonamese, Vilwil u.v.a.), die als Merker/Dörfer der gemeinsamen Mark fungieren. Verortungshinweise: am Taunus; unweit Homburg. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2032927, 8.5833676); Quelle: Nominatim AUTO_PLAUSIBEL; Oberursel (Taunus), Hochtaunuskreis, Hessen, 61440, Deutschland)."
     },
     "original_link": "",
     "ort": "Oberursel",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2032927,
+      "lng": 8.5833676
+    },
     "zeit": "1401",
     "typ": "Weisthum",
     "schreiberinfo": "",
@@ -23646,11 +23694,14 @@
     "titel": "STIERSTADT",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 496",
-      "notizen": "Keine Fußnoten im vorliegenden Ausschnitt vorhanden. Der Haupttext bricht mit \"etc. etc.\" ab, scheint also nur ein Auszug/unvollständige Wiedergabe des Weistums zu sein. Erwähnt werden die Herren zu Königstein als oberste Gerichtsherren sowie die Herren zu Unser Lieben Frauen zu Mainz mit eigenem Hofgericht. Verortungshinweise: Herren zu Königstein als oberster Herr des Gerichts und Dorfs; Landgericht zu Stuhlen (Stollen?) genannt; Herren zu Unser Lieben Frauen zu Mainz mit Hofgericht daselbst."
+      "notizen": "Keine Fußnoten im vorliegenden Ausschnitt vorhanden. Der Haupttext bricht mit \"etc. etc.\" ab, scheint also nur ein Auszug/unvollständige Wiedergabe des Weistums zu sein. Erwähnt werden die Herren zu Königstein als oberste Gerichtsherren sowie die Herren zu Unser Lieben Frauen zu Mainz mit eigenem Hofgericht. Verortungshinweise: Herren zu Königstein als oberster Herr des Gerichts und Dorfs; Landgericht zu Stuhlen (Stollen?) genannt; Herren zu Unser Lieben Frauen zu Mainz mit Hofgericht daselbst. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.185593, 8.5781339); Quelle: Nominatim AUTO_PLAUSIBEL; Stierstadt, Oberursel (Taunus), Hochtaunuskreis, Hessen, 61440, Deutschland)."
     },
     "original_link": "",
     "ort": "Stierstadt",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.185593,
+      "lng": 8.5781339
+    },
     "zeit": "",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -23678,11 +23729,14 @@
     "titel": "OBERNURSEL",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 496",
-      "notizen": "Verortungshinweise: Königstein (Herrschaft/Herren zu Konigkstein als oberste Herren des Gerichts); Bommersheim (benachbarter Ort mit hoffisch gericht)."
+      "notizen": "Verortungshinweise: Königstein (Herrschaft/Herren zu Konigkstein als oberste Herren des Gerichts); Bommersheim (benachbarter Ort mit hoffisch gericht). Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2032927, 8.5833676); Quelle: Nominatim AUTO_PLAUSIBEL; Oberursel (Taunus), Hochtaunuskreis, Hessen, 61440, Deutschland)."
     },
     "original_link": "",
     "ort": "Oberursel",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2032927,
+      "lng": 8.5833676
+    },
     "zeit": "",
     "typ": "",
     "schreiberinfo": "",
@@ -23796,11 +23850,14 @@
     "titel": "MÄRKERDING ZU OBERKLEEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 498–500",
-      "notizen": "Fußnote 1 bezieht sich vermutlich auf einen benachbarten Text/Ort (Cleeberg zwischen Usingen und Wetzlar, Kalsmunt dicht bei Wetzlar) und dient der Verortung der Herrschaft Kleen/Kliehen. Fußnote 2 lokalisiert Oberkleen zwischen Butzbach und Wetzlar und nennt als Quelle Reinhards Märkerrecht Nr. 7. Der Haupttext ist ein direktes Zitat der Weisung von 1480 (Transsumpt von 1551 und 1568), Sprache und Schreibweise (Kliehen/Klichen für Kleen) sind originalgetreu aus der Vorlage übernommen. Verortungshinweise: zwischen Butzbach und Wetzlar; Niederkleen (Niederkliehen) als Nachbarort genannt; Cleeberg zwischen Usingen und Wetzlar; Kalsmunt dicht bei Wetzlar."
+      "notizen": "Fußnote 1 bezieht sich vermutlich auf einen benachbarten Text/Ort (Cleeberg zwischen Usingen und Wetzlar, Kalsmunt dicht bei Wetzlar) und dient der Verortung der Herrschaft Kleen/Kliehen. Fußnote 2 lokalisiert Oberkleen zwischen Butzbach und Wetzlar und nennt als Quelle Reinhards Märkerrecht Nr. 7. Der Haupttext ist ein direktes Zitat der Weisung von 1480 (Transsumpt von 1551 und 1568), Sprache und Schreibweise (Kliehen/Klichen für Kleen) sind originalgetreu aus der Vorlage übernommen. Verortungshinweise: zwischen Butzbach und Wetzlar; Niederkleen (Niederkliehen) als Nachbarort genannt; Cleeberg zwischen Usingen und Wetzlar; Kalsmunt dicht bei Wetzlar. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.4623619, 8.5894674); Quelle: Nominatim AUTO_PLAUSIBEL; Oberkleen, Langgöns, Landkreis Gießen, Hessen, Deutschland)."
     },
     "original_link": "",
     "ort": "Oberkleen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.4623619,
+      "lng": 8.5894674
+    },
     "zeit": "1480, nach Transsumpten von 1551 und 1568",
     "typ": "Märkerding / Weistum",
     "schreiberinfo": "",
@@ -23812,13 +23869,13 @@
     "titel": "MARKERDING ZU WERHEIM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 500",
-      "notizen": "Keine Fußnoten im Quelltext vorhanden. Der Text ist ein Zitat des Weistums (Markerding), abgeschlossen mit Schreibervermerk. Grimms Kopfzeile weist die Region als \"Wetterau\" aus, was hier als region übernommen wird. Verortungshinweise: gegen Altenweilnau an die Brücke gelegen; bis in die Nid (Fluss/Grenzverlauf genannt). Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Bergheim') — bitte manuell prüfen."
+      "notizen": "Keine Fußnoten im Quelltext vorhanden. Der Text ist ein Zitat des Weistums (Markerding), abgeschlossen mit Schreibervermerk. Grimms Kopfzeile weist die Region als \"Wetterau\" aus, was hier als region übernommen wird. Verortungshinweise: gegen Altenweilnau an die Brücke gelegen; bis in die Nid (Fluss/Grenzverlauf genannt). Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Bergheim') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 48.205278, 'lng': 7.361667} -> (50.316111, 8.419167); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Weilnau_(Gemeinde)&language=de&params=50.316111_N_8.419167_E_region:DE-HE_type:landmark)."
     },
     "original_link": "",
     "ort": "Werheim",
     "koordinaten": {
-      "lat": 48.205278,
-      "lng": 7.361667
+      "lat": 50.316111,
+      "lng": 8.419167
     },
     "zeit": "1479",
     "typ": "Weistum (Markerding/Gemarkerding)",
@@ -23993,11 +24050,14 @@
     "titel": "WEISTHUM ZU SCHWARZENFELS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 517–518",
-      "notizen": "Grimms Fußnote lokalisiert Schwarzenfels in der Sinngegend, zwischen Schlüchtern und Brückenau. Laufende Kopfzeile nennt zusätzlich 'BURGJASSA' als benachbartes Stichwort und ordnet den Abschnitt 'FRANKEN' zu. Der Text ist ein Weistum der Schöffen von Schwarzenfels und Gronau, das Zugehörigkeit zahlreicher Dörfer zu den Gerichten Schwarzenfels bzw. Gronau feststellt (u.a. Sterpfriz, Weichersbach, Vollmerz, Rannelz, Hutten, Gunthelmb, Oberkalba, Newendorf, Leybolz, Heybach, Wimersspach, Kressenborn, Zell, Zunzelspach, Lindenbach, Remalzborn, Uterichshausen für Schwarzenfels; Gronau, Motgers, Kuchecken, Emmersbach, Rottersawe, Rorbach, Welefs, Brunings für Gronau, mit Vorbehalt bzgl. Gerade und Dattenborn). Die Grafen von Hanau werden als Erbgerichtsherren beider Gerichte bezeichnet. Datierung im Text: 'montag nach sanct Peterstag ad vincula anno domini millesimo quadringentesimo quinquagesimo tertio' = 1453. Verortungshinweise: in der Sinngegend; zwischen Schlüchtern und Brückenau; Grafschaft Hanau; Gericht Gronau (benachbart)."
+      "notizen": "Grimms Fußnote lokalisiert Schwarzenfels in der Sinngegend, zwischen Schlüchtern und Brückenau. Laufende Kopfzeile nennt zusätzlich 'BURGJASSA' als benachbartes Stichwort und ordnet den Abschnitt 'FRANKEN' zu. Der Text ist ein Weistum der Schöffen von Schwarzenfels und Gronau, das Zugehörigkeit zahlreicher Dörfer zu den Gerichten Schwarzenfels bzw. Gronau feststellt (u.a. Sterpfriz, Weichersbach, Vollmerz, Rannelz, Hutten, Gunthelmb, Oberkalba, Newendorf, Leybolz, Heybach, Wimersspach, Kressenborn, Zell, Zunzelspach, Lindenbach, Remalzborn, Uterichshausen für Schwarzenfels; Gronau, Motgers, Kuchecken, Emmersbach, Rottersawe, Rorbach, Welefs, Brunings für Gronau, mit Vorbehalt bzgl. Gerade und Dattenborn). Die Grafen von Hanau werden als Erbgerichtsherren beider Gerichte bezeichnet. Datierung im Text: 'montag nach sanct Peterstag ad vincula anno domini millesimo quadringentesimo quinquagesimo tertio' = 1453. Verortungshinweise: in der Sinngegend; zwischen Schlüchtern und Brückenau; Grafschaft Hanau; Gericht Gronau (benachbart). Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2985544, 9.6744811); Quelle: Nominatim AUTO_PLAUSIBEL; Schwarzenfels, Sinntal, Main-Kinzig-Kreis, Hessen, Deutschland)."
     },
     "original_link": "",
     "ort": "Schwarzenfels",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2985544,
+      "lng": 9.6744811
+    },
     "zeit": "1453",
     "typ": "Weisthum",
     "schreiberinfo": "",
@@ -24282,13 +24342,13 @@
     "titel": "Diese nachgeschriben haben die von Halfspach dem closter Schonrein zu recht geweyset uff den tage vnd datum wie obgeschriben ist.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 547",
-      "notizen": "Kopfzeile lautet 'HOFSTÄTTEN. MASSENBUCH. HALSBACH'; keine Fußnoten vorhanden. Der Text erwähnt das Kloster Schönrain (Schonrein) als Empfänger des Weistums sowie die Herren von Rieneck als Vogtherren und das Kloster Hirsau, dessen Prior offenbar Bezug zu Halsbach hatte. Zeitangabe fehlt im vorliegenden Ausschnitt. Verortungshinweise: Kloster Schonrein (Schönrain); Herren von Rieneck (Vogtabgaben); Kloster Hirsau wird erwähnt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Halsenbach u. Bickenbach') — bitte manuell prüfen."
+      "notizen": "Kopfzeile lautet 'HOFSTÄTTEN. MASSENBUCH. HALSBACH'; keine Fußnoten vorhanden. Der Text erwähnt das Kloster Schönrain (Schonrein) als Empfänger des Weistums sowie die Herren von Rieneck als Vogtherren und das Kloster Hirsau, dessen Prior offenbar Bezug zu Halsbach hatte. Zeitangabe fehlt im vorliegenden Ausschnitt. Verortungshinweise: Kloster Schonrein (Schönrain); Herren von Rieneck (Vogtabgaben); Kloster Hirsau wird erwähnt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Halsenbach u. Bickenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.17606, 'lng': 7.5506} -> (50.03514, 9.70228); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Massenbuch&language=de&params=50.03514_N_9.70228_E_dim:10000_region:DE-BY_type:city(190))."
     },
     "original_link": "",
     "ort": "Halsbach",
     "koordinaten": {
-      "lat": 50.17606,
-      "lng": 7.5506
+      "lat": 50.03514,
+      "lng": 9.70228
     },
     "zeit": "",
     "typ": "",
@@ -24301,13 +24361,13 @@
     "titel": "So haben sie diese nachgeschriben recht der herschaft von Rienecke gewysen.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 547",
-      "notizen": "Kopfzeile der Grimm-Ausgabe nennt HOFSTÄTTEN, MASSENBUCH, HALSBACH als Regionsangabe für diesen Abschnitt; der Text selbst betrifft die Rechte der Herrschaft von Rieneck über ein Kloster und dreizehn Güter. Keine Fußnoten vorhanden. Verortungshinweise: Herrschaft der Herren von Rieneck. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Halsenbach u. Bickenbach') — bitte manuell prüfen."
+      "notizen": "Kopfzeile der Grimm-Ausgabe nennt HOFSTÄTTEN, MASSENBUCH, HALSBACH als Regionsangabe für diesen Abschnitt; der Text selbst betrifft die Rechte der Herrschaft von Rieneck über ein Kloster und dreizehn Güter. Keine Fußnoten vorhanden. Verortungshinweise: Herrschaft der Herren von Rieneck. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Halsenbach u. Bickenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.17606, 'lng': 7.5506} -> (50.03514, 9.70228); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Massenbuch&language=de&params=50.03514_N_9.70228_E_dim:10000_region:DE-BY_type:city(190))."
     },
     "original_link": "",
     "ort": "Halsbach",
     "koordinaten": {
-      "lat": 50.17606,
-      "lng": 7.5506
+      "lat": 50.03514,
+      "lng": 9.70228
     },
     "zeit": "",
     "typ": "Weistum",
@@ -24377,13 +24437,13 @@
     "titel": "W. der Cent zu der Eiche",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 553–557",
-      "notizen": "Grimm datiert das Weistum mit 'o. j.' (ohne Jahr). Fußnote 1 zur Überschrift ordnet die Cent geographisch der Maingegend zwischen Klingenberg, Wörth und Obernburg zu und nennt mehrere Grenzorte (Faulbach/Faulenbach, Lautenbach, Seckmauern) zur Bestimmung des Centbezirks. Eine weitere Fußnote (im Text bei 'Muhmart') diskutiert unsicher, ob mit 'Momhart' das bickenbachische Momart bei König an der Mümling gemeint ist oder eher Eschau bzw. ein Mechenhart auf der rechten Mainseite; Grimm vermutet aber, dass das bickenbachische Gebiet eher am linken Main lag, analog zur Lage von Bickenbach selbst zwischen Darmstadt und Zwingenberg. Der Haupttext ist ein Zitat der Schöffenweistümer der Cent zu der Eiche, mit genauer Grenzbeschreibung, Bußenkatalog und Verfahrensregeln; erwähnt werden die Herren von Rieneck (zu Eschau) und von Bickenbach (zu Muhmart) als Grundherren mit Schäferei-Rechten. Kopfzeilen der Druckseiten: HOFSTÄTTEN. EICHE | FRANKEN | EICHE | MÜMLINGEN. Verortungshinweise: muss in der Maingegend von Klingenberg, Wörth und Obernburg gelegen haben; Faulbach, Lautenbach (zwischen Miltenberg und Wörth), Seckmauern (südwestlich von Wörth) als Grenzorte genannt; Mümling als Fluss erwähnt; Momhart/Mümhart unfern des Marktfleckens König an der Mümling; Eschau auf der rechten Mainseite, nordöstlich von Wörth; Bickenbach zwischen Darmstadt und Zwingenberg; im Text genannt: Klingenburg, Wildenstein, Ostheim (Landgericht), Salzbach, Sperbersbach, Walstat, Hanbuch. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Remich') — bitte manuell prüfen."
+      "notizen": "Grimm datiert das Weistum mit 'o. j.' (ohne Jahr). Fußnote 1 zur Überschrift ordnet die Cent geographisch der Maingegend zwischen Klingenberg, Wörth und Obernburg zu und nennt mehrere Grenzorte (Faulbach/Faulenbach, Lautenbach, Seckmauern) zur Bestimmung des Centbezirks. Eine weitere Fußnote (im Text bei 'Muhmart') diskutiert unsicher, ob mit 'Momhart' das bickenbachische Momart bei König an der Mümling gemeint ist oder eher Eschau bzw. ein Mechenhart auf der rechten Mainseite; Grimm vermutet aber, dass das bickenbachische Gebiet eher am linken Main lag, analog zur Lage von Bickenbach selbst zwischen Darmstadt und Zwingenberg. Der Haupttext ist ein Zitat der Schöffenweistümer der Cent zu der Eiche, mit genauer Grenzbeschreibung, Bußenkatalog und Verfahrensregeln; erwähnt werden die Herren von Rieneck (zu Eschau) und von Bickenbach (zu Muhmart) als Grundherren mit Schäferei-Rechten. Kopfzeilen der Druckseiten: HOFSTÄTTEN. EICHE | FRANKEN | EICHE | MÜMLINGEN. Verortungshinweise: muss in der Maingegend von Klingenberg, Wörth und Obernburg gelegen haben; Faulbach, Lautenbach (zwischen Miltenberg und Wörth), Seckmauern (südwestlich von Wörth) als Grenzorte genannt; Mümling als Fluss erwähnt; Momhart/Mümhart unfern des Marktfleckens König an der Mümling; Eschau auf der rechten Mainseite, nordöstlich von Wörth; Bickenbach zwischen Darmstadt und Zwingenberg; im Text genannt: Klingenburg, Wildenstein, Ostheim (Landgericht), Salzbach, Sperbersbach, Walstat, Hanbuch. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Remich') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.544917, 'lng': 6.364111} -> (49.794, 9.153); Quelle: GeoHack-Link (geocode_pruefliste_ECHT.csv, richtigerOrt); Eiche (Region Franken/Muemlingen) -- Scardi verweist auf Woerth am Main (Bayern, Landkreis Miltenberg) als korrekten heutigen Ort statt des von Nominatim vorgeschlagenen 'Eiche' bei Potsdam.)."
     },
     "original_link": "",
     "ort": "Eiche",
     "koordinaten": {
-      "lat": 49.544917,
-      "lng": 6.364111
+      "lat": 49.794,
+      "lng": 9.153
     },
     "zeit": "o. j.",
     "typ": "Weistum",
@@ -24875,13 +24935,13 @@
     "titel": "Freiheit der Zeidler im Reichswald zu Nürnberg",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 609–612",
-      "notizen": "Grimm entnimmt den Text (soweit ihm bekannt) nur aus Stissers Anhang zur Forsthistorie S. 55-58; ein besserer, aber unvollständiger Text findet sich laut Grimm in Schilters Glossar S. 891f. nach einer Bestätigungsurkunde König Ruprechts von 1403 (Chmel, Reg. Ruperti Nr. 1444). Grimm verweist zudem auf eine ältere Urkunde Ludwigs des Baiern über denselben Wald (Wölckern, Hist. Norimb. Diplom. 277; Böhmer, Reg. Ludovici Nr. 1279). Anschließend zitiert Grimm (in derselben Fußnote) eine weitere Urkunde von 1373 (Conrad Waldstromer zu Nürnberg), die er ebenfalls nur aus Stisser S. 88-91 kennt; diese ist im Haupttext als direkte Fortsetzung eingefügt (Bestätigung/Ergänzung der Zeidler-Rechte durch den Waldstromer). Haupttext ist die Urkunde König Carls (Karl IV.) von 1350, ausgestellt zu Nürnberg am Dienstag nach Fronleichnam im vierten Jahr seiner Regierung. Der Text bricht am Seitenende mitten im Satz ab (\"und wafs ein\"). Verortungshinweise: Reichswald bei Nürnberg; Zeidelmeister sitzt zu Feucht; Landvogtei zwischen den vier Wäldern."
+      "notizen": "Grimm entnimmt den Text (soweit ihm bekannt) nur aus Stissers Anhang zur Forsthistorie S. 55-58; ein besserer, aber unvollständiger Text findet sich laut Grimm in Schilters Glossar S. 891f. nach einer Bestätigungsurkunde König Ruprechts von 1403 (Chmel, Reg. Ruperti Nr. 1444). Grimm verweist zudem auf eine ältere Urkunde Ludwigs des Baiern über denselben Wald (Wölckern, Hist. Norimb. Diplom. 277; Böhmer, Reg. Ludovici Nr. 1279). Anschließend zitiert Grimm (in derselben Fußnote) eine weitere Urkunde von 1373 (Conrad Waldstromer zu Nürnberg), die er ebenfalls nur aus Stisser S. 88-91 kennt; diese ist im Haupttext als direkte Fortsetzung eingefügt (Bestätigung/Ergänzung der Zeidler-Rechte durch den Waldstromer). Haupttext ist die Urkunde König Carls (Karl IV.) von 1350, ausgestellt zu Nürnberg am Dienstag nach Fronleichnam im vierten Jahr seiner Regierung. Der Text bricht am Seitenende mitten im Satz ab (\"und wafs ein\"). Verortungshinweise: Reichswald bei Nürnberg; Zeidelmeister sitzt zu Feucht; Landvogtei zwischen den vier Wäldern. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.455556, 'lng': 11.078611} -> (49.453872, 11.077298); Quelle: Nominatim AUTO_PLAUSIBEL; Nürnberg, Bayern, Deutschland)."
     },
     "original_link": "",
     "ort": "Nürnberg",
     "koordinaten": {
-      "lat": 49.455556,
-      "lng": 11.078611
+      "lat": 49.453872,
+      "lng": 11.077298
     },
     "zeit": "1350",
     "typ": "Freiheit",
@@ -24913,11 +24973,14 @@
     "titel": "MAIENGERICHT ZU OBERAMPFERACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 615–616",
-      "notizen": "Fußnote 1: 'im ansbachischen amte Feuchtwang. aus den select. norimb. 3,148—150.' Grimms Kopfzeile auf den Seiten lautet 'HEIDENHEIM. OBERAMPFERACH | THÜRINGEN', was auf eine Sammlung mehrerer benachbarter Weistümer im Editionsband hindeutet (Heidenheim, Oberampferach). Haupttext ist ein direktes Zitat der Gerichtsordnung ('Das seind die recht und gewonheyt...'), keine Paraphrase Grimms. Der Text beschreibt Maien- und Herbstgericht, Zusammensetzung des Gerichts aus Heiligenpflegern und Vertretern der Orte Oberampferach, Unterampferach, Grimschwinden, Schneldorf und Vegetsheim, sowie Verfahrensregeln (Bußgelder, Schreiber, Appellation an das Kapitel Feuchtwang). Verortungshinweise: im ansbachischen Amte Feuchtwang; Nachbarorte im Text: Unterampferach, Grimschwinden, Schneldorf, Vegetsheim; Kapitel/Stift Feuchtwang genannt."
+      "notizen": "Fußnote 1: 'im ansbachischen amte Feuchtwang. aus den select. norimb. 3,148—150.' Grimms Kopfzeile auf den Seiten lautet 'HEIDENHEIM. OBERAMPFERACH | THÜRINGEN', was auf eine Sammlung mehrerer benachbarter Weistümer im Editionsband hindeutet (Heidenheim, Oberampferach). Haupttext ist ein direktes Zitat der Gerichtsordnung ('Das seind die recht und gewonheyt...'), keine Paraphrase Grimms. Der Text beschreibt Maien- und Herbstgericht, Zusammensetzung des Gerichts aus Heiligenpflegern und Vertretern der Orte Oberampferach, Unterampferach, Grimschwinden, Schneldorf und Vegetsheim, sowie Verfahrensregeln (Bußgelder, Schreiber, Appellation an das Kapitel Feuchtwang). Verortungshinweise: im ansbachischen Amte Feuchtwang; Nachbarorte im Text: Unterampferach, Grimschwinden, Schneldorf, Vegetsheim; Kapitel/Stift Feuchtwang genannt. Koordinate am 2026-08-19 korrigiert (vorher: None -> (49.1998903, 10.205236); Quelle: Nominatim AUTO_PLAUSIBEL; Oberampfrach, Schnelldorf, Landkreis Ansbach, Bayern, 91625, Deutschland)."
     },
     "original_link": "",
     "ort": "Oberampfrach",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 49.1998903,
+      "lng": 10.205236
+    },
     "zeit": "15. Jh.",
     "typ": "Weistum (Maiengericht)",
     "schreiberinfo": "",
@@ -25040,11 +25103,14 @@
     "titel": "AUS DEM EHHAFTBUCH VON ENKERING",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 630",
-      "notizen": "Fußnote 2 (zum Ort Enkering): \"an der Altmühl, in der eichstädtischen herschaft Rumburg, amts Küpfenberg, unweit Beilengries. aus dem fränk. mag. 1, 194.\" Fußnote 1 bezieht sich vermutlich auf ein benachbartes, im Korpus vorangehendes Weistum (Titting, östlich von Weifsenburg, im eichstädtischen Pflegamt Titting, ebenfalls aus fränk. mag. 1, 193) und ist hier nur der Vollständigkeit halber mitgegeben, da beide Fußnoten gemeinsam am Seitenende stehen. Quelle laut Grimm: fränkisches Magazin Bd. 1, S. 194. Verortungshinweise: an der Altmühl; in der eichstädtischen Herrschaft Rumburg; Amts Küpfenberg; unweit Beilngries."
+      "notizen": "Fußnote 2 (zum Ort Enkering): \"an der Altmühl, in der eichstädtischen herschaft Rumburg, amts Küpfenberg, unweit Beilengries. aus dem fränk. mag. 1, 194.\" Fußnote 1 bezieht sich vermutlich auf ein benachbartes, im Korpus vorangehendes Weistum (Titting, östlich von Weifsenburg, im eichstädtischen Pflegamt Titting, ebenfalls aus fränk. mag. 1, 193) und ist hier nur der Vollständigkeit halber mitgegeben, da beide Fußnoten gemeinsam am Seitenende stehen. Quelle laut Grimm: fränkisches Magazin Bd. 1, S. 194. Verortungshinweise: an der Altmühl; in der eichstädtischen Herrschaft Rumburg; Amts Küpfenberg; unweit Beilngries. Koordinate am 2026-08-19 korrigiert (vorher: None -> (48.9916, 11.3632122); Quelle: Nominatim AUTO_PLAUSIBEL; Enkering, Kinding, Landkreis Eichstätt, Bayern, 85125, Deutschland)."
     },
     "original_link": "",
     "ort": "Enkering",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 48.9916,
+      "lng": 11.3632122
+    },
     "zeit": "",
     "typ": "Ehhaftbuch (Weistum)",
     "schreiberinfo": "",
@@ -25129,13 +25195,13 @@
     "titel": "ÖFNUNG FÜR BUCH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 637–639",
-      "notizen": "Fußnote 1 identifiziert den Ort als Pfarrdorf des Landgerichts Landshut in Niederbayern, ehemals dem Kloster Frauenchiemsee gehörig. Die laufende Kopfzeile nennt zusätzlich 'MALCHING. BUCH' und 'BUCH. HOFMARK T.', was auf eine Sammelhandschrift mit mehreren benachbarten Weistümern (u.a. Malching) hindeutet, aus der dieses Dokument stammt. Der Haupttext ist ein direktes Zitat der Öffnung (Weistum) des Gotteshauses (Klosters) für die Hofmark Buch, mit 11 nummerierten Rechtssätzen. Erwähnt wird Herzog Stephan als historische Randnotiz zur Lehnsübernahme. Verortungshinweise: Pfarrdorf im Landgericht Landshut in Niederbayern; ehemals dem Kloster Frauenchiemsee gehörig; Nachbarschaft/Bezug zu München und Landshut (Gejaid-Grenzen); Bezug zu Erding (Weinabgabe an den Pfleger)."
+      "notizen": "Fußnote 1 identifiziert den Ort als Pfarrdorf des Landgerichts Landshut in Niederbayern, ehemals dem Kloster Frauenchiemsee gehörig. Die laufende Kopfzeile nennt zusätzlich 'MALCHING. BUCH' und 'BUCH. HOFMARK T.', was auf eine Sammelhandschrift mit mehreren benachbarten Weistümern (u.a. Malching) hindeutet, aus der dieses Dokument stammt. Der Haupttext ist ein direktes Zitat der Öffnung (Weistum) des Gotteshauses (Klosters) für die Hofmark Buch, mit 11 nummerierten Rechtssätzen. Erwähnt wird Herzog Stephan als historische Randnotiz zur Lehnsübernahme. Verortungshinweise: Pfarrdorf im Landgericht Landshut in Niederbayern; ehemals dem Kloster Frauenchiemsee gehörig; Nachbarschaft/Bezug zu München und Landshut (Gejaid-Grenzen); Bezug zu Erding (Weinabgabe an den Pfleger). Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.076411, 'lng': 7.3942} -> (48.45, 12.05); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Buch_am_Erlbach&language=de&params=48.45_N_12.05_E_region:DE-BY_type:city(3911))."
     },
     "original_link": "",
     "ort": "Buch",
     "koordinaten": {
-      "lat": 50.076411,
-      "lng": 7.3942
+      "lat": 48.45,
+      "lng": 12.05
     },
     "zeit": "",
     "typ": "Öfnung (Weistum)",
@@ -25237,11 +25303,14 @@
     "titel": "AUS DER EHHAFT ZU SINDELSDORF",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 657",
-      "notizen": "Keine Fußnoten im vorliegenden Ausschnitt vorhanden (Fußnotenzeichen ¹) und ²) im Text verweisen auf nicht mitgelieferte Anmerkungen). Haupttext ist Grimms Zitat aus der Ehhaft (Dorfordnung) zu Sindelsdorf, Regelung zu Zaunpflicht (Pannzäune) und Strafen bei Schäden."
+      "notizen": "Keine Fußnoten im vorliegenden Ausschnitt vorhanden (Fußnotenzeichen ¹) und ²) im Text verweisen auf nicht mitgelieferte Anmerkungen). Haupttext ist Grimms Zitat aus der Ehhaft (Dorfordnung) zu Sindelsdorf, Regelung zu Zaunpflicht (Pannzäune) und Strafen bei Schäden. Koordinate am 2026-08-19 korrigiert (vorher: None -> (47.7242348, 11.3329657); Quelle: Nominatim AUTO_PLAUSIBEL; Sindelsdorf, Habach (VGem), Landkreis Weilheim-Schongau, Bayern, 82404, Deutschland)."
     },
     "original_link": "",
     "ort": "Sindelsdorf",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 47.7242348,
+      "lng": 11.3329657
+    },
     "zeit": "",
     "typ": "Ehhaft",
     "schreiberinfo": "",
@@ -25507,11 +25576,14 @@
     "titel": "RECHTE ZU ISPER",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 692–694",
-      "notizen": "Fußnote 1 verweist auf Reils Donauländchen S. 225-227 als Quelle bzw. Parallelstelle und lokalisiert Isper im Isperthal an der linken Donauseite. Am Ende des Haupttextes findet sich eine weitere Fußnotenmarkierung (1) ohne im vorliegenden Ausschnitt sichtbaren Fußnotentext zu diesem zweiten Verweis (betrifft die Erwähnung der Herren von Meussau und der Dörfer Mäurhoffen/Zepering, die von der Königin damit belehnt wurden). Haupttext ist als direktes Zitat aus dem 'Yfsper Urbarbuch' gekennzeichnet ('So laut der von Yfsper vrbarbuech also'). Verortungshinweise: im Isperthal, auf der linken Seite der Donau; gehört zur Grafschaft Weitenegg (Weidenekh); Nachbarorte im Text: Ibs, Melk, Stein, Wimberg, Meussau, Mäurhoffen, Zepering; Bäche/Flüsse: Guettenpach, Ysper."
+      "notizen": "Fußnote 1 verweist auf Reils Donauländchen S. 225-227 als Quelle bzw. Parallelstelle und lokalisiert Isper im Isperthal an der linken Donauseite. Am Ende des Haupttextes findet sich eine weitere Fußnotenmarkierung (1) ohne im vorliegenden Ausschnitt sichtbaren Fußnotentext zu diesem zweiten Verweis (betrifft die Erwähnung der Herren von Meussau und der Dörfer Mäurhoffen/Zepering, die von der Königin damit belehnt wurden). Haupttext ist als direktes Zitat aus dem 'Yfsper Urbarbuch' gekennzeichnet ('So laut der von Yfsper vrbarbuech also'). Verortungshinweise: im Isperthal, auf der linken Seite der Donau; gehört zur Grafschaft Weitenegg (Weidenekh); Nachbarorte im Text: Ibs, Melk, Stein, Wimberg, Meussau, Mäurhoffen, Zepering; Bäche/Flüsse: Guettenpach, Ysper. Koordinate am 2026-08-19 korrigiert (vorher: None -> (48.2835259, 15.052468); Quelle: Nominatim AUTO_PLAUSIBEL; Katastralgemeinde Isper, Yspertal, Bezirk Melk, Niederösterreich, 3683, Österreich)."
     },
     "original_link": "",
     "ort": "Isper",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 48.2835259,
+      "lng": 15.052468
+    },
     "zeit": "1493",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -25637,11 +25709,14 @@
     "titel": "ÖFNUNG FÜR AUXMUS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 725–726",
-      "notizen": "Aus den mon. boic. 2, 525f. Grimm vermutet, dass es sich um das heutige Axams im Inntal handelt; verweist zur Namensform auf Sinnacher (Säben u. Brixen) I, 476, wo die Form „Ouxuuenes“ belegt sei. Laufende Kopfzeile auf den Seiten: WISING. AUXMUS | TIROL, was auf ein benachbartes Weistum (Wising) im selben Abschnitt hindeutet. Verortungshinweise: im Innthal; Tirol."
+      "notizen": "Aus den mon. boic. 2, 525f. Grimm vermutet, dass es sich um das heutige Axams im Inntal handelt; verweist zur Namensform auf Sinnacher (Säben u. Brixen) I, 476, wo die Form „Ouxuuenes“ belegt sei. Laufende Kopfzeile auf den Seiten: WISING. AUXMUS | TIROL, was auf ein benachbartes Weistum (Wising) im selben Abschnitt hindeutet. Verortungshinweise: im Innthal; Tirol. Koordinate am 2026-08-19 korrigiert (vorher: None -> (47.2307532, 11.279297); Quelle: Nominatim AUTO_PLAUSIBEL; Axams, Bezirk Innsbruck-Land, Tirol, 6094, Österreich)."
     },
     "original_link": "",
     "ort": "Axams",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 47.2307532,
+      "lng": 11.279297
+    },
     "zeit": "",
     "typ": "Öfnung (Weistum)",
     "schreiberinfo": "",
@@ -25710,13 +25785,13 @@
     "titel": "PLACITUM COLONIAE IN LAIAN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 733–734",
-      "notizen": "Titel aus Überschrift vermutet: \"PLACITUM COLONIAE IN LAIAN\". Laufende Kopfzeile: \"STUMM. LAIAN | TIROL\". Fußnote 1 identifiziert den Ort als Layen im Norithal (vallis Enniana), dem späteren Eisackviertel in Tirol, gelegen zwischen Klausen und Kollmann. Zeitangabe \"sec. xiv.\" stammt aus dem Haupttext selbst. Der Text nennt am Ende eine Liste von Hufen (hůbae) in Layano und deren Bebauer, die laut Grimms Abdruck offenbar nicht mit übernommen wurde (\"etc.\"). Lateinischer Text, Weistum über Rechte des Propstes (prepositus) gegenüber dem Meier (villicus) und den Hausgenossen (hausgnossi) der Kolonie Laian. Verortungshinweise: im Norithal (vallis Enniana); nachheriges Eisackviertel in Tirol; zwischen Klausen und Kollmann. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Mayen') — bitte manuell prüfen."
+      "notizen": "Titel aus Überschrift vermutet: \"PLACITUM COLONIAE IN LAIAN\". Laufende Kopfzeile: \"STUMM. LAIAN | TIROL\". Fußnote 1 identifiziert den Ort als Layen im Norithal (vallis Enniana), dem späteren Eisackviertel in Tirol, gelegen zwischen Klausen und Kollmann. Zeitangabe \"sec. xiv.\" stammt aus dem Haupttext selbst. Der Text nennt am Ende eine Liste von Hufen (hůbae) in Layano und deren Bebauer, die laut Grimms Abdruck offenbar nicht mit übernommen wurde (\"etc.\"). Lateinischer Text, Weistum über Rechte des Propstes (prepositus) gegenüber dem Meier (villicus) und den Hausgenossen (hausgnossi) der Kolonie Laian. Verortungshinweise: im Norithal (vallis Enniana); nachheriges Eisackviertel in Tirol; zwischen Klausen und Kollmann. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Mayen') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.329615, 'lng': 7.221258} -> (46.607777777778, 11.563055555556); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Lajen&language=de&params=46.607777777778_N_11.563055555556_E_region:IT-BZ_type:city(2833))."
     },
     "original_link": "",
     "ort": "Layen",
     "koordinaten": {
-      "lat": 50.329615,
-      "lng": 7.221258
+      "lat": 46.607777777778,
+      "lng": 11.563055555556
     },
     "zeit": "sec. xiv.",
     "typ": "Placitum",
@@ -25764,11 +25839,14 @@
     "titel": "AUS DER LANDSPRACHE ZU SCHLANDERS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 738–739",
-      "notizen": "Titel trägt Fußnotenzeichen 2), das sich auf die Ortsangabe bezieht: 'am Etsch, zwischen Glurns und Latsch im Vintschgau'. Eine weitere Fußnote 1) 'pfarrdorf des landgerichts Meran' bezieht sich vermutlich auf einen im Text genannten Ort (evtl. Schantzan/Schanzen, nicht eindeutig zuordenbar, da die Fußnotenziffer im vorgelegten Haupttext nicht direkt markiert ist). Der Haupttext ist von Grimm paraphrasiert (deutsche Übersetzung/Umschrift), enthält aber auch wörtliche Zitate in der Originalsprache (z.B. der einleitende Satz 'Das ist das man an Schantzaner pruckh offen sol...'). Am Ende fasst Grimm weitere Bestimmungen nur zusammen, ohne sie im Wortlaut wiederzugeben ('Das übrige sind genaue verordnungen...'). Konjekturvorschlag Grimms im Text: 'gerochenem (l. getrochenem) feuer'. Verortungshinweise: am Etsch, zwischen Glurns und Latsch im Vintschgau; Landgericht Meran; Gericht zu Schlanders; Ulten (angrenzendes Gebiet)."
+      "notizen": "Titel trägt Fußnotenzeichen 2), das sich auf die Ortsangabe bezieht: 'am Etsch, zwischen Glurns und Latsch im Vintschgau'. Eine weitere Fußnote 1) 'pfarrdorf des landgerichts Meran' bezieht sich vermutlich auf einen im Text genannten Ort (evtl. Schantzan/Schanzen, nicht eindeutig zuordenbar, da die Fußnotenziffer im vorgelegten Haupttext nicht direkt markiert ist). Der Haupttext ist von Grimm paraphrasiert (deutsche Übersetzung/Umschrift), enthält aber auch wörtliche Zitate in der Originalsprache (z.B. der einleitende Satz 'Das ist das man an Schantzaner pruckh offen sol...'). Am Ende fasst Grimm weitere Bestimmungen nur zusammen, ohne sie im Wortlaut wiederzugeben ('Das übrige sind genaue verordnungen...'). Konjekturvorschlag Grimms im Text: 'gerochenem (l. getrochenem) feuer'. Verortungshinweise: am Etsch, zwischen Glurns und Latsch im Vintschgau; Landgericht Meran; Gericht zu Schlanders; Ulten (angrenzendes Gebiet). Koordinate am 2026-08-19 korrigiert (vorher: None -> (46.6280688, 10.7734765); Quelle: Nominatim AUTO_PLAUSIBEL; Schlanders - Silandro, Vinschgau - Val Venosta, Bolzano - Bozen, Trentino-Alto Adige/Südtirol, Italia)."
     },
     "original_link": "",
     "ort": "Schlanders",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 46.6280688,
+      "lng": 10.7734765
+    },
     "zeit": "um 1400",
     "typ": "Landsprache (Weistum)",
     "schreiberinfo": "",
@@ -25780,11 +25858,14 @@
     "titel": "NACHTRÄGE.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 740",
-      "notizen": "Kein Haupttext und keine Fußnoten übermittelt; nur Kopfzeile \"SCHLANDERS\" und Überschrift \"NACHTRÄGE.\" vorhanden. Inhalt des Weistums selbst nicht verfügbar, daher keine inhaltlichen Angaben möglich."
+      "notizen": "Kein Haupttext und keine Fußnoten übermittelt; nur Kopfzeile \"SCHLANDERS\" und Überschrift \"NACHTRÄGE.\" vorhanden. Inhalt des Weistums selbst nicht verfügbar, daher keine inhaltlichen Angaben möglich. Koordinate am 2026-08-19 korrigiert (vorher: None -> (46.6280688, 10.7734765); Quelle: Nominatim AUTO_PLAUSIBEL; Schlanders - Silandro, Vinschgau - Val Venosta, Bolzano - Bozen, Trentino-Alto Adige/Südtirol, Italia)."
     },
     "original_link": "",
     "ort": "Schlanders",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 46.6280688,
+      "lng": 10.7734765
+    },
     "zeit": "",
     "typ": "",
     "schreiberinfo": "",
@@ -25828,13 +25909,13 @@
     "titel": "Weisthum zu Weilbach",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 741–743",
-      "notizen": "Fußnote 1 verortet Weilbach knapp: \"zwischen Mainz und Höchst\". Die laufende Kopfzeile auf den Seiten lautet \"OBERBREISGAU. WEILBACH | NACHTRÄGE | WEILBACH. WELMICH\" - dies deutet darauf hin, dass es sich um einen Nachtrag handelt, der in Grimms Werk unter der Rubrik \"Oberbreisgau\" bzw. \"Nachträge\" eingeordnet ist, obwohl der Inhalt selbst (Mainzer Bistum, Kloster St. Jakobsberg bei Mainz) auf eine Lage bei Mainz/Höchst hindeutet, nicht im eigentlichen Breisgau. Diese Diskrepanz zwischen Kopfzeile und inhaltlicher Verortung sollte beachtet werden. Der Text ist ein vollständiges notarielles Instrument (Weistum) mit Datierung nach Papst Innocenz VIII. (6. Regierungsjahr), ausgestellt durch den Notar Philippus Lang von Garlach, Kleriker des Wormser Bistums. Genannt werden Schultheiß Dietrich von Erlenbach im Auftrag des Abtes Herman vom Kloster St. Jakobsberg (Benediktinerorden) bei Mainz, sowie der Sindicus/Gewalthaber Johann Keller. Zeugen: Pfarrer Jacob Ruffus von Rüdesheim zu Weilbach, Morchen, Conrad Pusch, Schalken u.a. Der Text enthält Aufzählungen von Rechten und Pflichten (Zinsen, Fronungen, Hauptrecht, Dingtage), typisch für ein Weistum. Verortungshinweise: zwischen Mainz und Höchst; Mentzer bisthumbs (Mainzer Bistum); Kloster/Abtei St. Jakobsberg außerhalb Mainz als Grundherr genannt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Weidelbach ') — bitte manuell prüfen."
+      "notizen": "Fußnote 1 verortet Weilbach knapp: \"zwischen Mainz und Höchst\". Die laufende Kopfzeile auf den Seiten lautet \"OBERBREISGAU. WEILBACH | NACHTRÄGE | WEILBACH. WELMICH\" - dies deutet darauf hin, dass es sich um einen Nachtrag handelt, der in Grimms Werk unter der Rubrik \"Oberbreisgau\" bzw. \"Nachträge\" eingeordnet ist, obwohl der Inhalt selbst (Mainzer Bistum, Kloster St. Jakobsberg bei Mainz) auf eine Lage bei Mainz/Höchst hindeutet, nicht im eigentlichen Breisgau. Diese Diskrepanz zwischen Kopfzeile und inhaltlicher Verortung sollte beachtet werden. Der Text ist ein vollständiges notarielles Instrument (Weistum) mit Datierung nach Papst Innocenz VIII. (6. Regierungsjahr), ausgestellt durch den Notar Philippus Lang von Garlach, Kleriker des Wormser Bistums. Genannt werden Schultheiß Dietrich von Erlenbach im Auftrag des Abtes Herman vom Kloster St. Jakobsberg (Benediktinerorden) bei Mainz, sowie der Sindicus/Gewalthaber Johann Keller. Zeugen: Pfarrer Jacob Ruffus von Rüdesheim zu Weilbach, Morchen, Conrad Pusch, Schalken u.a. Der Text enthält Aufzählungen von Rechten und Pflichten (Zinsen, Fronungen, Hauptrecht, Dingtage), typisch für ein Weistum. Verortungshinweise: zwischen Mainz und Höchst; Mentzer bisthumbs (Mainzer Bistum); Kloster/Abtei St. Jakobsberg außerhalb Mainz als Grundherr genannt. Koordinaten-Zuordnung unsicher (Score 0.89, CSV-Eintrag 'Weidelbach ') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.995189, 'lng': 7.566375} -> (50.0451519, 8.435043); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Weilbach_(Flörsheim)&language=de&params=50.0451519_N_8.435043_E_dim:10000_region:DE-HE_type:city(4030))."
     },
     "original_link": "",
     "ort": "Weilbach",
     "koordinaten": {
-      "lat": 49.995189,
-      "lng": 7.566375
+      "lat": 50.0451519,
+      "lng": 8.435043
     },
     "zeit": "1489",
     "typ": "Weisthum",
@@ -25952,7 +26033,7 @@
     "titel": "WEISTHUM ZU RIMSBACH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 750–752",
-      "notizen": "Fußnote 1 verortet Rimsbach 'östlich von Merzig'. Datierung im Haupttext: 'montag 14. november 1558'. Text ist ein wörtliches Weistumsprotokoll mit mehreren Weisungsfragen an den scheffen (Schöffen) zu Grenzen, Herrschaftsrechten (vier Herren: Abt von Mettlach als Halbherr, Junker Johann vom Hagen als Viertherr, Amtmann zu Serfsburg für den Herzog von Lothringen als Viertherr), Hochgericht, Straßenrecht (Geleit), Fund- und Strafrecht sowie einer eingeschobenen Zeugenaussage (Mergen Endries) über einen Vorfall vor über 40 Jahren (Kelchdiebstahl, Verfolgung eines Missetäters, Tod desselben durch Schlag mit einem Trotstab). Diese Zeugenaussage ist als direkte Rede/Paraphrase im Protokollstil wiedergegeben, keine separate Grimm'sche Interpretation. Verortungshinweise: östlich von Merzig; Gotshaus Mettlach (herr abt des gotshaufs Metloch); Buschfeldt/Buchfeldt (iuncker Johann vom Hagen als herr zu Buschfeldt); Serfsburg/Sersburg/Serfsberg (amptman zu Serfsburg von wegen des herzogen von Lothringen); Bettingen (Wohnort einer im Text genannten Person)."
+      "notizen": "Fußnote 1 verortet Rimsbach 'östlich von Merzig'. Datierung im Haupttext: 'montag 14. november 1558'. Text ist ein wörtliches Weistumsprotokoll mit mehreren Weisungsfragen an den scheffen (Schöffen) zu Grenzen, Herrschaftsrechten (vier Herren: Abt von Mettlach als Halbherr, Junker Johann vom Hagen als Viertherr, Amtmann zu Serfsburg für den Herzog von Lothringen als Viertherr), Hochgericht, Straßenrecht (Geleit), Fund- und Strafrecht sowie einer eingeschobenen Zeugenaussage (Mergen Endries) über einen Vorfall vor über 40 Jahren (Kelchdiebstahl, Verfolgung eines Missetäters, Tod desselben durch Schlag mit einem Trotstab). Diese Zeugenaussage ist als direkte Rede/Paraphrase im Protokollstil wiedergegeben, keine separate Grimm'sche Interpretation. Verortungshinweise: östlich von Merzig; Gotshaus Mettlach (herr abt des gotshaufs Metloch); Buschfeldt/Buchfeldt (iuncker Johann vom Hagen als herr zu Buschfeldt); Serfsburg/Sersburg/Serfsberg (amptman zu Serfsburg von wegen des herzogen von Lothringen); Bettingen (Wohnort einer im Text genannten Person). Koordinate am 2026-08-19 geprueft (alte Koordinate bestaetigt korrekt; geocode_pruefliste_ECHT_band3.csv)."
     },
     "original_link": "",
     "ort": "Rimsbach",
@@ -26073,11 +26154,14 @@
     "titel": "WEISTHUM VON WINTERBURG",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 767–768",
-      "notizen": "Fußnote 1: In einer Niederschrift von 1591 werden 'die junckern von Langenaw' genannt (abweichende Lesart/Ergänzung). Fußnote 2: Ortsangabe Grimms zur Lage Winterburgs 'zwischen Gemünd und Creutzenach auf dem Hundsrücken'. Der Text nennt die Grafen zu Sponheim als Herrschaft. Im Text werden vier zugehörige Dörfer genannt: Winterbach, Gebrodt, Spaldt und Allenfelt, die als 'frei eigen' der Grafen zu Sponheim bezeichnet werden und Dienste zum Halsgericht leisten. Laufende Kopfzeile verortet den Text unter 'NACHTRÄGE' zu Tholey/Niederdiefenbach/Winterburg. Verortungshinweise: zwischen Gemünd und Creutzenach (Kreuznach) auf dem Hundsrücken; zugehörig zur Grafschaft Sponheim; nahe Kreuznach (Markt dort erwähnt)."
+      "notizen": "Fußnote 1: In einer Niederschrift von 1591 werden 'die junckern von Langenaw' genannt (abweichende Lesart/Ergänzung). Fußnote 2: Ortsangabe Grimms zur Lage Winterburgs 'zwischen Gemünd und Creutzenach auf dem Hundsrücken'. Der Text nennt die Grafen zu Sponheim als Herrschaft. Im Text werden vier zugehörige Dörfer genannt: Winterbach, Gebrodt, Spaldt und Allenfelt, die als 'frei eigen' der Grafen zu Sponheim bezeichnet werden und Dienste zum Halsgericht leisten. Laufende Kopfzeile verortet den Text unter 'NACHTRÄGE' zu Tholey/Niederdiefenbach/Winterburg. Verortungshinweise: zwischen Gemünd und Creutzenach (Kreuznach) auf dem Hundsrücken; zugehörig zur Grafschaft Sponheim; nahe Kreuznach (Markt dort erwähnt). Koordinate am 2026-08-19 korrigiert (vorher: None -> (49.8631916, 7.6504364); Quelle: Nominatim AUTO_PLAUSIBEL; Winterburg, Nahe-Glan, Landkreis Bad Kreuznach, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Winterburg",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 49.8631916,
+      "lng": 7.6504364
+    },
     "zeit": "1591",
     "typ": "",
     "schreiberinfo": "",
@@ -26089,13 +26173,13 @@
     "titel": "AUS DEM WEISTUM ZU LONSHEIM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 768–769",
-      "notizen": "Titel und Ortsangabe aus Grimms Überschrift; Fußnote 1 erläutert Lage im Amt Kreuznach und grenzt den Ort ausdrücklich von Langenlonsheim am linken Rheinufer unweit Bretzenheim ab, mit einem Fragezeichen Grimms, das auf Unsicherheit der Identifikation hindeutet. Der Haupttext enthält offenbar eine weitere Fußnote (1) mitten im Text, die zusätzliche Weistumsbestimmungen (zu Weglängen, Malsteinen, Zäunen) referiert; der genaue Bezug dieser eingefügten Fußnote zum Haupttext ist im vorliegenden Ausschnitt nicht eindeutig, da der Text an dieser Stelle stark fragmentiert/verschachtelt wiedergegeben ist. Kopfzeile \"NACHTRÄGE\" verweist auf Grimms Nachtragsteil zu Bd. 3. Verortungshinweise: im Amt Creuzenach (Kreuznach); verschieden von Langenlonsheim am linken Rheinufer unweit Bretzenheim."
+      "notizen": "Titel und Ortsangabe aus Grimms Überschrift; Fußnote 1 erläutert Lage im Amt Kreuznach und grenzt den Ort ausdrücklich von Langenlonsheim am linken Rheinufer unweit Bretzenheim ab, mit einem Fragezeichen Grimms, das auf Unsicherheit der Identifikation hindeutet. Der Haupttext enthält offenbar eine weitere Fußnote (1) mitten im Text, die zusätzliche Weistumsbestimmungen (zu Weglängen, Malsteinen, Zäunen) referiert; der genaue Bezug dieser eingefügten Fußnote zum Haupttext ist im vorliegenden Ausschnitt nicht eindeutig, da der Text an dieser Stelle stark fragmentiert/verschachtelt wiedergegeben ist. Kopfzeile \"NACHTRÄGE\" verweist auf Grimms Nachtragsteil zu Bd. 3. Verortungshinweise: im Amt Creuzenach (Kreuznach); verschieden von Langenlonsheim am linken Rheinufer unweit Bretzenheim. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.894722, 'lng': 7.898056} -> (49.7782744, 8.0792878); Quelle: Nominatim AUTO_PLAUSIBEL; Lonsheim, Alzey-Land, Landkreis Alzey-Worms, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Lonsheim",
     "koordinaten": {
-      "lat": 49.894722,
-      "lng": 7.898056
+      "lat": 49.7782744,
+      "lng": 8.0792878
     },
     "zeit": "1595",
     "typ": "",
@@ -26108,13 +26192,13 @@
     "titel": "AUS DEM ERENBERGER W.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 770",
-      "notizen": "Weistum betrifft die Lehenleute von Dommershausen und Dorweiler; genannt werden die Grafen/Fürsten von Sponheim als Lehensherren. Text nennt Ort als 'Ernberg' bzw. 'Erenberg'; laut Fußnote 1 identisch mit Erenberg am Ehrenbach auf dem rechten Moselufer oberhalb Alken. Kopfzeile der Seite lautet 'NACHTRÄGE', da es sich um einen Nachtrag Grimms handelt. Der Haupttext ist ein direktes Zitat der Weistumsformel (mit eingestreuten Sprecheranweisungen 'Spricht der vogt...'), keine Paraphrase Grimms. Verortungshinweise: am Ehrenbach; auf dem rechten Moselufer oberhalb Alken. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Nürnberg') — bitte manuell prüfen."
+      "notizen": "Weistum betrifft die Lehenleute von Dommershausen und Dorweiler; genannt werden die Grafen/Fürsten von Sponheim als Lehensherren. Text nennt Ort als 'Ernberg' bzw. 'Erenberg'; laut Fußnote 1 identisch mit Erenberg am Ehrenbach auf dem rechten Moselufer oberhalb Alken. Kopfzeile der Seite lautet 'NACHTRÄGE', da es sich um einen Nachtrag Grimms handelt. Der Haupttext ist ein direktes Zitat der Weistumsformel (mit eingestreuten Sprecheranweisungen 'Spricht der vogt...'), keine Paraphrase Grimms. Verortungshinweise: am Ehrenbach; auf dem rechten Moselufer oberhalb Alken. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Nürnberg') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 49.455556, 'lng': 11.078611} -> (50.14, 7.4216666666667); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Dorweiler_(Dommershausen)&language=de&params=50.14_N_7.4216666666667_E_dim:10000_region:DE-RP_type:city(273))."
     },
     "original_link": "",
     "ort": "Ehrenberg",
     "koordinaten": {
-      "lat": 49.455556,
-      "lng": 11.078611
+      "lat": 50.14,
+      "lng": 7.4216666666667
     },
     "zeit": "",
     "typ": "Weistum",
@@ -26162,11 +26246,14 @@
     "titel": "SENDWEISTHUM ZU BOPPARD",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 774–777",
-      "notizen": "Grimm ordnet dieses Weistum unter 'Nachträge' ein; laufende Kopfzeile: NACHTRÄGE | BOPPARD | BOPPARD. RHENSE. Keine Fußnoten vorhanden im vorliegenden Auszug. Der Text ist ein ausführliches Sendweisthum (kirchenrechtliches Weistum) über den 'heiligen Send' zu Boppard, verhandelt zwischen dem Untervogt/Schöffen Cristian Schaiffe im Namen von Rat und Gemeinde der Stadt Boppard und dem Pastor/Sendekan Johann Smytgin von Zyssen, unter Bezugnahme auf ein älteres, wortgetreu verlesenes Instrument (Urkunde) der Sendekane Conrait von Dusenauwe (Pastor zu Rhense) und Reynhart von Bopart. Datierung erfolgt nach Trierer Bistumsgewohnheit im Pontifikat Papst Gregors XII., 23. Januar, im Jahr 1412 laut Text ('dusent vierhundert vnd darnae jnne dem zwolfften jair'). Erzbischof von Trier zur Zeit der Beurkundung: Wernher (Werner von Falkenstein). Verortungshinweise: Pfarrkirche zu Boppard, Kirchsprengel Trier; Rhense (Rense) genannt als Nachbarort; Wormsen bei St. Martin (sente Martin zu Wurmisse) als Sitz des Propstes; Rhein (Rin) als Grenzfluss der Zehntbezirke; Tuberbach und Beyerbach als Grenzbäche; Dörfer Vilczen (Filsen) und Kester genannt; Erzbistum Trier."
+      "notizen": "Grimm ordnet dieses Weistum unter 'Nachträge' ein; laufende Kopfzeile: NACHTRÄGE | BOPPARD | BOPPARD. RHENSE. Keine Fußnoten vorhanden im vorliegenden Auszug. Der Text ist ein ausführliches Sendweisthum (kirchenrechtliches Weistum) über den 'heiligen Send' zu Boppard, verhandelt zwischen dem Untervogt/Schöffen Cristian Schaiffe im Namen von Rat und Gemeinde der Stadt Boppard und dem Pastor/Sendekan Johann Smytgin von Zyssen, unter Bezugnahme auf ein älteres, wortgetreu verlesenes Instrument (Urkunde) der Sendekane Conrait von Dusenauwe (Pastor zu Rhense) und Reynhart von Bopart. Datierung erfolgt nach Trierer Bistumsgewohnheit im Pontifikat Papst Gregors XII., 23. Januar, im Jahr 1412 laut Text ('dusent vierhundert vnd darnae jnne dem zwolfften jair'). Erzbischof von Trier zur Zeit der Beurkundung: Wernher (Werner von Falkenstein). Verortungshinweise: Pfarrkirche zu Boppard, Kirchsprengel Trier; Rhense (Rense) genannt als Nachbarort; Wormsen bei St. Martin (sente Martin zu Wurmisse) als Sitz des Propstes; Rhein (Rin) als Grenzfluss der Zehntbezirke; Tuberbach und Beyerbach als Grenzbäche; Dörfer Vilczen (Filsen) und Kester genannt; Erzbistum Trier. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2312823, 7.5885884); Quelle: Nominatim AUTO_PLAUSIBEL; Boppard, Rhein-Hunsrück-Kreis, Rheinland-Pfalz, 56154, Deutschland)."
     },
     "original_link": "",
     "ort": "Boppard",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2312823,
+      "lng": 7.5885884
+    },
     "zeit": "1412",
     "typ": "Sendweisthum",
     "schreiberinfo": "",
@@ -26178,11 +26265,14 @@
     "titel": "AUS DEM W. ZU RHENSE",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 777–780",
-      "notizen": "Grimms Fußnote 1 lokalisiert Rhense \"am linken Rheinufer oberhalb Coblenz\". Text ist eine Abschrift von 1573 nach einem Original von 1456. Laufende Kopfzeile der Seiten lautet \"BOPPARD. RHENSE | NACHTRÄGE | RHENS\", was auf eine Zuordnung zu einem Nachtragsabschnitt zu Boppard/Rhens hinweist. Im Text erscheint auch der Ortsname \"Bobbert\" (wohl Boppard) im Zusammenhang mit dem Brotkauf der Bürgermeister. Am Textende (Fußnote 1, zweites Vorkommen) ist keine weitere inhaltliche Fußnote angegeben außer der Verortung. Der Text enthält detaillierte Rechtsbräuche (Eidesleistung, Ladungen, Blutgericht, Totschlagverfahren, Marktrecht für Brot/Wecken), die typisch für ein Dinggerichtsweistum sind. Verortungshinweise: am linken Rheinufer oberhalb Coblenz; Bobbert (Boppard) in der Nähe genannt."
+      "notizen": "Grimms Fußnote 1 lokalisiert Rhense \"am linken Rheinufer oberhalb Coblenz\". Text ist eine Abschrift von 1573 nach einem Original von 1456. Laufende Kopfzeile der Seiten lautet \"BOPPARD. RHENSE | NACHTRÄGE | RHENS\", was auf eine Zuordnung zu einem Nachtragsabschnitt zu Boppard/Rhens hinweist. Im Text erscheint auch der Ortsname \"Bobbert\" (wohl Boppard) im Zusammenhang mit dem Brotkauf der Bürgermeister. Am Textende (Fußnote 1, zweites Vorkommen) ist keine weitere inhaltliche Fußnote angegeben außer der Verortung. Der Text enthält detaillierte Rechtsbräuche (Eidesleistung, Ladungen, Blutgericht, Totschlagverfahren, Marktrecht für Brot/Wecken), die typisch für ein Dinggerichtsweistum sind. Verortungshinweise: am linken Rheinufer oberhalb Coblenz; Bobbert (Boppard) in der Nähe genannt. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.281527, 7.6162978); Quelle: Nominatim AUTO_PLAUSIBEL; Rhens, Rhein-Mosel, Landkreis Mayen-Koblenz, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Rhens",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.281527,
+      "lng": 7.6162978
+    },
     "zeit": "1456",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -26305,7 +26395,7 @@
     "titel": "WEISTHUM ZU EDINGEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 793–794",
-      "notizen": "Fußnote 1: Edingen liegt unterhalb Echternach; Text ist aus mehreren späteren Copien zusammengestellt. Am Schluss einer Kopie von 1669 findet sich ein Zusatz (Paraphrase Grimms bzw. Zitat aus dieser Kopie), wonach ein gewisser Weyller Hans von Prüm wegen Grenzverrückung und Beschimpfung als 'Landdieb' von seinem Schöffenstuhl suspendiert wurde. Der Text steht unter der laufenden Kopfzeile 'FELLERICH. EDINGEN | NACHTRÄGE', was auf eine nachträgliche Einordnung durch Grimm hinweist. Bezug zum Kloster/Gotteshaus St. Willibrord in Echternach als Grundherrn. Verortungshinweise: unterhalb Echternach; gehört zum Gotteshaus/Kloster St. Willibrord (Echternach); Erwähnung von Murstorff (Sitz der Vögte); Erwähnung des Propsts von Bitburg (Biedtborgh); Erwähnung von Prüm (Weyller Hans von Prúm)."
+      "notizen": "Fußnote 1: Edingen liegt unterhalb Echternach; Text ist aus mehreren späteren Copien zusammengestellt. Am Schluss einer Kopie von 1669 findet sich ein Zusatz (Paraphrase Grimms bzw. Zitat aus dieser Kopie), wonach ein gewisser Weyller Hans von Prüm wegen Grenzverrückung und Beschimpfung als 'Landdieb' von seinem Schöffenstuhl suspendiert wurde. Der Text steht unter der laufenden Kopfzeile 'FELLERICH. EDINGEN | NACHTRÄGE', was auf eine nachträgliche Einordnung durch Grimm hinweist. Bezug zum Kloster/Gotteshaus St. Willibrord in Echternach als Grundherrn. Verortungshinweise: unterhalb Echternach; gehört zum Gotteshaus/Kloster St. Willibrord (Echternach); Erwähnung von Murstorff (Sitz der Vögte); Erwähnung des Propsts von Bitburg (Biedtborgh); Erwähnung von Prüm (Weyller Hans von Prúm). Koordinate am 2026-08-19 geprueft (alte Koordinate bestaetigt korrekt; geocode_pruefliste_ECHT_band3.csv)."
     },
     "original_link": "",
     "ort": "Edingen",
@@ -26378,11 +26468,14 @@
     "titel": "WEISTHUM ZU MECKEL. 1541.",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 796–798",
-      "notizen": "Fußnote 1 zum Titel: Lagebestimmung des Orts Meckel (nordwestlich von Welschbillig, westlich von Ittel). Fußnote 1 im Text ('gerauftem'): im Weistum von 1669 steht stattdessen 'mit halben gezuckten'. Der Haupttext besteht aus zwei Teilen: zunächst das eigentliche Schöffenweistum von 1541 (Hoefweistum zu Meckel, betrifft Echternach als Grundherrn, Kloster St. Willibrord, und den Junker von Clerff/Klerff als Vogt), danach ein separat gekennzeichneter Auszug 'Aus dem w. von 1669', der Parallel- bzw. Ergänzungsbestimmungen zu Freiheit, Kurmut, Vogtrecht und Bußen enthält. Grimm ordnet den Text unter 'Nachträge' ein (laufende Kopfzeile). Verortungshinweise: nordwestlich von Welschbillig; westlich von Ittel."
+      "notizen": "Fußnote 1 zum Titel: Lagebestimmung des Orts Meckel (nordwestlich von Welschbillig, westlich von Ittel). Fußnote 1 im Text ('gerauftem'): im Weistum von 1669 steht stattdessen 'mit halben gezuckten'. Der Haupttext besteht aus zwei Teilen: zunächst das eigentliche Schöffenweistum von 1541 (Hoefweistum zu Meckel, betrifft Echternach als Grundherrn, Kloster St. Willibrord, und den Junker von Clerff/Klerff als Vogt), danach ein separat gekennzeichneter Auszug 'Aus dem w. von 1669', der Parallel- bzw. Ergänzungsbestimmungen zu Freiheit, Kurmut, Vogtrecht und Bußen enthält. Grimm ordnet den Text unter 'Nachträge' ein (laufende Kopfzeile). Verortungshinweise: nordwestlich von Welschbillig; westlich von Ittel. Koordinate am 2026-08-19 korrigiert (vorher: None -> (49.8895226, 6.5153087); Quelle: Nominatim AUTO_PLAUSIBEL; Meckel, Bitburger Land, Eifelkreis Bitburg-Prüm, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Meckel",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 49.8895226,
+      "lng": 6.5153087
+    },
     "zeit": "1541",
     "typ": "Hoefweistum (Weistum)",
     "schreiberinfo": "",
@@ -26394,11 +26487,14 @@
     "titel": "Weisthum des Schönfelderwaldes",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 798–802",
-      "notizen": "Fußnote 1 von Grimm: 'bei Orenhofen oder Dudeldorf an der Kill? Bd. III. 51' - Grimm selbst unsicher über genaue Lokalisierung. Der Haupttext enthält einen offensichtlichen Encoding-/OCR-Fehler: ein eingebetteter, fehlerhaft dekodierter JSON-Fragment-Block mit buchstabenweise getrennten Zeichen (Artefakt der Digitalisierung, kein Originaltext) unterbricht den fortlaufenden Text zwischen den Passagen zu den Bußgeldern und dem Text zu 'der soll jnen alsdann recht loſsen...'. Dieser Abschnitt wurde bei der Transkription rekonstruiert/übersprungen, da er offensichtlich kein historischer Text ist, sondern ein technischer Fehler. Der Text bezieht sich auf zwei Institutionen: das Kloster Himmelrod (Hemmeroth/Hemrode) und das Frauenstift Oehren (Ohrren/Öhren) bei Trier, sowie den Amtmann zu Dudeldorf und den Herrn zu Criechingen. Die Nachträge-Kennzeichnung in der Kopfzeile deutet darauf hin, dass dieses Weistum als Nachtrag zu einem früher (Bd. III, S. 51) behandelten Ort eingeordnet wurde. Verortungshinweise: bei Orenhofen oder Dudeldorf an der Kill; Amtmann zu Dudeldorff; Kloster/Abt zu Himmelrodt (Hemmeroth/Hemrode); Frauen-/Abteikloster zu Ohrren (Oehren); Schönfelt/Schönfeld als Hof genannt; Zendtner zu Breyfs, Zemmern, Rodt und Schletweyler als benachbarte Vogteibezirke."
+      "notizen": "Fußnote 1 von Grimm: 'bei Orenhofen oder Dudeldorf an der Kill? Bd. III. 51' - Grimm selbst unsicher über genaue Lokalisierung. Der Haupttext enthält einen offensichtlichen Encoding-/OCR-Fehler: ein eingebetteter, fehlerhaft dekodierter JSON-Fragment-Block mit buchstabenweise getrennten Zeichen (Artefakt der Digitalisierung, kein Originaltext) unterbricht den fortlaufenden Text zwischen den Passagen zu den Bußgeldern und dem Text zu 'der soll jnen alsdann recht loſsen...'. Dieser Abschnitt wurde bei der Transkription rekonstruiert/übersprungen, da er offensichtlich kein historischer Text ist, sondern ein technischer Fehler. Der Text bezieht sich auf zwei Institutionen: das Kloster Himmelrod (Hemmeroth/Hemrode) und das Frauenstift Oehren (Ohrren/Öhren) bei Trier, sowie den Amtmann zu Dudeldorf und den Herrn zu Criechingen. Die Nachträge-Kennzeichnung in der Kopfzeile deutet darauf hin, dass dieses Weistum als Nachtrag zu einem früher (Bd. III, S. 51) behandelten Ort eingeordnet wurde. Verortungshinweise: bei Orenhofen oder Dudeldorf an der Kill; Amtmann zu Dudeldorff; Kloster/Abt zu Himmelrodt (Hemmeroth/Hemrode); Frauen-/Abteikloster zu Ohrren (Oehren); Schönfelt/Schönfeld als Hof genannt; Zendtner zu Breyfs, Zemmern, Rodt und Schletweyler als benachbarte Vogteibezirke. Koordinate am 2026-08-19 korrigiert (vorher: None -> (49.8970074, 6.652498); Quelle: Nominatim AUTO_PLAUSIBEL; Orenhofen, Speicher, Eifelkreis Bitburg-Prüm, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Orenhofen",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 49.8970074,
+      "lng": 6.652498
+    },
     "zeit": "1584",
     "typ": "Weisthum (Scheffenweistum)",
     "schreiberinfo": "",
@@ -26483,11 +26579,14 @@
     "titel": "AUS DEM W. ZU GRENDERICH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 806–807",
-      "notizen": "Nachtrag bei Grimm. Titel mit hochgestellter Fußnotenziffer 3) im Original. Fußnote 1) enthält einen Zusatz aus einem 'spät. w.' (späteren Weistum) zu Abgaben von Wachs auf Splinter und Kaimmeter. Fußnote 2) bezieht sich auf Nieder Ernst (in der Kopfzeile mitgenannt) und stellt fest, dass jenes Weistum größtenteils mit denen von Neef und Nieder Ernst übereinstimmt, weshalb nur abweichende Stellen ausgezogen wurden. Fußnote 3) verortet Grenderich zwischen Zell und Senheim. Domcüster von Trier als Grundherr genannt. Verortungshinweise: zwischen Zell und Senheim (an der Mosel); das Weistum stimmt größtenteils mit denen von Neef und Nieder Ernst überein; Nieder Ernst liegt am linken Moselufer zwischen Neef und Eller."
+      "notizen": "Nachtrag bei Grimm. Titel mit hochgestellter Fußnotenziffer 3) im Original. Fußnote 1) enthält einen Zusatz aus einem 'spät. w.' (späteren Weistum) zu Abgaben von Wachs auf Splinter und Kaimmeter. Fußnote 2) bezieht sich auf Nieder Ernst (in der Kopfzeile mitgenannt) und stellt fest, dass jenes Weistum größtenteils mit denen von Neef und Nieder Ernst übereinstimmt, weshalb nur abweichende Stellen ausgezogen wurden. Fußnote 3) verortet Grenderich zwischen Zell und Senheim. Domcüster von Trier als Grundherr genannt. Verortungshinweise: zwischen Zell und Senheim (an der Mosel); das Weistum stimmt größtenteils mit denen von Neef und Nieder Ernst überein; Nieder Ernst liegt am linken Moselufer zwischen Neef und Eller. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.0652962, 7.2278568); Quelle: Nominatim AUTO_PLAUSIBEL; Grenderich, Zell (Mosel), Landkreis Cochem-Zell, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Grenderich",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.0652962,
+      "lng": 7.2278568
+    },
     "zeit": "1567",
     "typ": "",
     "schreiberinfo": "",
@@ -26550,7 +26649,7 @@
     "titel": "HOEHGEDING ZU TREIS",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 811",
-      "notizen": "Keine Fußnoten vorhanden. Kopfzeile nennt \"TREIS. ALKEN\" als Grimms Regionseinteilung, was auf die Nähe von Treis und Alken an der Mosel hindeutet, jedoch ohne explizite geographische Zuordnung im Haupttext selbst."
+      "notizen": "Keine Fußnoten vorhanden. Kopfzeile nennt \"TREIS. ALKEN\" als Grimms Regionseinteilung, was auf die Nähe von Treis und Alken an der Mosel hindeutet, jedoch ohne explizite geographische Zuordnung im Haupttext selbst. Koordinate am 2026-08-19 geprueft (alte Koordinate bestaetigt korrekt; geocode_pruefliste_ECHT_band3.csv)."
     },
     "original_link": "",
     "ort": "Treis",
@@ -26569,11 +26668,14 @@
     "titel": "WEISTHUM ZU ALKEN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 811–813",
-      "notizen": "Text ist Teil der Nachträge Grimms (Kopfzeile: TREIS. ALKEN | NACHTRÄGE | ALKEN. MONREAL). Enthält Bericht über Gerichtsverhandlung mit trierischem und kölnischem Vogt, Vereidigung der Bürgermeister von Alken, Oberfell und Cathenes, anschließend das eigentliche Scheffenweistum zu Alken (Rechte beider Kurfürsten Trier und Köln, Rechte des Abtes von Laach). Grimm verweist auf ein weiteres, abweichendes Weistum aus den trierischen Mannbüchern, dessen Anfang bereits an anderer Stelle (II, 462) abgedruckt sei ('es folgt der anfang des II, 462 abgedruckten'). Keine Fußnoten vorhanden im vorgelegten Ausschnitt. Verortungshinweise: Kloster Laach (Abt von Laach mit Hof zu Alken); Oberfell; Cathenes (Cattenes); gemeinsames Gericht der Kurfürsten von Trier und Köln."
+      "notizen": "Text ist Teil der Nachträge Grimms (Kopfzeile: TREIS. ALKEN | NACHTRÄGE | ALKEN. MONREAL). Enthält Bericht über Gerichtsverhandlung mit trierischem und kölnischem Vogt, Vereidigung der Bürgermeister von Alken, Oberfell und Cathenes, anschließend das eigentliche Scheffenweistum zu Alken (Rechte beider Kurfürsten Trier und Köln, Rechte des Abtes von Laach). Grimm verweist auf ein weiteres, abweichendes Weistum aus den trierischen Mannbüchern, dessen Anfang bereits an anderer Stelle (II, 462) abgedruckt sei ('es folgt der anfang des II, 462 abgedruckten'). Keine Fußnoten vorhanden im vorgelegten Ausschnitt. Verortungshinweise: Kloster Laach (Abt von Laach mit Hof zu Alken); Oberfell; Cathenes (Cattenes); gemeinsames Gericht der Kurfürsten von Trier und Köln. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.2456152, 7.4482849); Quelle: Nominatim AUTO_PLAUSIBEL; Alken, Rhein-Mosel, Landkreis Mayen-Koblenz, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Alken",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.2456152,
+      "lng": 7.4482849
+    },
     "zeit": "17. april",
     "typ": "Weistum",
     "schreiberinfo": "Gerichtsschreiber (nicht namentlich genannt), Weistum aus dem Gerichtsbuch verlesen",
@@ -26623,11 +26725,14 @@
     "titel": "WEISTHUM ZU KRUFT",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 816–819",
-      "notizen": "Aus dem Original auf Pergament laut Grimms Fußnote. Grimm merkt an, dass Auszüge aus älteren Weistümern übereinstimmen (Bd. III, 52). Der Text steht in Grimms 'Nachträge'-Abschnitt; laufende Kopfzeile nennt 'Kruft' bzw. 'Kruft. Obermendig', was auf eine Zusammenstellung benachbarter Weistümer in diesem Abschnitt hindeutet. Der Haupttext ist ein wörtliches Zitat des Weistums (Rechtsweisung der Schöffen vor dem Abt Johann von Cochem, Abt des Gotteshauses Laach). Verortungshinweise: Gotshaus Lach (Kloster Laach) als Grund- und Gerichtsherr; Nierenhem (Niedernehm/Nachbarort mit Holzrechten in der Lafshelden)."
+      "notizen": "Aus dem Original auf Pergament laut Grimms Fußnote. Grimm merkt an, dass Auszüge aus älteren Weistümern übereinstimmen (Bd. III, 52). Der Text steht in Grimms 'Nachträge'-Abschnitt; laufende Kopfzeile nennt 'Kruft' bzw. 'Kruft. Obermendig', was auf eine Zusammenstellung benachbarter Weistümer in diesem Abschnitt hindeutet. Der Haupttext ist ein wörtliches Zitat des Weistums (Rechtsweisung der Schöffen vor dem Abt Johann von Cochem, Abt des Gotteshauses Laach). Verortungshinweise: Gotshaus Lach (Kloster Laach) als Grund- und Gerichtsherr; Nierenhem (Niedernehm/Nachbarort mit Holzrechten in der Lafshelden). Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.3873905, 7.3388191); Quelle: Nominatim AUTO_PLAUSIBEL; Kruft, Pellenz, Landkreis Mayen-Koblenz, Rheinland-Pfalz, 56642, Deutschland)."
     },
     "original_link": "",
     "ort": "Kruft",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.3873905,
+      "lng": 7.3388191
+    },
     "zeit": "1585",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -26639,13 +26744,13 @@
     "titel": "WEISTHUM ZU OBERMENDIG",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 819–821",
-      "notizen": "Text laut Fußnote 1 \"alles undeutlich, unvollständig und verderbt\". Steht unter Grimms Rubrik \"Nachträge\" zu Kruft/Obermendig; Kopfzeile wechselt zwischen \"KRUFT. OBERMENDIG\", \"NACHTRÄGE\" und \"OBERMENDIG\", was auf einen Nachtrag zu einem bereits an anderer Stelle behandelten Weistum (Kruft/Obermendig) hindeutet. Text enthält zahlreiche unklare/verderbte Passagen (z.B. bei der Schilderung des Vogt-Verfahrens gegen die Frau), die dem Schreiber offenbar Schwierigkeiten bereiteten. Verortungshinweise: Herrschaft der Junker von Warsberg, Herr zu Rheineck; Fischfang von Falckenstein bis an den Riedersteg; Nähe zu Kruft (laut Kopfzeile). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Niedermendig') — bitte manuell prüfen."
+      "notizen": "Text laut Fußnote 1 \"alles undeutlich, unvollständig und verderbt\". Steht unter Grimms Rubrik \"Nachträge\" zu Kruft/Obermendig; Kopfzeile wechselt zwischen \"KRUFT. OBERMENDIG\", \"NACHTRÄGE\" und \"OBERMENDIG\", was auf einen Nachtrag zu einem bereits an anderer Stelle behandelten Weistum (Kruft/Obermendig) hindeutet. Text enthält zahlreiche unklare/verderbte Passagen (z.B. bei der Schilderung des Vogt-Verfahrens gegen die Frau), die dem Schreiber offenbar Schwierigkeiten bereiteten. Verortungshinweise: Herrschaft der Junker von Warsberg, Herr zu Rheineck; Fischfang von Falckenstein bis an den Riedersteg; Nähe zu Kruft (laut Kopfzeile). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Niedermendig') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.374444, 'lng': 7.280833} -> (50.3758842, 7.241329); Quelle: Nominatim AUTO_PLAUSIBEL; Obermendig, Mendig, Landkreis Mayen-Koblenz, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Obermendig",
     "koordinaten": {
-      "lat": 50.374444,
-      "lng": 7.280833
+      "lat": 50.3758842,
+      "lng": 7.241329
     },
     "zeit": "",
     "typ": "Weisthum",
@@ -26658,13 +26763,13 @@
     "titel": "WEISTHUM ZU OBERMENDIG",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 821–823",
-      "notizen": "Lateinischer Text eines Weistums von 1427 (Weistum betrifft Rechte des Stifts s. Florini in Koblenz und des Klosters Dunnenwalde in Obermendig). Laut Fußnote 1 wurde die Zahl (offenbar der Manszahl xxi) von späterer Hand durchgestrichen und überschrieben mit XXI, ebenso in der zweiten Kopie; Verweis auf Grimm Bd. II, S. 496. Fußnote 2 vermerkt, dass die zweite Kopie 'zwey vaitzrecht' liest statt 'vatzrecht' im Haupttext. Kopfzeile verweist auf 'NACHTRÄGE' und nennt zusätzlich 'BUBENHEIM', was auf ein benachbartes, in derselben Handschrift/Sammlung enthaltenes Weistum hindeutet, das hier aber nicht mit abgedruckt ist. Am Ende des Textes findet sich ein späterer Zusatz: 'Ista non debent dici laicis dempto sculteto nostro.' Verortungshinweise: Kirche/Stift s. Florini in Koblenz (ecclesia s. Florini confluent. treuer. dioc.); Kloster/Abtei der Nonnen in Dunnenwalde (Thönisvald?), colon. dioc.; Trier'sche Diözese (treuer. dioc.); Kölner Diözese (colon. dioc.) für das Kloster Dunnenwalde."
+      "notizen": "Lateinischer Text eines Weistums von 1427 (Weistum betrifft Rechte des Stifts s. Florini in Koblenz und des Klosters Dunnenwalde in Obermendig). Laut Fußnote 1 wurde die Zahl (offenbar der Manszahl xxi) von späterer Hand durchgestrichen und überschrieben mit XXI, ebenso in der zweiten Kopie; Verweis auf Grimm Bd. II, S. 496. Fußnote 2 vermerkt, dass die zweite Kopie 'zwey vaitzrecht' liest statt 'vatzrecht' im Haupttext. Kopfzeile verweist auf 'NACHTRÄGE' und nennt zusätzlich 'BUBENHEIM', was auf ein benachbartes, in derselben Handschrift/Sammlung enthaltenes Weistum hindeutet, das hier aber nicht mit abgedruckt ist. Am Ende des Textes findet sich ein späterer Zusatz: 'Ista non debent dici laicis dempto sculteto nostro.' Verortungshinweise: Kirche/Stift s. Florini in Koblenz (ecclesia s. Florini confluent. treuer. dioc.); Kloster/Abtei der Nonnen in Dunnenwalde (Thönisvald?), colon. dioc.; Trier'sche Diözese (treuer. dioc.); Kölner Diözese (colon. dioc.) für das Kloster Dunnenwalde. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.374444, 'lng': 7.280833} -> (50.3758842, 7.241329); Quelle: Nominatim AUTO_PLAUSIBEL; Obermendig, Mendig, Landkreis Mayen-Koblenz, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Obermendig",
     "koordinaten": {
-      "lat": 50.374444,
-      "lng": 7.280833
+      "lat": 50.3758842,
+      "lng": 7.241329
     },
     "zeit": "1427",
     "typ": "Weistum",
@@ -26715,13 +26820,13 @@
     "titel": "WEISTHUM ZU COBLENZ. 1459",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 827–828",
-      "notizen": "Titel laut Überschrift 'WEISTHUM ZU COBLENZ 1). 1459.' mit Fußnotenverweis. Laufende Kopfzeile auf den Seiten lautet 'URMÜTZ | NACHTRÄGE', was auf eine andere Grimm'sche Kapiteleinteilung/Region hindeutet als der Ortsname vermuten lässt (evtl. Einordnung als Nachtrag zu anderem Abschnitt, nicht direkt zu Koblenz gehörig). Laut Fußnote 1 stammt der Text aus einer Sammlung von Weistümern, Gedingen, Ordnungen und Reformationen des weltlichen Gerichts der Stadt Koblenz vom Jahre 1423 (Sammelhandschrift). Der Haupttext ist eine Erzählung/Bericht über ein Mordgeschehen und Gerichtsverfahren (nicht klassisches Weistum-Formular), Grimm ordnet ihn dennoch als Weistum ein. Datierung im Text: 'im jair als man schreiff thuifsent vierhundert vnnd nuyn vnnd funffzich' = 1459, Ereignis am Sonntag vor Mariä Himmelfahrt. Verortungshinweise: Sitz des Erzbischofs von Trier; genannt: Johann von Baden, Erzbischof zu Trier; Ort 'Lutzercouelennts' im Text (vermutlich Bezeichnung für Koblenz). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Leye (Mosel/Eifel)') — bitte manuell prüfen."
+      "notizen": "Titel laut Überschrift 'WEISTHUM ZU COBLENZ 1). 1459.' mit Fußnotenverweis. Laufende Kopfzeile auf den Seiten lautet 'URMÜTZ | NACHTRÄGE', was auf eine andere Grimm'sche Kapiteleinteilung/Region hindeutet als der Ortsname vermuten lässt (evtl. Einordnung als Nachtrag zu anderem Abschnitt, nicht direkt zu Koblenz gehörig). Laut Fußnote 1 stammt der Text aus einer Sammlung von Weistümern, Gedingen, Ordnungen und Reformationen des weltlichen Gerichts der Stadt Koblenz vom Jahre 1423 (Sammelhandschrift). Der Haupttext ist eine Erzählung/Bericht über ein Mordgeschehen und Gerichtsverfahren (nicht klassisches Weistum-Formular), Grimm ordnet ihn dennoch als Weistum ein. Datierung im Text: 'im jair als man schreiff thuifsent vierhundert vnnd nuyn vnnd funffzich' = 1459, Ereignis am Sonntag vor Mariä Himmelfahrt. Verortungshinweise: Sitz des Erzbischofs von Trier; genannt: Johann von Baden, Erzbischof zu Trier; Ort 'Lutzercouelennts' im Text (vermutlich Bezeichnung für Koblenz). Koordinaten-Zuordnung unsicher (Score 0.88, CSV-Eintrag 'Leye (Mosel/Eifel)') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.321111, 'lng': 7.539722} -> (50.3533278, 7.5943951); Quelle: Nominatim AUTO_PLAUSIBEL; Koblenz, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Koblenz",
     "koordinaten": {
-      "lat": 50.321111,
-      "lng": 7.539722
+      "lat": 50.3533278,
+      "lng": 7.5943951
     },
     "zeit": "1459",
     "typ": "",
@@ -26750,13 +26855,13 @@
     "titel": "WEISTHUM VON RUMERSHEIM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 830–831",
-      "notizen": "Kopfzeile der Seiten lautet \"NACHTRÄGE | HERMANSPACH. MANDERFELD UND AUE\", passt aber nicht zum Haupttext, der dem Weistum von Rumersheim (Nachtrag) zugeordnet ist; vermutlich Fehlzuordnung/Restseite in Grimms Nachträgen. Keine Fußnoten vorhanden (\"---FUSSNOTEN--- leer). Text nennt Abtei Prüm (m.h. von Pr.) als Grundherrn, Vogt zu Schonecken, sowie Orte Murelbach und Burbach/Borbach als Hafteinrichtungen. Verortungshinweise: Grundherr: mein herr von Prume (Abtei Prüm); Bezug zu Schonecken (Vogt zu Schonecken); Bezug zu Murelbach; Bezug zu Burbach/Borbach. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Limersheim') — bitte manuell prüfen."
+      "notizen": "Kopfzeile der Seiten lautet \"NACHTRÄGE | HERMANSPACH. MANDERFELD UND AUE\", passt aber nicht zum Haupttext, der dem Weistum von Rumersheim (Nachtrag) zugeordnet ist; vermutlich Fehlzuordnung/Restseite in Grimms Nachträgen. Keine Fußnoten vorhanden (\"---FUSSNOTEN--- leer). Text nennt Abtei Prüm (m.h. von Pr.) als Grundherrn, Vogt zu Schonecken, sowie Orte Murelbach und Burbach/Borbach als Hafteinrichtungen. Verortungshinweise: Grundherr: mein herr von Prume (Abtei Prüm); Bezug zu Schonecken (Vogt zu Schonecken); Bezug zu Murelbach; Bezug zu Burbach/Borbach. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Limersheim') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 48.456111, 'lng': 7.644167} -> (50.193611111111, 6.4436111111111); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Rommersheim&language=de&params=50.193611111111_N_6.4436111111111_E_region:DE-RP_type:city(660))."
     },
     "original_link": "",
     "ort": "Rumersheim",
     "koordinaten": {
-      "lat": 48.456111,
-      "lng": 7.644167
+      "lat": 50.193611111111,
+      "lng": 6.4436111111111
     },
     "zeit": "1550",
     "typ": "",
@@ -26842,13 +26947,13 @@
     "titel": "W. DES HEILENBACHER HARTWALDES",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 837–838",
-      "notizen": "Grimm merkt an, dass Bickendorf an der Ims, südlich von Seffern liegt, die beiden anderen genannten Orte (Heilenbach, Feierschiedt) jedoch nicht sicher zu identifizieren sind ('finden sich nicht'). Der Text steht unter der laufenden Kopfzeile 'SEFFERN. HEILENBACH | NACHTRÄGE', was auf eine Ergänzung zu einem bereits behandelten Ort/Region hinweist. Verortungshinweise: Bickendorf liegt an der Ims, südlich von Seffern; Nachbarorte laut Text: Heilenbach, Bickendorf und Feierschiedt (drei Gemeinden); Feierschiedt konnte laut Grimm nicht identifiziert werden. Koordinaten-Zuordnung unsicher (Score 0.84, CSV-Eintrag 'Erlenbach') — bitte manuell prüfen."
+      "notizen": "Grimm merkt an, dass Bickendorf an der Ims, südlich von Seffern liegt, die beiden anderen genannten Orte (Heilenbach, Feierschiedt) jedoch nicht sicher zu identifizieren sind ('finden sich nicht'). Der Text steht unter der laufenden Kopfzeile 'SEFFERN. HEILENBACH | NACHTRÄGE', was auf eine Ergänzung zu einem bereits behandelten Ort/Region hinweist. Verortungshinweise: Bickendorf liegt an der Ims, südlich von Seffern; Nachbarorte laut Text: Heilenbach, Bickendorf und Feierschiedt (drei Gemeinden); Feierschiedt konnte laut Grimm nicht identifiziert werden. Koordinaten-Zuordnung unsicher (Score 0.84, CSV-Eintrag 'Erlenbach') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.22584, 'lng': 8.67848} -> (50.0644438, 6.464977); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=ja; Heilenbach, Bitburger Land, Eifelkreis Bitburg-Prüm, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Heilenbach",
     "koordinaten": {
-      "lat": 50.22584,
-      "lng": 8.67848
+      "lat": 50.0644438,
+      "lng": 6.464977
     },
     "zeit": "1550",
     "typ": "",
@@ -26861,13 +26966,13 @@
     "titel": "WEISTHUM ZU NIEDERPRÜM",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 838",
-      "notizen": "Teil der Nachträge (Kopfzeile 'NACHTRÄGE') in Grimms Weisthümer Bd. 3, S. 841. Keine Fußnoten vorhanden. Text nennt Bezug zu Kloster Prüm und Schönecken (Schonecken) als benachbarten Ort mit Burg (Gewaltvoigt von Schonecken). Verweis im Text auf 'vgl. II, 533' als Querverweis auf einen anderen Band/Stelle bei Grimm. Verortungshinweise: Bezug zum Kloster Prüm (nidersten closter zu Prüme); Erwähnung von Schönecken (Schonecken); Erwähnung eines Hofes/Person Mollenborn Lenhart."
+      "notizen": "Teil der Nachträge (Kopfzeile 'NACHTRÄGE') in Grimms Weisthümer Bd. 3, S. 841. Keine Fußnoten vorhanden. Text nennt Bezug zu Kloster Prüm und Schönecken (Schonecken) als benachbarten Ort mit Burg (Gewaltvoigt von Schonecken). Verweis im Text auf 'vgl. II, 533' als Querverweis auf einen anderen Band/Stelle bei Grimm. Verortungshinweise: Bezug zum Kloster Prüm (nidersten closter zu Prüme); Erwähnung von Schönecken (Schonecken); Erwähnung eines Hofes/Person Mollenborn Lenhart. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 50.19606, 'lng': 6.41225} -> (50.1946739, 6.4116775); Quelle: Nominatim AUTO_PLAUSIBEL; Niederprüm, Prüm, Eifelkreis Bitburg-Prüm, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Niederprüm",
     "koordinaten": {
-      "lat": 50.19606,
-      "lng": 6.41225
+      "lat": 50.1946739,
+      "lng": 6.4116775
     },
     "zeit": "",
     "typ": "Weisthum",
@@ -26915,11 +27020,14 @@
     "titel": "WEISTHUM ZU DEMERATH",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 840–842",
-      "notizen": "Fußnote 1 lokalisiert Demerath als 'südöstlich von Daun'. Kopfzeile weist den Text als Nachtrag ('NACHTRÄGE | DEMERATH') aus. Haupttext ist ein Zitat des Weistums (Scheffenweistum), keine Paraphrase Grimms. Verortungshinweise: südöstlich von Daun."
+      "notizen": "Fußnote 1 lokalisiert Demerath als 'südöstlich von Daun'. Kopfzeile weist den Text als Nachtrag ('NACHTRÄGE | DEMERATH') aus. Haupttext ist ein Zitat des Weistums (Scheffenweistum), keine Paraphrase Grimms. Verortungshinweise: südöstlich von Daun. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.1739501, 6.9418072); Quelle: Nominatim AUTO_PLAUSIBEL; Demerath, Daun, Landkreis Vulkaneifel, Rheinland-Pfalz, Deutschland)."
     },
     "original_link": "",
     "ort": "Demerath",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.1739501,
+      "lng": 6.9418072
+    },
     "zeit": "1578",
     "typ": "Weistum",
     "schreiberinfo": "",
@@ -27068,11 +27176,14 @@
     "titel": "WEISTHUM VON SUESTEREN",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 861–864",
-      "notizen": "Fußnote 1: Susteren liegt nordwärts von Sittard; das dortige Kloster wurde von zwei Schwestern Zuentebolds gestiftet, die auch dort begraben liegen. Quelle: Bondams Charterboek van Gelderland, Bd. 1, S. 543–547. Der Text ist eine lateinische Urkunde (Weistum der Schöffen von Susteren über Rechte zwischen den Herren von Valkenborg und von Ditren), datiert auf das Fest der Kreuzerhöhung 1260. Laufende Kopfzeile verweist auf 'Borne. Suesteren' sowie 'Nachträge. Suesteren', was auf eine Zuordnung zu einem Nachtragsabschnitt bei Grimm hindeutet. Verortungshinweise: nordwärts von Sittard; Kloster des Orts von zwei Schwestern Zuentebolds gestiftet, dort begraben; Herrschaft/Herren von Valkenborg (Valkenburg); Herrschaft/Herren von Ditren (Dieteren)."
+      "notizen": "Fußnote 1: Susteren liegt nordwärts von Sittard; das dortige Kloster wurde von zwei Schwestern Zuentebolds gestiftet, die auch dort begraben liegen. Quelle: Bondams Charterboek van Gelderland, Bd. 1, S. 543–547. Der Text ist eine lateinische Urkunde (Weistum der Schöffen von Susteren über Rechte zwischen den Herren von Valkenborg und von Ditren), datiert auf das Fest der Kreuzerhöhung 1260. Laufende Kopfzeile verweist auf 'Borne. Suesteren' sowie 'Nachträge. Suesteren', was auf eine Zuordnung zu einem Nachtragsabschnitt bei Grimm hindeutet. Verortungshinweise: nordwärts von Sittard; Kloster des Orts von zwei Schwestern Zuentebolds gestiftet, dort begraben; Herrschaft/Herren von Valkenborg (Valkenburg); Herrschaft/Herren von Ditren (Dieteren). Koordinate am 2026-08-19 korrigiert (vorher: None -> (51.24529, 6.6981946); Quelle: Nominatim AUTO_PLAUSIBEL; Axa Markus von Susteren, Witzfeldstraße, Niederdonk, Büderich, Meerbusch, Rhein-Kreis Neuss, Nordrhein-Westfalen, 40667, Deutschland)."
     },
     "original_link": "",
     "ort": "Susteren",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 51.24529,
+      "lng": 6.6981946
+    },
     "zeit": "1260, 14. September",
     "typ": "Weistum (lateinische Urkunde der Schöffen)",
     "schreiberinfo": "",
@@ -27084,11 +27195,14 @@
     "titel": "RECORDIUM DE RICHOLT",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 864–865",
-      "notizen": "Text besteht aus zwei ineinander verschachtelten Dokumenten: einer lateinischen Rahmenurkunde von 1726 (Recordium der Schöffen und des Praetors der Freiherrschaft Richolt), die zwei ältere Dokumente zitiert - eines von 1469 in mittelniederdeutscher/mitteldeutscher Sprache und ein weiteres undatiertes in niederländischer Sprache zu Gerichtsbarkeit und Privilegien der Baronie Rycholt. Aus Grimms Nachträgen. Quelle laut Fußnote: Cramers Wetzlarische Nebenstunden 9, 60-61, sowie Cramer, observationes juris universi, observatio 316. Kopfzeile verzeichnet auch 'LOTTUM' als weiteres benachbartes Stichwort, vermutlich ein weiteres Weistum im selben Abschnitt der Nachträge. Verortungshinweise: Freiherrschaft an der Maas gelegen; westwärts von Aachen."
+      "notizen": "Text besteht aus zwei ineinander verschachtelten Dokumenten: einer lateinischen Rahmenurkunde von 1726 (Recordium der Schöffen und des Praetors der Freiherrschaft Richolt), die zwei ältere Dokumente zitiert - eines von 1469 in mittelniederdeutscher/mitteldeutscher Sprache und ein weiteres undatiertes in niederländischer Sprache zu Gerichtsbarkeit und Privilegien der Baronie Rycholt. Aus Grimms Nachträgen. Quelle laut Fußnote: Cramers Wetzlarische Nebenstunden 9, 60-61, sowie Cramer, observationes juris universi, observatio 316. Kopfzeile verzeichnet auch 'LOTTUM' als weiteres benachbartes Stichwort, vermutlich ein weiteres Weistum im selben Abschnitt der Nachträge. Verortungshinweise: Freiherrschaft an der Maas gelegen; westwärts von Aachen. Koordinate am 2026-08-19 korrigiert (vorher: None -> (50.7980765, 5.732183); Quelle: Nominatim AUTO_PLAUSIBEL; Rijckholt, Gronsveld, Eijsden-Margraten, Limburg, Nederland, 6247 EG, Nederland)."
     },
     "original_link": "",
     "ort": "Rijckholt",
-    "koordinaten": null,
+    "koordinaten": {
+      "lat": 50.7980765,
+      "lng": 5.732183
+    },
     "zeit": "1469; 1726",
     "typ": "Recordium (Weistum-Bestätigung/Zeugnisurkunde)",
     "schreiberinfo": "Praetor und Schöffen der freien Baronie Richolt an der Maas",
@@ -27151,13 +27265,13 @@
     "titel": "Hobsrolle zum Bramsel",
     "edition": {
       "stelle": "Grimm Bd. 3, S. 874–876",
-      "notizen": "Grimm ordnet den Text den 'Nachträgen' zu (laufende Kopfzeile: NACHTRÄGE | BRAMSEL). Titel und Datierung laut Grimms Überschrift: '(III, 32.) HOBSROLLE ZUM BRAMSEL. 17. jh.' Fußnote 1 gibt eine alternative Ortsform/Verortung: 'oder Brasel im hochgerichte Schwelm.' Der Haupttext ist ein direktes Zitat der Hofrolle (Weistum), keine Paraphrase Grimms. Erwähnt wird mehrfach 'unser gnediger herr, der herzog von Berg' als Grundherr, was auf die Zugehörigkeit zum Herzogtum Berg hinweist. Der Text ist in mitteld./niederdeutsch gefärbter Sprache mit zahlreichen Rechtsbegriffen (Hovesrecht, Eckerrecht, Bede u.a.). Verortungshinweise: im hochgericht Schwelm; Herzogtum Berg (der herzog von Berg als Grundherr genannt). Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Basel') — bitte manuell prüfen."
+      "notizen": "Grimm ordnet den Text den 'Nachträgen' zu (laufende Kopfzeile: NACHTRÄGE | BRAMSEL). Titel und Datierung laut Grimms Überschrift: '(III, 32.) HOBSROLLE ZUM BRAMSEL. 17. jh.' Fußnote 1 gibt eine alternative Ortsform/Verortung: 'oder Brasel im hochgerichte Schwelm.' Der Haupttext ist ein direktes Zitat der Hofrolle (Weistum), keine Paraphrase Grimms. Erwähnt wird mehrfach 'unser gnediger herr, der herzog von Berg' als Grundherr, was auf die Zugehörigkeit zum Herzogtum Berg hinweist. Der Text ist in mitteld./niederdeutsch gefärbter Sprache mit zahlreichen Rechtsbegriffen (Hovesrecht, Eckerrecht, Bede u.a.). Verortungshinweise: im hochgericht Schwelm; Herzogtum Berg (der herzog von Berg als Grundherr genannt). Koordinaten-Zuordnung unsicher (Score 0.91, CSV-Eintrag 'Basel') — bitte manuell prüfen. Koordinate am 2026-08-19 korrigiert (vorher: {'lat': 47.55814, 'lng': 7.58769} -> (51.284166666667, 7.2933333333333); Quelle: geocode_pruefliste_ECHT_band3.csv bestaetigt=nein, eigene Recherche; https://geohack.toolforge.org/geohack.php?pagename=Schwelm&language=de&params=51.284166666667_N_7.2933333333333_E_region:DE-NW_type:city(27880))."
     },
     "original_link": "",
     "ort": "Bramsel",
     "koordinaten": {
-      "lat": 47.55814,
-      "lng": 7.58769
+      "lat": 51.284166666667,
+      "lng": 7.2933333333333
     },
     "zeit": "17. jh.",
     "typ": "Hobsrolle (Weistum/Hofrolle)",
