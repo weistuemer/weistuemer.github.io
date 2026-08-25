@@ -36584,13 +36584,13 @@
     "titel": "AUS DER LENDERSDORFER TEICHORDNUNG",
     "edition": {
       "stelle": "Grimm Bd. 2, S. 801–802",
-      "notizen": "Titel trägt eine Fußnotenmarkierung (1), die Lendersdorf lokalisiert: am linken Ufer der Ruhr, südwestlich von Düren. Der Text ist als Auszug (\"AUS DER ... TEICHORDNUNG\") gekennzeichnet, also nur ein Fragment/Ausschnitt aus einer größeren Teichordnung, kein vollständiges Weistum. Laufende Kopfzeile nennt zusätzlich \"ONESHEIM\" als Stichwort, das im vorliegenden Textausschnitt selbst nicht auftaucht - vermutlich Bezug zu einem benachbarten Dokument im selben Abschnitt der Edition. Am Ende des Texts steht der Vermerk \"NACHTRÄGE.\", was auf einen Abschnittswechsel/Nachtragsteil in Grimms Edition hindeutet. Verortungshinweise: am linken Ufer der Ruhr; südwestlich von Düren. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen."
+      "notizen": "Titel trägt eine Fußnotenmarkierung (1), die Lendersdorf lokalisiert: am linken Ufer der Ruhr, südwestlich von Düren. Der Text ist als Auszug (\"AUS DER ... TEICHORDNUNG\") gekennzeichnet, also nur ein Fragment/Ausschnitt aus einer größeren Teichordnung, kein vollständiges Weistum. Laufende Kopfzeile nennt zusätzlich \"ONESHEIM\" als Stichwort, das im vorliegenden Textausschnitt selbst nicht auftaucht - vermutlich Bezug zu einem benachbarten Dokument im selben Abschnitt der Edition. Am Ende des Texts steht der Vermerk \"NACHTRÄGE.\", was auf einen Abschnittswechsel/Nachtragsteil in Grimms Edition hindeutet. Verortungshinweise: am linken Ufer der Ruhr; südwestlich von Düren. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen. Koordinate am 2026-08-25 korrigiert (vorher: {'lat': 48.079444, 'lng': 16.606667} -> (50.79, 6.48); Quelle: manuelle Websuche (Lendersdorf = Stadtteil von Düren, NRW); vorherige Koordinate lag fälschlich in Österreich)."
     },
     "original_link": "",
     "ort": "Lendersdorf",
     "koordinaten": {
-      "lat": 48.079444,
-      "lng": 16.606667
+      "lat": 50.79,
+      "lng": 6.48
     },
     "zeit": "1556",
     "typ": "Teichordnung",
@@ -36784,13 +36784,13 @@
     "titel": "W. zu Rüpstorf und Hunersdorf",
     "edition": {
       "stelle": "Grimm Bd. 2, S. 826",
-      "notizen": "Fußnoten zu diesem Weistum fehlen im vorliegenden Ausschnitt (Fußnotenbereich leer). Haupttext ist wörtliches Zitat der Weistumsformel. Kopfzeile der Seite lautet 'HUNERSDORF. BURTSCHEID', was auf die Zuordnung Grimms zu dieser Region hindeutet. Verortungshinweise: Herrschaft der Herren van Guylgh (Gulich); Herren von Blankenheim mit Lehen zu Hunersdorp; Nerendorp (Sitz des Richart Hurte); Kopfzeile nennt Hunersdorf und Burtscheid als benachbarte Orte. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen."
+      "notizen": "Fußnoten zu diesem Weistum fehlen im vorliegenden Ausschnitt (Fußnotenbereich leer). Haupttext ist wörtliches Zitat der Weistumsformel. Kopfzeile der Seite lautet 'HUNERSDORF. BURTSCHEID', was auf die Zuordnung Grimms zu dieser Region hindeutet. Verortungshinweise: Herrschaft der Herren van Guylgh (Gulich); Herren von Blankenheim mit Lehen zu Hunersdorp; Nerendorp (Sitz des Richart Hurte); Kopfzeile nennt Hunersdorf und Burtscheid als benachbarte Orte. Koordinaten-Zuordnung unsicher (Score 0.80, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen. Koordinate am 2026-08-25 korrigiert (vorher: {'lat': 48.079444, 'lng': 16.606667} -> (50.401, 6.683); Quelle: manuelle Websuche, NÄHERUNG. Rüpstorf selbst nicht separat lokalisierbar; Wert ist die im selben Weistum genannte Nachbarortschaft Hunersdorf = vermutlich das heutige Hüngersdorf, Ortsteil von Blankenheim, Kreis Euskirchen (Lehen derer von Blankenheim passt zur obigen Editionsnotiz). Vorherige Koordinate lag fälschlich in Österreich (CSV-Fehlzuordnung auf 'Enzersdorf', s. o.); bei Gelegenheit weiter verifizieren."
     },
     "original_link": "",
     "ort": "Rüpstorf",
     "koordinaten": {
-      "lat": 48.079444,
-      "lng": 16.606667
+      "lat": 50.401,
+      "lng": 6.683
     },
     "zeit": "15. Jh.",
     "typ": "",
@@ -43167,13 +43167,13 @@
     "titel": "WEISTHUM VON MUENGERSDORF",
     "edition": {
       "stelle": "Grimm Bd. 6, S. 687–691",
-      "notizen": "Fußnote 1 zum Titel: westlich von Köln; annal. des hist. ver. f. d. Niederrhein 11, 106-9. Fußnote 2: epiphanias. Fußnote 3: die alte gottestracht (procession) am 2. freitag nach der osterwoche, die neue am 1. freitag. Weitere Fußnote im Haupttext (nach '.....' Zeichen): 'scheint etwas ausgelassen zu sein' - Hinweis auf Textlücke. Zweiter Teil des Textes betrifft ein separates, aber benachbart überliefertes Weistum: 'Weiszthumb stiftskirchen zu st. Aposteln in Collen hofgerichts zu Brenich', mit eigener Fußnote 1: zwischen Bonn und Brühl, aus den annalen des hist. ver. f. d. Niederrhein 11, 109-12; ebendas. 112-17 Weistum von Vogtsbell (zwischen Cöln und Bergheim) v. j. 1662. Fußnote 2 zu Brenich-Text: wol 'seiner vorigen'. Fußnote 3: Nettekoven zwischen Bonn und Rheinbach (zu 'Netteshoven'). Fußnote 4: Hersel am Rhein (zu 'Herszell'). Fußnote 5: Bornheim bei Brenich (zu 'Bornehm'). Weitere Fußnoten im §14-Bereich: 1) erntewagen (zu 'arntzwahn'); 2) der zusammenhang dieses artikels ist unverständlich (zu §12). Der Text enthält also zwei separate Weistümer: Müngersdorf und Brenich (St. Aposteln Hofgericht), letzteres unter eigener Überschrift. Verortungshinweise: westlich von Köln; Herrlichkeit Müngersdorf gehörte zum Stift St. Aposteln in Köln; Patron: s. Vital. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen."
+      "notizen": "Fußnote 1 zum Titel: westlich von Köln; annal. des hist. ver. f. d. Niederrhein 11, 106-9. Fußnote 2: epiphanias. Fußnote 3: die alte gottestracht (procession) am 2. freitag nach der osterwoche, die neue am 1. freitag. Weitere Fußnote im Haupttext (nach '.....' Zeichen): 'scheint etwas ausgelassen zu sein' - Hinweis auf Textlücke. Zweiter Teil des Textes betrifft ein separates, aber benachbart überliefertes Weistum: 'Weiszthumb stiftskirchen zu st. Aposteln in Collen hofgerichts zu Brenich', mit eigener Fußnote 1: zwischen Bonn und Brühl, aus den annalen des hist. ver. f. d. Niederrhein 11, 109-12; ebendas. 112-17 Weistum von Vogtsbell (zwischen Cöln und Bergheim) v. j. 1662. Fußnote 2 zu Brenich-Text: wol 'seiner vorigen'. Fußnote 3: Nettekoven zwischen Bonn und Rheinbach (zu 'Netteshoven'). Fußnote 4: Hersel am Rhein (zu 'Herszell'). Fußnote 5: Bornheim bei Brenich (zu 'Bornehm'). Weitere Fußnoten im §14-Bereich: 1) erntewagen (zu 'arntzwahn'); 2) der zusammenhang dieses artikels ist unverständlich (zu §12). Der Text enthält also zwei separate Weistümer: Müngersdorf und Brenich (St. Aposteln Hofgericht), letzteres unter eigener Überschrift. Verortungshinweise: westlich von Köln; Herrlichkeit Müngersdorf gehörte zum Stift St. Aposteln in Köln; Patron: s. Vital. Koordinaten-Zuordnung unsicher (Score 0.82, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen. Koordinate am 2026-08-25 korrigiert (vorher: {'lat': 48.079444, 'lng': 16.606667} -> (50.948, 6.888); Quelle: manuelle Websuche (Müngersdorf = Stadtteil von Köln-Lindenthal); vorherige Koordinate lag fälschlich in Österreich)."
     },
     "original_link": "",
     "ort": "Müngersdorf",
     "koordinaten": {
-      "lat": 48.079444,
-      "lng": 16.606667
+      "lat": 50.948,
+      "lng": 6.888
     },
     "zeit": "",
     "typ": "Weisthum",
@@ -43291,13 +43291,13 @@
     "titel": "Gerechtigkeit des hofs der hern von s. Albert zu Lenderstorf",
     "edition": {
       "stelle": "Grimm Bd. 6, S. 705–706",
-      "notizen": "Fußnote verweist auf Grimm Bd. 2, S. 798 und Bd. 5, S. 728 sowie auf die Quelle: aus Bonn, Rumpel und Fischbach, Materialien zur Geschichte Dürens, S. 208–211. Der Text ist Grimms Wiedergabe (Zitat) des Weistums, mit eingefügten Lesungskorrekturen Grimms in Klammern (z.B. \"l. buwigh\", \"l. offen\", \"l. gemelten\"), die auf unsichere oder fehlerhafte Vorlage hindeuten. Erwähnung des Marschalls des Landes Gülich als Lehnsherr-Bezug. Verortungshinweise: Herrschaft/Hof der Herren von St. Albert; im Land Jülich (Gulich); gelegen zwischen Eifel, Ruhr und Maas; nahe Düren (vgl. Materialien zur Geschichte Dürens). Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen."
+      "notizen": "Fußnote verweist auf Grimm Bd. 2, S. 798 und Bd. 5, S. 728 sowie auf die Quelle: aus Bonn, Rumpel und Fischbach, Materialien zur Geschichte Dürens, S. 208–211. Der Text ist Grimms Wiedergabe (Zitat) des Weistums, mit eingefügten Lesungskorrekturen Grimms in Klammern (z.B. \"l. buwigh\", \"l. offen\", \"l. gemelten\"), die auf unsichere oder fehlerhafte Vorlage hindeuten. Erwähnung des Marschalls des Landes Gülich als Lehnsherr-Bezug. Verortungshinweise: Herrschaft/Hof der Herren von St. Albert; im Land Jülich (Gulich); gelegen zwischen Eifel, Ruhr und Maas; nahe Düren (vgl. Materialien zur Geschichte Dürens). Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen. Koordinate am 2026-08-25 korrigiert (vorher: {'lat': 48.079444, 'lng': 16.606667} -> (50.79, 6.48); Quelle: manuelle Websuche (Lendersdorf = Stadtteil von Düren, NRW); vorherige Koordinate lag fälschlich in Österreich)."
     },
     "original_link": "",
     "ort": "Lendersdorf",
     "koordinaten": {
-      "lat": 48.079444,
-      "lng": 16.606667
+      "lat": 50.79,
+      "lng": 6.48
     },
     "zeit": "",
     "typ": "Weistum (Hofrecht)",
@@ -43310,13 +43310,13 @@
     "titel": "Des herzogen zu Gülich Cleve und Berg gerechtigkeit des hofs zu Lenderstorf, wie jars dreimal durch den geschworn hofsman daselbst erclert wirt",
     "edition": {
       "stelle": "Grimm Bd. 6, S. 706–707",
-      "notizen": "Titel laut Überschrift, Jahreszahl 1553 direkt im Titel angegeben. Fußnote 1 verweist auf §. 6 des folgenden Weistums (Sammlung benachbarter Weistümer aus gleichem Bestand). Fußnote 2 ist Grimms eigene sprachliche Vermutung zu 'erschling' (rückwärts?, unsicher). Diplomatische Transkription mit zahlreichen Auflösungen Grimms in Klammern (l. = lies), z.B. 'zaum (l. zaun)', 'häwen (l. hauwen)', 'g. (l. gemeltem)', 'weddig' etc. Text enthält dialektale/mittelfränkische Ausdrücke ohne weitere Erläuterung. Verortungshinweise: Kopfzeile nennt Nachbarort/Region: Gressenich; liegt im Gebiet zwischen Eifel, Ruhr und Maas; Herzogtum Gülich (Jülich), Cleve und Berg als Landesherrschaft genannt; Fluss/Bach Wiehebach im Text erwähnt; Fluss/Gewässer Kure(n) im Text erwähnt. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen."
+      "notizen": "Titel laut Überschrift, Jahreszahl 1553 direkt im Titel angegeben. Fußnote 1 verweist auf §. 6 des folgenden Weistums (Sammlung benachbarter Weistümer aus gleichem Bestand). Fußnote 2 ist Grimms eigene sprachliche Vermutung zu 'erschling' (rückwärts?, unsicher). Diplomatische Transkription mit zahlreichen Auflösungen Grimms in Klammern (l. = lies), z.B. 'zaum (l. zaun)', 'häwen (l. hauwen)', 'g. (l. gemeltem)', 'weddig' etc. Text enthält dialektale/mittelfränkische Ausdrücke ohne weitere Erläuterung. Verortungshinweise: Kopfzeile nennt Nachbarort/Region: Gressenich; liegt im Gebiet zwischen Eifel, Ruhr und Maas; Herzogtum Gülich (Jülich), Cleve und Berg als Landesherrschaft genannt; Fluss/Bach Wiehebach im Text erwähnt; Fluss/Gewässer Kure(n) im Text erwähnt. Koordinaten-Zuordnung unsicher (Score 0.86, CSV-Eintrag 'Enzersdorf') — bitte manuell prüfen. Koordinate am 2026-08-25 korrigiert (vorher: {'lat': 48.079444, 'lng': 16.606667} -> (50.79, 6.48); Quelle: manuelle Websuche (Lendersdorf = Stadtteil von Düren, NRW); vorherige Koordinate lag fälschlich in Österreich)."
     },
     "original_link": "",
     "ort": "Lendersdorf",
     "koordinaten": {
-      "lat": 48.079444,
-      "lng": 16.606667
+      "lat": 50.79,
+      "lng": 6.48
     },
     "zeit": "1553",
     "typ": "Weistum",
