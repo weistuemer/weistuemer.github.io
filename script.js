@@ -341,10 +341,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // 2. Fallback für ungefähre Angaben (z.B. "Ende 13. Jh.")
-        
-        // Match "13. jh.", "14. jh.", etc.
-        const centuryMatch = lowerZeit.match(/(\d{2})\.\s*jh/); 
+        // 2. Fallback für ungefähre Angaben (z.B. "Ende 13. Jh." oder
+        // ausgeschrieben "13. Jahrhundert")
+
+        // Match "13. jh.", "14. jh.", aber auch "13. jahrhundert" usw.
+        const centuryMatch = lowerZeit.match(/(\d{2})\.\s*(?:jh|jahrhundert)/);
         if (centuryMatch) {
             century = parseInt(centuryMatch[1], 10);
             centuryName = `${century}. Jh.`;
