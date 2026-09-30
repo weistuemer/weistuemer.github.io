@@ -366,23 +366,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    /**
+     * Zerlegt die freie Editionsangabe ("Grimm Bd. 1, S. 1–2") in Band und
+     * Seite, damit beide als eigene Spalten exportiert werden können.
+     * Diese Angaben liegen in den Daten nur als ein zusammenhängender
+     * Text vor, nicht als getrennte Felder.
+     */
+    function extractBandSeite(stelle) {
+        if (!stelle) return { band: "", seite: "" };
+        const bandMatch = stelle.match(/Bd\.\s*(\d+)/);
+        const seiteMatch = stelle.match(/S\.\s*(.+)$/);
+        return {
+            band: bandMatch ? bandMatch[1] : "",
+            seite: seiteMatch ? seiteMatch[1].trim() : "",
+        };
+    }
+
     function exportToCSV(data, filename) {
         const headers = [
-            "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ", 
-            "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten", 
-            "edition_stelle", "edition_notizen", "original_link"
+            "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ",
+            "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
+            "edition_stelle", "band", "seite", "edition_notizen", "original_link"
         ];
         const csvRows = [headers.join(",")];
 
         data.forEach(entry => {
             // Textbereinigung für den Export (entfernt Markdown-Fußnoten und Zeilenumbrüche)
             const raw = entry.text || "";
-            const inline = raw.replace(/\\[\\^(\\d+)\\]/g, "[$1]");
+            const inline = raw.replace(/\[\^(\d+)\]/g, "[$1]");
             const notes = [];
-            const textClean = inline.replace(/^\\[\\^(\\d+)\\]:(.*)$/gm, (match, num, txt) => {
+            const textClean = inline.replace(/^\[\^(\d+)\]:(.*)$/gm, (match, num, txt) => {
                 notes.push(`${num}: ${txt.trim()}`);
                 return "";
-            }).replace(/\\n/g, " ").trim();
+            }).replace(/\n/g, " ").trim();
+
+            const stelle = entry.edition ? entry.edition.stelle : "";
+            const { band, seite } = extractBandSeite(stelle);
 
             const row = [
                 entry.id,
@@ -395,10 +414,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.koordinaten ? entry.koordinaten.lat : "",
                 entry.koordinaten ? entry.koordinaten.lng : "",
                 entry.schreiberinfo || "",
-                textClean.replace(/\"/g, '\"\"'), // Escape Anführungszeichen
-                notes.join(" | ").replace(/\"/g, '\"\"'),
-                entry.edition ? entry.edition.stelle : "",
-                entry.edition ? entry.edition.notizen.replace(/\"/g, '\"\"') : "",
+                textClean.replace(/"/g, '""'), // Escape Anführungszeichen
+                notes.join(" | ").replace(/"/g, '""'),
+                stelle || "",
+                band,
+                seite,
+                entry.edition ? (entry.edition.notizen || "").replace(/"/g, '""') : "",
                 entry.original_link || ""
             ].map(v => `"${v}"`).join(","); // Alle Werte in Anführungszeichen setzen
 
@@ -406,7 +427,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Erzeugt eine CSV-Datei und löst den Download aus
-        const blob = new Blob(["\\uFEFF" + csvRows.join("\\n")], { type: "text/csv;charset=utf-8;" });
+        const blob = new Blob(["\uFEFF" + csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
         link.download = filename;
