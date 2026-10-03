@@ -188,15 +188,55 @@ document.addEventListener("DOMContentLoaded", function () {
         // Die Karte mit den gefilterten Ergebnissen aktualisieren
         updateMapMarkers(filtered);
         
-        // Die Ergebnisse unter der Karte anzeigen
-        displayResults(filtered);
+        // Die Ergebnisse unter der Karte anzeigen; bei nicht-leerer Suche
+        // wird der Suchterm in den Treffern farbig hervorgehoben
+        const highlightRegex = query ? new RegExp(query, "gi") : null;
+        displayResults(filtered, highlightRegex);
+    }
+
+    /**
+     * Markiert alle Treffer des Suchmusters in den Textknoten eines
+     * DOM-Elements mit <mark class="treffer">. Es werden nur Textknoten
+     * angefasst, nicht HTML-Tags oder Attribute (Links, Fußnoten usw.
+     * bleiben intakt). Treffer, die über mehrere Textknoten hinweg laufen
+     * (z. B. über ein <u>-Tag), werden nicht markiert.
+     */
+    function highlightMatches(root, regex) {
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+        textNodes.forEach(node => {
+            const text = node.nodeValue;
+            regex.lastIndex = 0;
+            let match;
+            let last = 0;
+            let frag = null;
+            while ((match = regex.exec(text)) !== null) {
+                if (match[0].length === 0) { // z. B. Muster wie "x*" -- Endlosschleife vermeiden
+                    regex.lastIndex++;
+                    continue;
+                }
+                if (!frag) frag = document.createDocumentFragment();
+                frag.appendChild(document.createTextNode(text.slice(last, match.index)));
+                const mark = document.createElement("mark");
+                mark.className = "treffer";
+                mark.textContent = match[0];
+                frag.appendChild(mark);
+                last = match.index + match[0].length;
+            }
+            if (frag) {
+                frag.appendChild(document.createTextNode(text.slice(last)));
+                node.parentNode.replaceChild(frag, node);
+            }
+        });
     }
     
     // =========================================================
     // RESTLICHE HELFERFUNKTIONEN
     // =========================================================
 
-    function displayResults(data) {
+    function displayResults(data, highlightRegex) {
         const resultsDiv = document.getElementById("results");
         resultsDiv.innerHTML = `<p>Gefundene Einträge: <b>${data.length}</b></p>`;
 
@@ -228,6 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
             resultItem.innerHTML = detailHtml;
+            if (highlightRegex) highlightMatches(resultItem, highlightRegex);
             resultsDiv.appendChild(resultItem);
         });
     }
