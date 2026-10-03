@@ -124,6 +124,14 @@ a:link {
 .result-item h3 {
     color: #4478A8;
 }
+
+/* Hervorhebung des Suchterms in den Treffern */
+mark.treffer {
+    background-color: #ffe066;
+    color: inherit;
+    padding: 0 2px;
+    border-radius: 2px;
+}
 .footnotes {
   font-size: 0.9em;
   border-top: 1px solid #aaa;
