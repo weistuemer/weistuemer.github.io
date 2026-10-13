@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const matchesQuery = Object.values(entry).some(value =>
                 regex.test(typeof value === "object" ? JSON.stringify(value) : String(value))
             );
-            const matchesTyp = !filterTyp || entry.typ === filterTyp;
+            const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
             const matchesRegion = !filterRegion || entry.region === filterRegion;
             const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
             return matchesQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <b>${entry.titel}</b><br>
                     Ort: ${entry.ort}<br>
                     Zeit: ${entry.zeit || 'Unbekannt'}<br>
-                    Typ: ${entry.typ || 'Unbekannt'}<br>
+                    Typ: ${entry.typ_norm || entry.typ || 'Unbekannt'}<br>
                     <button onclick="window.filterByLocation('${entry.ort.replace(/'/g, "\\'")}')" style="margin-top: 5px; cursor: pointer;">Nur diesen Ort anzeigen</button>
                 `;
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
             // 2. Filter-Überprüfung
-            const matchesTyp = !filterTyp || entry.typ === filterTyp;
+            const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
             const matchesRegion = !filterRegion || entry.region === filterRegion;
             const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
 
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         Ort: <b>${entry.ort || 'N/A'}</b> | 
                         Region: <b>${entry.region || 'N/A'}</b> | 
                         Zeit: <b>${entry.zeit || 'N/A'}</b> |
-                        Typ: <b>${entry.typ || 'N/A'}</b>
+                        Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
                     </p>
                 </div>
                 <div class="result-body">
@@ -354,7 +354,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const zeitSet = new Set();
 
         data.forEach(entry => {
-            if (entry.typ) typSet.add(entry.typ);
+            if (entry.typ_norm) typSet.add(entry.typ_norm);
             if (entry.region) regionSet.add(entry.region);
             if (entry.zeit_kategorie) zeitSet.add(entry.zeit_kategorie);
         });
@@ -510,7 +510,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function exportToCSV(data, filename) {
         const headers = [
-            "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ",
+            "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
             "edition_stelle", "band", "seite", "edition_notizen", "original_link",
             "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
@@ -538,6 +538,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.zeit,
                 entry.zeit_kategorie,
                 entry.typ,
+                entry.typ_norm || "",
+                (entry.typ_form || []).join("; "),
                 entry.koordinaten ? entry.koordinaten.lat : "",
                 entry.koordinaten ? entry.koordinaten.lng : "",
                 entry.schreiberinfo || "",
