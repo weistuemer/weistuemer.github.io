@@ -37,6 +37,14 @@ header {
     font-size: 1rem;
 }
 
+/* Auswahlfelder: Breite begrenzen (Typ enthält ~1000 teils sehr lange Werte) */
+.search-container select {
+    width: 11rem;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.search-container select#filter-typ { width: 9rem; }
+
 .flex-header {
   display: flex;
   align-items: center;
