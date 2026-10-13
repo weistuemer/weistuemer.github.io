@@ -26,12 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("filter-zeit").addEventListener("change", performSearch);
     document.getElementById("filter-vorlage").addEventListener("change", performSearch);
     document.getElementById("filter-original").addEventListener("change", performSearch);
+    document.getElementById("filter-referat").addEventListener("change", performSearch);
 
     // Zusatzfilter: Grimms Vorlage und Überlieferung (Originale)
     function matchesExtraFilters(entry) {
         const fv = document.getElementById("filter-vorlage").value;
         const fo = document.getElementById("filter-original").value;
         if (fv && !(entry.grimm_vorlage && entry.grimm_vorlage.kategorie === fv)) return false;
+        const fr = document.getElementById("filter-referat").value;
+        const ref = entry.grimm_vorlage && entry.grimm_vorlage.referat;
+        if (fr === "verdacht" && !(ref && ref.stufe === "verdacht")) return false;
+        if (fr === "verdacht_moeglich" && !ref) return false;
+        if (fr === "ohne" && ref) return false;
         const orig = entry.originale || [];
         const archiv = orig.filter(o => o.art === "Archivüberlieferung" && !/keine Original/.test(o.zuordnung || ""));
         if (fo === "archiv" && archiv.length === 0) return false;
@@ -51,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("filter-zeit").value = "";
             document.getElementById("filter-vorlage").value = "";
             document.getElementById("filter-original").value = "";
+            document.getElementById("filter-referat").value = "";
             performSearch();
         });
     }
@@ -307,6 +314,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gv.kindlinger) html += ` – ${esc(gv.kindlinger)}`;
         if (gv.beleg) html += `<br><span class="vorlage-beleg">Beleg: „…${esc(gv.beleg)}…“</span>`;
         html += ` <span class="vorlage-methode">(${esc(gv.methode || "")})</span></p>`;
+        if (gv.referat) {
+            const r = gv.referat;
+            const lbl = r.stufe === "verdacht" ? "Verdacht: Referat/Auszug statt Wortlaut" : "möglicherweise Referat/Auszug";
+            html += `<p class="vorlage-referat"><b>${lbl}</b> – ${esc((r.merkmale || []).join("; "))}`;
+            if (r.geprueft) html += `<br><span class="vorlage-beleg">Geprüft: ${esc(r.geprueft)}</span>`;
+            html += ` <span class="vorlage-methode">(${esc(r.methode || "")}; Sprachstand daher evtl. jünger als die Datierung)</span></p>`;
+        }
         return html;
     }
 
@@ -497,7 +511,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
             "edition_stelle", "band", "seite", "edition_notizen", "original_link",
-            "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "anzahl_originale", "originale"
+            "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
         ];
         const csvRows = [headers.join(",")];
 
@@ -535,6 +549,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.grimm_vorlage ? entry.grimm_vorlage.kategorie : "",
                 entry.grimm_vorlage ? (entry.grimm_vorlage.beleg || "").replace(/"/g, '""') : "",
                 entry.grimm_vorlage ? (entry.grimm_vorlage.kindlinger || "") : "",
+                (entry.grimm_vorlage && entry.grimm_vorlage.referat) ? entry.grimm_vorlage.referat.stufe : "",
                 (entry.originale || []).length,
                 (entry.originale || []).map(o => [o.art, o.archiv, o.signatur, o.datierung, o.ueberlieferung, o.zuordnung, o.digitalisat, o.link].join(" / ")).join(" || ").replace(/"/g, '""')
             ].map(v => `"${v}"`).join(","); // Alle Werte in Anführungszeichen setzen

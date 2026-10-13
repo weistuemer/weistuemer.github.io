@@ -155,3 +155,5 @@ table.originale-tabelle th { background: #eef3f8; }
 .vorlage-beleg { font-size: 0.85em; color: #555; }
 .vorlage-methode { font-size: 0.8em; color: #888; }
 .originale-wrap { overflow-x: auto; }
+
+.vorlage-referat { background: #fff4e0; border-left: 3px solid #d98c00; padding: 4px 8px; margin: 4px 0; }
