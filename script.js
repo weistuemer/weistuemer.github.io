@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const md = window.markdownit({ html: true }).use(window.markdownitFootnote);
 
-    fetch("data.json?v=0.4")
+    fetch("data.json?v=0.5")
         .then(response => response.json())
         .then(data => {
             dataset = data;
