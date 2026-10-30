@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const md = window.markdownit({ html: true }).use(window.markdownitFootnote);
 
-    fetch("data.json?v=0.5")
+    fetch("data.json?v=0.6")
         .then(response => response.json())
         .then(data => {
             dataset = data;
@@ -27,11 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("filter-vorlage").addEventListener("change", performSearch);
     document.getElementById("filter-original").addEventListener("change", performSearch);
     document.getElementById("filter-referat").addEventListener("change", performSearch);
+    document.getElementById("filter-edition").addEventListener("change", performSearch);
+    document.getElementById("filter-sprache").addEventListener("change", performSearch);
 
     // Zusatzfilter: Grimms Vorlage und Überlieferung (Originale)
     function matchesExtraFilters(entry) {
         const fv = document.getElementById("filter-vorlage").value;
         const fo = document.getElementById("filter-original").value;
+        const fe = document.getElementById("filter-edition").value;
+        const fs = document.getElementById("filter-sprache").value;
+        const quelle = entry.quelle || "Grimm";
+        if (fe === "Grimm" && quelle !== "Grimm") return false;
+        if (fe === "Hardt" && quelle !== "Hardt") return false;
+        if (fe === "ohne_dubletten" && entry.dublette_von) return false;
+        if (fs && (entry.sprache || "deutsch") !== fs) return false;
         if (fv && !(entry.grimm_vorlage && entry.grimm_vorlage.kategorie === fv)) return false;
         const fr = document.getElementById("filter-referat").value;
         const ref = entry.grimm_vorlage && entry.grimm_vorlage.referat;
@@ -58,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("filter-vorlage").value = "";
             document.getElementById("filter-original").value = "";
             document.getElementById("filter-referat").value = "";
+            document.getElementById("filter-edition").value = "";
+            document.getElementById("filter-sprache").value = "";
             performSearch();
         });
     }
@@ -290,6 +301,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="result-details">
                     ${entry.edition && entry.edition.stelle ? `<p>Quelle: ${entry.edition.stelle}</p>` : ''}
+                    ${entry.dublette_von ? `<p><i>Dublette: Hardt übernimmt dieses Stück aus ${entry.dublette_von}.</i></p>` : ''}
+                    ${entry.sprache && entry.sprache !== 'deutsch' ? `<p>Sprache: ${entry.sprache}</p>` : ''}
                     ${entry.edition && entry.edition.notizen ? `<p>Anmerkungen: ${entry.edition.notizen}</p>` : ''}
                     ${entry.schreiberinfo ? `<p>Schreiberinfo: ${entry.schreiberinfo}</p>` : ''}
                     ${entry.original_link ? `<p><a href="${entry.original_link}" target="_blank">Original-Link</a></p>` : ''}
@@ -512,7 +525,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const headers = [
             "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
-            "edition_stelle", "band", "seite", "edition_notizen", "original_link",
+            "quelle", "sprache", "edition_stelle", "band", "seite", "edition_notizen", "original_link",
             "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
         ];
         const csvRows = [headers.join(",")];
@@ -545,6 +558,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.schreiberinfo || "",
                 textClean.replace(/"/g, '""'), // Escape Anführungszeichen
                 notes.join(" | ").replace(/"/g, '""'),
+                entry.quelle || "Grimm",
+                entry.sprache || "deutsch",
                 stelle || "",
                 band,
                 seite,
