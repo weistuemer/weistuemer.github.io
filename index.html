@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weistümer-Datenbank</title>
-    <link rel="stylesheet" href="style.css?v=0.8">
+    <link rel="stylesheet" href="style.css?v=0.9">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
@@ -24,7 +24,7 @@
     <button id="reset-search-btn" title="Neue Suche" style="font-size: 2em;">🔄</button>
     <input type="text" id="search-input" placeholder="Freitextsuche...">
     <select id="filter-typ"><option value="">Typ</option></select>
-    <select id="filter-region"><option value="">Region</option></select>
+    <select id="filter-region"><option value="">Region (Großraum)</option></select>
     <select id="filter-zeit"><option value="">Zeit</option></select>
     <select id="filter-vorlage"><option value="">Grimms Vorlage</option></select>
     <select id="filter-edition">
@@ -37,6 +37,7 @@
         <option value="Chlumecky">Chlumecky, Mähren</option>
         <option value="Rein">Rein, Uerdinger Weisthümer</option>
         <option value="ohne_dubletten">alle ohne Dubletten</option>
+        <option value="nur_dubletten">nur Dubletten und Überschneidungen (beide Fassungen)</option>
     </select>
     <select id="filter-sprache">
         <option value="">Sprache</option>
@@ -72,11 +73,11 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-    <script src="script.js?v=0.8"></script>
+    <script src="script.js?v=0.9"></script>
 </body>
 <footer>
   <p class="footer-text">
-    Version 0.8 (2026) © <a href="https://lea-schaefer.de">Lea Schäfer</a> – Universität Bamberg<br>
+    Version 0.9 (2026) © <a href="https://lea-schaefer.de">Lea Schäfer</a> – Universität Bamberg<br>
     Grafik im Header: Ausschnitt aus 
     <a href="https://de.wikipedia.org/wiki/Twingherrenstreit#/media/Datei:Deutsche_Geschichte5-311.jpg" target="_blank">
       „Gericht zu Bern“ (Diebold Schilling, 1483, Gemeinfrei)

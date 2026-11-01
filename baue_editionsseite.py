@@ -1,13 +1,16 @@
 """Erzeugt editionen.html (Überblick über die Editionen: Umfang, Zeit, Raum) und daten/punkte.json
 aus data.json (+ data_weitere.json). Aufruf im Repository-Hauptordner:  python3 baue_editionsseite.py
 Alle Zahlen werden aus den Daten berechnet; Beschreibungstexte stehen unten in ED."""
-import json, os, re, html, statistics, collections
+import json, os, re, html, statistics, collections, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.')
+import region_gross
 HERE = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else '.'
 os.chdir(HERE)
 D = json.load(open('data.json', encoding='utf-8'))
 if os.path.exists('data_weitere.json'):
     D += json.load(open('data_weitere.json', encoding='utf-8'))
 os.makedirs('daten', exist_ok=True)
+for _w, _g in zip(D, region_gross.zuordnen(D)): _w['region_gross'] = _g
 
 # ---- Beschreibungen (Reihenfolge = Reihenfolge auf der Seite) ----
 ED = [
@@ -62,8 +65,8 @@ def jahr(z):
     return None
 BINS = [('vor 1300', 0, 1300), ('14. Jh.', 1300, 1400), ('15. Jh.', 1400, 1500), ('16. Jh.', 1500, 1600),
         ('17. Jh.', 1600, 1700), ('18. Jh.', 1700, 1800), ('ab 1800', 1800, 3000)]
-def region(r):
-    return re.split(r'\s*[\(,]', (r or '').strip())[0].strip() or '–'
+def region(e):
+    return e.get('region_gross') or '–'
 fmt = lambda n: f'{n:,}'.replace(',', '.')
 esc = html.escape
 
@@ -84,7 +87,7 @@ for ed in ED:
         js.sort(); q = lambda p: js[min(len(js) - 1, int(p * len(js)))]
         s['min'], s['p10'], s['med'], s['p90'], s['max'] = js[0], q(.1), int(statistics.median(js)), q(.9), js[-1]
     s['bins'] = [sum(1 for j in js if a <= j < b) for _, a, b in BINS]
-    s['regionen'] = collections.Counter(region(e.get('region')) for e in es)
+    s['regionen'] = collections.Counter(region(e) for e in es)
     s['sprache'] = collections.Counter(e.get('sprache') or 'deutsch' for e in es)
     s['ref'] = sum(1 for e in es if isinstance(e.get('grimm_vorlage'), dict) and e['grimm_vorlage'].get('referat'))
     lat = [e['koordinaten']['lat'] for e in es if isinstance(e.get('koordinaten'), dict) and e['koordinaten'].get('lat')]
@@ -150,7 +153,7 @@ for ed in ED:
 <p>{fmt(s["n"])} Einträge mit rund {fmt(round(s["woerter"], -3))} Wörtern an {fmt(s["orte"])} verschiedenen Ortsnamen.
 {"Koordinaten liegen für " + fmt(s["koord"]) + " Einträge vor." if s["koord"] else ""}{box}</p>
 {"<ul>" + "".join(f"<li>{x}</li>" for x in extra) + "</ul>" if extra else ""}
-<h3>Raum</h3><p>Regionen (Angabe im Feld „Region“): {reg}.</p></div>
+<h3>Raum</h3><p>Großräume (abgeleitet aus dem Feld „Region“): {reg}.</p></div>
 <div><h3>Zeit</h3><p class="klein">{zeitsatz(s)}</p>
 <div class="zeit">{balken(s, ed["farbe"])}</div></div>
 </div>
@@ -162,7 +165,7 @@ seite = f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Die Editionen der Weistümer-Datenbank</title>
-<link rel="stylesheet" href="style.css?v=0.8">
+<link rel="stylesheet" href="style.css?v=0.9">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
  .wrap{{max-width:980px;margin:0 auto;padding:0 16px 40px;text-align:left}}
@@ -215,7 +218,7 @@ Alle Texte außer Grimm (Bd. 1–6) und Hardt wurden mit der Claude-API (Vision)
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-fetch('daten/punkte.json?v=0.8').then(r=>r.json()).then(d=>{{
+fetch('daten/punkte.json?v=0.9').then(r=>r.json()).then(d=>{{
   const map=L.map('emap',{{preferCanvas:true}}).setView([49.5,10],5);
   L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{attribution:'© OpenStreetMap'}}).addTo(map);
   const gruppen=d.editionen.map(()=>L.layerGroup().addTo(map));

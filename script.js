@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dataset = [];
+    const idMap = {};
     // Globale Variablen für Karte und Marker-Gruppe
     let map;
     let markers = L.markerClusterGroup({ chunkedLoading: true }); // Marker Cluster Group für bessere Performance
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // und Detailangaben kommen in Häppchen (daten/d_NNN.json) – zuerst die Häppchen,
     // die gerade angezeigt werden, danach der Rest im Hintergrund.
     const PAGE = 50;                 // so viele Einträge pro "Mehr anzeigen"
-    const VERSION = "0.8";
+    const VERSION = "0.9";
     let nChunks = 0, nChunksGeladen = 0;
     const chunkPromises = {};
     let currentList = [], shown = 0, currentHighlight = null;
@@ -21,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
             dataset = idx.eintraege;
             nChunks = idx.chunks;
             kategorisiereAlleZeiten(dataset);
+            dataset.forEach(e => { idMap[e.id] = e; });
             dataset.forEach(e => {
-                e._s = [e.titel, e.ort, e.region, e.zeit, e.typ, e.typ_norm, e.quelle, e.nr_edition,
+                e._s = [e.titel, e.ort, e.region, e.region_gross, e.zeit, e.typ, e.typ_norm, e.quelle, e.nr_edition,
                         e.edition && e.edition.stelle, e.dublette_von, e.ueberschneidung_mit].filter(Boolean).join(" \n ");
             });
             populateDropdowns(dataset);
@@ -107,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const fe = document.getElementById("filter-edition").value;
         const fs = document.getElementById("filter-sprache").value;
         const quelle = entry.quelle || "Grimm";
-        if (fe && fe !== "ohne_dubletten" && quelle !== fe) return false;
+        if (fe && fe !== "ohne_dubletten" && fe !== "nur_dubletten" && quelle !== fe) return false;
+        if (fe === "nur_dubletten" && !(entry.dublette_von || entry.ueberschneidung_mit || (entry.dub_ids && entry.dub_ids.length))) return false;
         if (fe === "ohne_dubletten" && entry.dublette_von) return false;
         if (fs && (entry.sprache || "deutsch") !== fs) return false;
         if (fv && !(entry.grimm_vorlage && entry.grimm_vorlage.kategorie === fv)) return false;
@@ -162,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const filteredForExport = dataset.filter(entry => {
                 const okQuery = !currentQuery || matchesQuery(entry, regex);
                 const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
-                const matchesRegion = !filterRegion || entry.region === filterRegion;
+                const matchesRegion = !filterRegion || entry.region_gross === filterRegion;
                 const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
                 return okQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
             });
@@ -275,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // 2. Filter-Überprüfung
             const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
-            const matchesRegion = !filterRegion || entry.region === filterRegion;
+            const matchesRegion = !filterRegion || entry.region_gross === filterRegion;
             const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
 
             return okQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
@@ -381,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h3>${entry.titel}</h3>
                     <p>
                         Ort: <b>${entry.ort || 'N/A'}</b> | 
-                        Region: <b>${entry.region || 'N/A'}</b> | 
+                        Region: <b>${entry.region || 'N/A'}</b>${entry.region_gross && entry.region_gross !== 'Ohne Angabe' ? ' <span class="vorlage-methode" title="Großraum (Filter „Region“)">[' + esc(entry.region_gross) + ']</span>' : ''} | 
                         Zeit: <b>${entry.zeit || 'N/A'}</b> |
                         Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
                     </p>
@@ -392,6 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="result-details">
                     ${entry.edition && entry.edition.stelle ? `<p>Quelle: ${entry.edition.stelle}${entry.nr_edition ? ' (Nr. ' + esc(entry.nr_edition) + ')' : ''}</p>` : ''}
                     ${entry.dublette_von ? (entry.quelle === 'Hardt' ? `<p><i>Dublette: Hardt übernimmt dieses Stück aus ${entry.dublette_von}.</i></p>` : `<p><i>Dublette: Text weitgehend identisch mit ${entry.dublette_von} (automatisch erkannt, ungeprüft).</i></p>`) : ''}
+                    ${(!entry.dublette_von && !entry.ueberschneidung_mit && entry.dub_ids && entry.dub_ids.length) ? `<p><i>Dieses Stück steht auch in: ${entry.dub_ids.map(i => idMap[i] ? esc((idMap[i].edition && idMap[i].edition.stelle) || idMap[i].titel) : '').filter(Boolean).join('; ')} (automatisch erkannt, ungeprüft).</i></p>` : ''}
                     ${entry.ueberschneidung_mit ? `<p><i>Teilweise Überschneidung mit ${entry.ueberschneidung_mit} (Textübereinstimmung ${Math.round((entry.ueberschneidung_anteil || 0) * 100)} %, automatisch erkannt, ungeprüft).</i></p>` : ''}
                     ${entry.koordinaten_status && entry.koordinaten_status !== 'automatisch' ? `<p><i>Koordinate: ${entry.koordinaten_status}.</i></p>` : ''}
                     ${entry.sprache && entry.sprache !== 'deutsch' ? `<p>Sprache: ${entry.sprache}</p>` : ''}
@@ -456,7 +460,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         data.forEach(entry => {
             if (entry.typ_norm) typSet.add(entry.typ_norm);
-            if (entry.region) regionSet.add(entry.region);
+            if (entry.region_gross) regionSet.add(entry.region_gross);
             if (entry.zeit_kategorie) zeitSet.add(entry.zeit_kategorie);
         });
 
@@ -611,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function exportToCSV(data, filename) {
         const headers = [
-            "id", "titel", "ort", "region", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form",
+            "id", "titel", "ort", "region", "region_gross", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
             "quelle", "sprache", "edition_stelle", "band", "seite", "edition_notizen", "original_link",
             "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
@@ -636,6 +640,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.titel,
                 entry.ort,
                 entry.region,
+                entry.region_gross || "",
                 entry.zeit,
                 entry.zeit_kategorie,
                 entry.typ,
