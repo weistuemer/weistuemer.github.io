@@ -2,25 +2,95 @@ document.addEventListener("DOMContentLoaded", function () {
     let dataset = [];
     // Globale Variablen für Karte und Marker-Gruppe
     let map;
-    let markers = L.markerClusterGroup(); // Marker Cluster Group für bessere Performance
+    let markers = L.markerClusterGroup({ chunkedLoading: true }); // Marker Cluster Group für bessere Performance
 
     const md = window.markdownit({ html: true }).use(window.markdownitFootnote);
 
-    fetch("data.json?v=0.6")
+    // Schnelle Ladeweise (ab Version 0.8): erst ein schlanker Index, die Volltexte
+    // und Detailangaben kommen in Häppchen (daten/d_NNN.json) – zuerst die Häppchen,
+    // die gerade angezeigt werden, danach der Rest im Hintergrund.
+    const PAGE = 50;                 // so viele Einträge pro "Mehr anzeigen"
+    const VERSION = "0.8";
+    let nChunks = 0, nChunksGeladen = 0;
+    const chunkPromises = {};
+    let currentList = [], shown = 0, currentHighlight = null;
+
+    fetch("daten/index.json?v=" + VERSION)
         .then(response => response.json())
-        .then(data => {
-            dataset = data;
+        .then(idx => {
+            dataset = idx.eintraege;
+            nChunks = idx.chunks;
             kategorisiereAlleZeiten(dataset);
+            dataset.forEach(e => {
+                e._s = [e.titel, e.ort, e.region, e.zeit, e.typ, e.typ_norm, e.quelle, e.nr_edition,
+                        e.edition && e.edition.stelle, e.dublette_von, e.ueberschneidung_mit].filter(Boolean).join(" \n ");
+            });
             populateDropdowns(dataset);
             displayResults(dataset);
-            initializeMap(dataset); // Initialisiert die Karte mit allen Daten
+            initializeMap(dataset);
+            ladeRestImHintergrund();
         });
+
+    function ensureChunk(c) {
+        if (!chunkPromises[c]) {
+            const nr = String(c).padStart(3, "0");
+            chunkPromises[c] = fetch("daten/d_" + nr + ".json?v=" + VERSION)
+                .then(r => r.json())
+                .then(det => {
+                    dataset.forEach(e => {
+                        if (e.c === c && det[e.id]) {
+                            Object.assign(e, det[e.id]);
+                            e._t = (e.text || "") + " \n " + (e.schreiberinfo || "") + " \n " +
+                                   (e.edition && e.edition.notizen || "") + " \n " + JSON.stringify(e.originale || []);
+                            e._d = true;
+                        }
+                    });
+                    nChunksGeladen++;
+                    aktualisiereLadeHinweis();
+                });
+        }
+        return chunkPromises[c];
+    }
+
+    function ladeRestImHintergrund() {
+        // nacheinander laden, damit Seite und Suche reaktionsfähig bleiben
+        let c = 0;
+        const next = () => {
+            if (c >= nChunks) {
+                if (searchInput.value.trim()) performSearch();   // Suche mit vollständigem Volltext wiederholen
+                return;
+            }
+            ensureChunk(c++).then(() => setTimeout(next, 0));
+        };
+        next();
+    }
+
+    function loadAllChunks() {
+        const arr = [];
+        for (let c = 0; c < nChunks; c++) arr.push(ensureChunk(c));
+        return Promise.all(arr);
+    }
+
+    function aktualisiereLadeHinweis() {
+        const el = document.getElementById("lade-hinweis");
+        if (!el) return;
+        if (nChunksGeladen >= nChunks) { el.textContent = ""; return; }
+        el.textContent = searchInput.value.trim()
+            ? `Volltext wird noch geladen (${nChunksGeladen}/${nChunks}) – die Suche berücksichtigt bisher nur die geladenen Texte.`
+            : "";
+    }
+
+    // Freitextsuche: Index-Felder immer, Volltext und Detailangaben, sobald geladen
+    function matchesQuery(entry, regex) {
+        return regex.test(entry._s) || (entry._d && regex.test(entry._t));
+    }
 
     const searchInput = document.getElementById("search-input");
     const resetButton = document.getElementById("reset-search-btn");
     
     // Event-Listener für Sucheingabe und Filter
-    searchInput.addEventListener("input", performSearch);
+    let suchTimer = null;
+    searchInput.addEventListener("input", () => { clearTimeout(suchTimer); suchTimer = setTimeout(performSearch, 250); });
     document.getElementById("filter-typ").addEventListener("change", performSearch);
     document.getElementById("filter-region").addEventListener("change", performSearch);
     document.getElementById("filter-zeit").addEventListener("change", performSearch);
@@ -37,8 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const fe = document.getElementById("filter-edition").value;
         const fs = document.getElementById("filter-sprache").value;
         const quelle = entry.quelle || "Grimm";
-        if (fe === "Grimm" && quelle !== "Grimm") return false;
-        if (fe === "Hardt" && quelle !== "Hardt") return false;
+        if (fe && fe !== "ohne_dubletten" && quelle !== fe) return false;
         if (fe === "ohne_dubletten" && entry.dublette_von) return false;
         if (fs && (entry.sprache || "deutsch") !== fs) return false;
         if (fv && !(entry.grimm_vorlage && entry.grimm_vorlage.kategorie === fv)) return false;
@@ -47,13 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (fr === "verdacht" && !(ref && ref.stufe === "verdacht")) return false;
         if (fr === "verdacht_moeglich" && !ref) return false;
         if (fr === "ohne" && ref) return false;
-        const orig = entry.originale || [];
-        const archiv = orig.filter(o => o.art === "Archivüberlieferung" && !/keine Original/.test(o.zuordnung || ""));
-        if (fo === "archiv" && archiv.length === 0) return false;
-        if (fo === "archiv_digi" && !archiv.some(o => /^ja/.test(o.digitalisat || ""))) return false;
-        if (fo === "ausfertigung" && !archiv.some(o => /Ausfertigung|Original/i.test(o.ueberlieferung || "") && !/Abschrift/i.test(o.ueberlieferung || ""))) return false;
-        if (fo === "sbb" && !orig.some(o => (o.art || "").startsWith("Druckvorlage"))) return false;
-        if (fo === "keine" && orig.length > 0) return false;
+        const o = entry._o || { n: 0, archiv: false, digi: false, ausf: false, sbb: false };
+        if (fo === "archiv" && !o.archiv) return false;
+        if (fo === "archiv_digi" && !o.digi) return false;
+        if (fo === "ausfertigung" && !o.ausf) return false;
+        if (fo === "sbb" && !o.sbb) return false;
+        if (fo === "keine" && o.n > 0) return false;
         return true;
     }
 
@@ -90,17 +158,16 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const filteredForExport = dataset.filter(entry => {
-            const matchesQuery = Object.values(entry).some(value =>
-                regex.test(typeof value === "object" ? JSON.stringify(value) : String(value))
-            );
-            const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
-            const matchesRegion = !filterRegion || entry.region === filterRegion;
-            const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
-            return matchesQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
+        loadAllChunks().then(() => {   // für den Export werden alle Volltexte gebraucht
+            const filteredForExport = dataset.filter(entry => {
+                const okQuery = !currentQuery || matchesQuery(entry, regex);
+                const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
+                const matchesRegion = !filterRegion || entry.region === filterRegion;
+                const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
+                return okQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
+            });
+            exportToCSV(filteredForExport, "weistuemer_export.csv");
         });
-
-        exportToCSV(filteredForExport, "weistuemer_export.csv");
     });
     
     // =========================================================
@@ -142,35 +209,27 @@ document.addEventListener("DOMContentLoaded", function () {
         // 1. Alle alten Marker entfernen
         markers.clearLayers();
 
-        // 2. Neue Marker hinzufügen
+        // 2. Neue Marker hinzufügen (gesammelt; Popup erst beim Klick erzeugen)
+        const neue = [];
         filteredData.forEach(entry => {
             if (entry.koordinaten && entry.koordinaten.lat && entry.koordinaten.lng) {
-                
-                // Popup-Text für den Marker erstellen
-                const popupText = `
+                const marker = L.marker([entry.koordinaten.lat, entry.koordinaten.lng]);
+                marker.bindPopup(() => `
                     <b>${entry.titel}</b><br>
                     Ort: ${entry.ort}<br>
                     Zeit: ${entry.zeit || 'Unbekannt'}<br>
                     Typ: ${entry.typ_norm || entry.typ || 'Unbekannt'}<br>
-                    <button onclick="window.filterByLocation('${entry.ort.replace(/'/g, "\\'")}')" style="margin-top: 5px; cursor: pointer;">Nur diesen Ort anzeigen</button>
-                `;
-
-                // Marker erstellen
-                const marker = L.marker([entry.koordinaten.lat, entry.koordinaten.lng]);
-                
-                // Popup binden
-                marker.bindPopup(popupText);
-                
-                // Marker zur Marker-Gruppe hinzufügen
-                markers.addLayer(marker);
+                    <button onclick="window.filterByLocation('${(entry.ort || '').replace(/'/g, "\\'")}')" style="margin-top: 5px; cursor: pointer;">Nur diesen Ort anzeigen</button>
+                `);
+                neue.push(marker);
             }
         });
+        markers.addLayers(neue);
 
         // 3. Karte auf die Marker zentrieren (optional)
-        if (markers.getLayers().length > 0) {
-            // Berechne die Begrenzungen der Marker und passe die Ansicht an
-            // maxZoom: 10, um nicht zu stark hineinzuzoomen, wenn nur ein Marker existiert
-            map.fitBounds(markers.getBounds(), { padding: [50, 50], maxZoom: 10 }); 
+        if (neue.length > 0) {
+            // Begrenzungen aus den Koordinaten berechnen (chunkedLoading füllt die Gruppe erst nach und nach)
+            map.fitBounds(L.latLngBounds(neue.map(m => m.getLatLng())), { padding: [50, 50], maxZoom: 10 });
         } else {
             // Wenn keine Ergebnisse, kehre zur Standardansicht zurück
             map.setView([49.0, 9.0], 6);
@@ -212,16 +271,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const filtered = dataset.filter(entry => {
             // 1. Freitextsuche
-            const matchesQuery = Object.values(entry).some(value =>
-                regex.test(typeof value === "object" ? JSON.stringify(value) : String(value))
-            );
+            const okQuery = !query || matchesQuery(entry, regex);
 
             // 2. Filter-Überprüfung
             const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
             const matchesRegion = !filterRegion || entry.region === filterRegion;
             const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
 
-            return matchesQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
+            return okQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
         });
 
         // Die Karte mit den gefilterten Ergebnissen aktualisieren
@@ -276,17 +333,50 @@ document.addEventListener("DOMContentLoaded", function () {
     // =========================================================
 
     function displayResults(data, highlightRegex) {
+        currentList = data;
+        currentHighlight = highlightRegex || null;
+        shown = 0;
         const resultsDiv = document.getElementById("results");
-        resultsDiv.innerHTML = `<p>Gefundene Einträge: <b>${data.length}</b></p>`;
+        resultsDiv.innerHTML = `<p>Gefundene Einträge: <b>${data.length}</b> <span id="lade-hinweis" style="color:#a60"></span></p><div id="result-liste"></div><div id="mehr-wrap"></div>`;
+        aktualisiereLadeHinweis();
+        zeigeNaechsteSeite();
+    }
 
-        data.forEach(entry => {
-            const resultItem = document.createElement("div");
-            resultItem.className = "result-item";
-            
-            const markdownText = entry.text || "";
-            const htmlText = md.render(markdownText);
-            
-            const detailHtml = `
+    function zeigeNaechsteSeite() {
+        const liste = document.getElementById("result-liste");
+        const wrap = document.getElementById("mehr-wrap");
+        const bis = Math.min(shown + PAGE, currentList.length);
+        for (let i = shown; i < bis; i++) liste.appendChild(renderItem(currentList[i]));
+        shown = bis;
+        wrap.innerHTML = "";
+        if (shown < currentList.length) {
+            const btn = document.createElement("button");
+            btn.textContent = `Mehr anzeigen (${shown} von ${currentList.length})`;
+            btn.style.cssText = "margin:1em 0;padding:.5em 1.2em;cursor:pointer;font-size:1em;";
+            btn.addEventListener("click", zeigeNaechsteSeite);
+            wrap.appendChild(btn);
+        }
+    }
+
+    function renderItem(entry) {
+        const resultItem = document.createElement("div");
+        resultItem.className = "result-item";
+        const hl = currentHighlight;
+        const fill = () => {
+            resultItem.innerHTML = itemHtml(entry);
+            if (hl) highlightMatches(resultItem, hl);
+        };
+        if (entry._d) fill();
+        else {
+            resultItem.innerHTML = `<div class="result-header"><h3>${entry.titel}</h3><p>Ort: <b>${entry.ort || 'N/A'}</b> | Zeit: <b>${entry.zeit || 'N/A'}</b></p></div><div class="result-body"><p><i>Text wird geladen …</i></p></div>`;
+            ensureChunk(entry.c).then(fill);
+        }
+        return resultItem;
+    }
+
+    function itemHtml(entry) {
+        const htmlText = md.render(entry.text || "");
+        return `
                 <div class="result-header">
                     <h3>${entry.titel}</h3>
                     <p>
@@ -300,8 +390,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${htmlText}
                 </div>
                 <div class="result-details">
-                    ${entry.edition && entry.edition.stelle ? `<p>Quelle: ${entry.edition.stelle}</p>` : ''}
-                    ${entry.dublette_von ? `<p><i>Dublette: Hardt übernimmt dieses Stück aus ${entry.dublette_von}.</i></p>` : ''}
+                    ${entry.edition && entry.edition.stelle ? `<p>Quelle: ${entry.edition.stelle}${entry.nr_edition ? ' (Nr. ' + esc(entry.nr_edition) + ')' : ''}</p>` : ''}
+                    ${entry.dublette_von ? (entry.quelle === 'Hardt' ? `<p><i>Dublette: Hardt übernimmt dieses Stück aus ${entry.dublette_von}.</i></p>` : `<p><i>Dublette: Text weitgehend identisch mit ${entry.dublette_von} (automatisch erkannt, ungeprüft).</i></p>`) : ''}
+                    ${entry.ueberschneidung_mit ? `<p><i>Teilweise Überschneidung mit ${entry.ueberschneidung_mit} (Textübereinstimmung ${Math.round((entry.ueberschneidung_anteil || 0) * 100)} %, automatisch erkannt, ungeprüft).</i></p>` : ''}
+                    ${entry.koordinaten_status && entry.koordinaten_status !== 'automatisch' ? `<p><i>Koordinate: ${entry.koordinaten_status}.</i></p>` : ''}
                     ${entry.sprache && entry.sprache !== 'deutsch' ? `<p>Sprache: ${entry.sprache}</p>` : ''}
                     ${entry.edition && entry.edition.notizen ? `<p>Anmerkungen: ${entry.edition.notizen}</p>` : ''}
                     ${entry.schreiberinfo ? `<p>Schreiberinfo: ${entry.schreiberinfo}</p>` : ''}
@@ -310,10 +402,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${renderOriginale(entry)}
                 </div>
             `;
-            resultItem.innerHTML = detailHtml;
-            if (highlightRegex) highlightMatches(resultItem, highlightRegex);
-            resultsDiv.appendChild(resultItem);
-        });
     }
 
     function esc(s) {
