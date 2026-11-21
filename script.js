@@ -192,10 +192,9 @@ document.addEventListener("DOMContentLoaded", function () {
         kartenRenderer = L.canvas({ padding: 0.5 });
         map = L.map('map', { renderer: kartenRenderer, zoomSnap: 0.5 }).setView([49.0, 9.0], 6);
 
-        // helle Grundkarte, damit die Punkte gut zu sehen sind
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '© OpenStreetMap-Mitwirkende © CARTO',
-            subdomains: 'abcd', maxZoom: 18
+        // OpenStreetMap-Kacheln, per CSS aufgehellt/entsättigt (Klasse karte-hell), damit die Punkte gut zu sehen sind
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap-Mitwirkende', className: 'karte-hell', maxZoom: 19
         }).addTo(map);
 
         // Legende
