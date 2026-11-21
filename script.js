@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             kategorisiereAlleZeiten(dataset);
             dataset.forEach(e => { idMap[e.id] = e; });
             dataset.forEach(e => {
-                e._s = [e.titel, e.ort, e.region, e.region_gross, e.zeit, e.typ, e.typ_norm, e.texttyp, e.quelle, e.nr_edition,
+                e._s = [e.titel, e.ort, e.region, e.region_gross, e.zeit, e.typ, e.typ_norm, e.quelle, e.nr_edition,
                         e.edition && e.edition.stelle, e.dublette_von, e.ueberschneidung_mit].filter(Boolean).join(" \n ");
             });
             populateDropdowns(dataset);
@@ -94,8 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let suchTimer = null;
     searchInput.addEventListener("input", () => { clearTimeout(suchTimer); suchTimer = setTimeout(performSearch, 250); });
     document.getElementById("filter-typ").addEventListener("change", performSearch);
-    document.getElementById("filter-texttyp").addEventListener("change", performSearch);
-    document.getElementById("filter-region").addEventListener("change", performSearch);
+        document.getElementById("filter-region").addEventListener("change", performSearch);
     document.getElementById("filter-zeit").addEventListener("change", performSearch);
     document.getElementById("filter-vorlage").addEventListener("change", performSearch);
     document.getElementById("filter-original").addEventListener("change", performSearch);
@@ -109,8 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const fo = document.getElementById("filter-original").value;
         const fe = document.getElementById("filter-edition").value;
         const fs = document.getElementById("filter-sprache").value;
-        const ft = document.getElementById("filter-texttyp").value;
-        if (ft && (entry.texttyp || "weistum") !== ft) return false;
         const quelle = entry.quelle || "Grimm";
         if (fe && fe !== "ohne_dubletten" && fe !== "nur_dubletten" && quelle !== fe) return false;
         if (fe === "nur_dubletten" && !(entry.dublette_von || entry.ueberschneidung_mit || (entry.dub_ids && entry.dub_ids.length))) return false;
@@ -136,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
         resetButton.addEventListener("click", () => {
             searchInput.value = "";
             document.getElementById("filter-typ").value = "";
-            document.getElementById("filter-texttyp").value = "";
             document.getElementById("filter-region").value = "";
             document.getElementById("filter-zeit").value = "";
             document.getElementById("filter-vorlage").value = "";
@@ -168,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loadAllChunks().then(() => {   // für den Export werden alle Volltexte gebraucht
             const filteredForExport = dataset.filter(entry => {
                 const okQuery = !currentQuery || matchesQuery(entry, regex);
-                const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
+                const matchesTyp = typPasst(entry, filterTyp);
                 const matchesRegion = !filterRegion || entry.region_gross === filterRegion;
                 const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
                 return okQuery && matchesTyp && matchesRegion && matchesZeit && matchesExtraFilters(entry);
@@ -248,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Setzt den Such-Input auf den Ort und führt die Suche durch
         document.getElementById("search-input").value = `\\b${locationName}\\b`; // Sucht exakt nach dem Wort
         document.getElementById("filter-typ").value = "";
-        document.getElementById("filter-texttyp").value = "";
         document.getElementById("filter-region").value = "";
         document.getElementById("filter-zeit").value = "";
         document.getElementById("filter-vorlage").value = "";
@@ -282,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const okQuery = !query || matchesQuery(entry, regex);
 
             // 2. Filter-Überprüfung
-            const matchesTyp = !filterTyp || entry.typ_norm === filterTyp;
+            const matchesTyp = typPasst(entry, filterTyp);
             const matchesRegion = !filterRegion || entry.region_gross === filterRegion;
             const matchesZeit = !filterZeit || entry.zeit_kategorie === filterZeit;
 
@@ -391,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         Ort: <b>${entry.ort || 'N/A'}</b> | 
                         Region: <b>${entry.region || 'N/A'}</b>${entry.region_gross && entry.region_gross !== 'Ohne Angabe' ? ' <span class="vorlage-methode" title="Großraum (Filter „Region“)">[' + esc(entry.region_gross) + ']</span>' : ''} | 
                         Zeit: <b>${entry.zeit || 'N/A'}</b> |
-                        Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${entry.texttyp && entry.texttyp !== 'weistum' ? ' | Texttyp: <b>' + esc(entry.texttyp) + '</b>' : ''}${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
+                        Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${entry.typ_sicherheit === 'niedrig' ? ' <span class="vorlage-methode" title="Typ vom Modell als unsicher eingestuft">[unsicher]</span>' : ''}${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
                     </p>
                 </div>
                 <div class="result-body">
@@ -458,6 +453,14 @@ document.addEventListener("DOMContentLoaded", function () {
             </details>`;
     }
 
+    // Typ-Filter: "Weistum (alle Unterarten)" fasst die sieben Weistum-Typen zusammen
+    const WEISTUM_TYPEN = ["Hof- und Dinghofrecht", "Dorf- und Gemeinderecht", "Gerichtsweistum (Land-, Hoch-, Zent-, Sendgericht, Ding)", "Mark-, Wald-, Wasser- und Bergrecht", "Öffnung", "Vogtei-, Dienst- und Herrschaftsrecht", "Weistum (ohne nähere Angabe)"];
+    function typPasst(entry, f) {
+        if (!f) return true;
+        if (f === "__weistum__") return WEISTUM_TYPEN.includes(entry.typ_norm);
+        return entry.typ_norm === f;
+    }
+
     function populateDropdowns(data) {
         const typSet = new Set();
         const regionSet = new Set();
@@ -470,6 +473,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         populateDropdown("filter-typ", typSet);
+        const ft = document.getElementById("filter-typ");
+        const o = document.createElement("option");
+        o.value = "__weistum__"; o.textContent = "Weistum (alle Unterarten)";
+        ft.insertBefore(o, ft.options[1]);
         populateDropdown("filter-region", regionSet);
         populateDropdown("filter-zeit", zeitSet);
 
@@ -620,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function exportToCSV(data, filename) {
         const headers = [
-            "id", "titel", "ort", "region", "region_gross", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form", "texttyp",
+            "id", "titel", "ort", "region", "region_gross", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form", "typ_sicherheit",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
             "quelle", "sprache", "edition_stelle", "band", "seite", "edition_notizen", "original_link",
             "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
@@ -651,7 +658,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.typ,
                 entry.typ_norm || "",
                 (entry.typ_form || []).join("; "),
-                entry.texttyp || "weistum",
+                entry.typ_sicherheit || "",
                 entry.koordinaten ? entry.koordinaten.lat : "",
                 entry.koordinaten ? entry.koordinaten.lng : "",
                 entry.schreiberinfo || "",
