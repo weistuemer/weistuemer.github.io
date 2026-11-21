@@ -192,10 +192,20 @@ document.addEventListener("DOMContentLoaded", function () {
         kartenRenderer = L.canvas({ padding: 0.5 });
         map = L.map('map', { renderer: kartenRenderer, zoomSnap: 0.5 }).setView([49.0, 9.0], 6);
 
-        // OpenStreetMap-Kacheln, per CSS aufgehellt/entsättigt (Klasse karte-hell), damit die Punkte gut zu sehen sind
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap-Mitwirkende', className: 'karte-hell', maxZoom: 19
+        // Grundkarte: helle Esri-Karte (ohne Schlüssel, funktioniert auch bei lokal geöffneter Seite);
+        // fällt bei Ladefehlern auf OpenStreetMap zurück
+        const esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles © Esri, © OpenStreetMap-Mitwirkende', maxZoom: 16
         }).addTo(map);
+        let tileFehler = 0;
+        esri.on('tileerror', () => {
+            if (++tileFehler === 4) {
+                map.removeLayer(esri);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap-Mitwirkende', className: 'karte-hell', maxZoom: 19
+                }).addTo(map);
+            }
+        });
 
         // Legende
         const legende = L.control({ position: 'bottomright' });

@@ -179,3 +179,5 @@ table.originale-tabelle th { background: #eef3f8; }
 .originale-wrap { overflow-x: auto; }
 
 .vorlage-referat { background: #fff4e0; border-left: 3px solid #d98c00; padding: 4px 8px; margin: 4px 0; }
+
+.karte-hell { filter: grayscale(0.85) brightness(1.08) contrast(0.9); }
