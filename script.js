@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // und Detailangaben kommen in Häppchen (daten/d_NNN.json) – zuerst die Häppchen,
     // die gerade angezeigt werden, danach der Rest im Hintergrund.
     const PAGE = 50;                 // so viele Einträge pro "Mehr anzeigen"
-    const VERSION = "0.9";
+    const VERSION = "0.92";
     let nChunks = 0, nChunksGeladen = 0;
     const chunkPromises = {};
     let currentList = [], shown = 0, currentHighlight = null;
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             kategorisiereAlleZeiten(dataset);
             dataset.forEach(e => { idMap[e.id] = e; });
             dataset.forEach(e => {
-                e._s = [e.titel, e.ort, e.region, e.region_gross, e.zeit, e.typ, e.typ_norm, e.quelle, e.nr_edition,
+                e._s = [e.titel, e.ort, e.region, e.region_gross, e.zeit, e.typ, e.typ_norm, e.texttyp, e.quelle, e.nr_edition,
                         e.edition && e.edition.stelle, e.dublette_von, e.ueberschneidung_mit].filter(Boolean).join(" \n ");
             });
             populateDropdowns(dataset);
@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let suchTimer = null;
     searchInput.addEventListener("input", () => { clearTimeout(suchTimer); suchTimer = setTimeout(performSearch, 250); });
     document.getElementById("filter-typ").addEventListener("change", performSearch);
+    document.getElementById("filter-texttyp").addEventListener("change", performSearch);
     document.getElementById("filter-region").addEventListener("change", performSearch);
     document.getElementById("filter-zeit").addEventListener("change", performSearch);
     document.getElementById("filter-vorlage").addEventListener("change", performSearch);
@@ -108,6 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const fo = document.getElementById("filter-original").value;
         const fe = document.getElementById("filter-edition").value;
         const fs = document.getElementById("filter-sprache").value;
+        const ft = document.getElementById("filter-texttyp").value;
+        if (ft && (entry.texttyp || "weistum") !== ft) return false;
         const quelle = entry.quelle || "Grimm";
         if (fe && fe !== "ohne_dubletten" && fe !== "nur_dubletten" && quelle !== fe) return false;
         if (fe === "nur_dubletten" && !(entry.dublette_von || entry.ueberschneidung_mit || (entry.dub_ids && entry.dub_ids.length))) return false;
@@ -133,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resetButton.addEventListener("click", () => {
             searchInput.value = "";
             document.getElementById("filter-typ").value = "";
+            document.getElementById("filter-texttyp").value = "";
             document.getElementById("filter-region").value = "";
             document.getElementById("filter-zeit").value = "";
             document.getElementById("filter-vorlage").value = "";
@@ -244,6 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Setzt den Such-Input auf den Ort und führt die Suche durch
         document.getElementById("search-input").value = `\\b${locationName}\\b`; // Sucht exakt nach dem Wort
         document.getElementById("filter-typ").value = "";
+        document.getElementById("filter-texttyp").value = "";
         document.getElementById("filter-region").value = "";
         document.getElementById("filter-zeit").value = "";
         document.getElementById("filter-vorlage").value = "";
@@ -386,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         Ort: <b>${entry.ort || 'N/A'}</b> | 
                         Region: <b>${entry.region || 'N/A'}</b>${entry.region_gross && entry.region_gross !== 'Ohne Angabe' ? ' <span class="vorlage-methode" title="Großraum (Filter „Region“)">[' + esc(entry.region_gross) + ']</span>' : ''} | 
                         Zeit: <b>${entry.zeit || 'N/A'}</b> |
-                        Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
+                        Typ: <b>${entry.typ_norm || entry.typ || 'N/A'}</b>${entry.texttyp && entry.texttyp !== 'weistum' ? ' | Texttyp: <b>' + esc(entry.texttyp) + '</b>' : ''}${(entry.typ_form || []).length ? ' (' + entry.typ_form.join(', ') + ')' : ''}${entry.typ && entry.typ !== entry.typ_norm ? ' <span class="vorlage-methode" title="Angabe in der Datenbank (Original)">[Angabe: ' + esc(entry.typ) + ']</span>' : ''}
                     </p>
                 </div>
                 <div class="result-body">
@@ -615,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function exportToCSV(data, filename) {
         const headers = [
-            "id", "titel", "ort", "region", "region_gross", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form",
+            "id", "titel", "ort", "region", "region_gross", "zeit", "zeit_kategorie", "typ", "typ_norm", "typ_form", "texttyp",
             "koordinaten_lat", "koordinaten_lng", "schreiberinfo", "text", "Fussnoten",
             "quelle", "sprache", "edition_stelle", "band", "seite", "edition_notizen", "original_link",
             "grimm_vorlage", "grimm_vorlage_beleg", "kindlinger", "referat_verdacht", "anzahl_originale", "originale"
@@ -646,6 +651,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.typ,
                 entry.typ_norm || "",
                 (entry.typ_form || []).join("; "),
+                entry.texttyp || "weistum",
                 entry.koordinaten ? entry.koordinaten.lat : "",
                 entry.koordinaten ? entry.koordinaten.lng : "",
                 entry.schreiberinfo || "",
