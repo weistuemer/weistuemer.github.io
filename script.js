@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const idMap = {};
     // Globale Variablen für Karte und Marker-Gruppe
     let map;
-    let markers = L.markerClusterGroup({ chunkedLoading: true }); // Marker Cluster Group für bessere Performance
+    let markers = L.layerGroup(); // ein Punkt pro Ort (ab Version 0.9.3 ohne Clustering)
+    let kartenRenderer = null;
+    // Farben je Edition (wie auf der Editionen-Seite)
+    const EDI_FARBE = {"Grimm":"#1b6ca8","ÖW":"#c0392b","Wintterlin":"#2e8b57","Hardt":"#8e5ea2","Loersch":"#d98c00","Chlumecky":"#555555","Rein":"#00a5a5","Harleß":"#a0522d","Michelsen Thüringen":"#e84393","Michelsen Dithmarschen":"#b5a300"};
+    const escHtml = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
     const md = window.markdownit({ html: true }).use(window.markdownitFootnote);
 
@@ -11,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // und Detailangaben kommen in Häppchen (daten/d_NNN.json) – zuerst die Häppchen,
     // die gerade angezeigt werden, danach der Rest im Hintergrund.
     const PAGE = 50;                 // so viele Einträge pro "Mehr anzeigen"
-    const VERSION = "0.92";
+    const VERSION = "0.92"; // Datenversion (Kartenumbau 0.9.3 ändert keine Daten)
     let nChunks = 0, nChunksGeladen = 0;
     const chunkPromises = {};
     let currentList = [], shown = 0, currentHighlight = null;
@@ -185,11 +189,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Initialisierung der Leaflet-Karte
         // Standard-Zentrum (Deutschland/Schweiz) und Zoom
-        map = L.map('map').setView([49.0, 9.0], 6);
+        kartenRenderer = L.canvas({ padding: 0.5 });
+        map = L.map('map', { renderer: kartenRenderer, zoomSnap: 0.5 }).setView([49.0, 9.0], 6);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap-Mitwirkende'
+        // helle Grundkarte, damit die Punkte gut zu sehen sind
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap-Mitwirkende © CARTO',
+            subdomains: 'abcd', maxZoom: 18
         }).addTo(map);
+
+        // Legende
+        const legende = L.control({ position: 'bottomright' });
+        legende.onAdd = function () {
+            const div = L.DomUtil.create('div', 'karten-legende');
+            let h = '<b>Edition</b><br>';
+            Object.keys(EDI_FARBE).forEach(k => { h += `<span class="lg-punkt" style="background:${EDI_FARBE[k]}"></span>${escHtml(k)}<br>`; });
+            h += '<span class="lg-punkt" style="background:#444"></span>mehrere Editionen am Ort<br>';
+            h += '<small>Ein Kreis = ein Ort; Größe = Zahl der Weistümer</small>';
+            div.innerHTML = h;
+            L.DomEvent.disableClickPropagation(div);
+            return div;
+        };
+        legende.addTo(map);
 
         // Marker-Gruppe zur Karte hinzufügen
         markers.clearLayers();
@@ -212,22 +233,39 @@ document.addEventListener("DOMContentLoaded", function () {
         // 1. Alle alten Marker entfernen
         markers.clearLayers();
 
-        // 2. Neue Marker hinzufügen (gesammelt; Popup erst beim Klick erzeugen)
-        const neue = [];
+        // 2. Nach Ort bündeln: ein Kreis je Ort (Koordinate auf ~100 m gerundet)
+        const orte = new Map();
         filteredData.forEach(entry => {
-            if (entry.koordinaten && entry.koordinaten.lat && entry.koordinaten.lng) {
-                const marker = L.marker([entry.koordinaten.lat, entry.koordinaten.lng]);
-                marker.bindPopup(() => `
-                    <b>${entry.titel}</b><br>
-                    Ort: ${entry.ort}<br>
-                    Zeit: ${entry.zeit || 'Unbekannt'}<br>
-                    Typ: ${entry.typ_norm || entry.typ || 'Unbekannt'}<br>
-                    <button onclick="window.filterByLocation('${(entry.ort || '').replace(/'/g, "\\'")}')" style="margin-top: 5px; cursor: pointer;">Nur diesen Ort anzeigen</button>
-                `);
-                neue.push(marker);
-            }
+            const k = entry.koordinaten;
+            if (!(k && k.lat && k.lng)) return;
+            const key = k.lat.toFixed(3) + ',' + k.lng.toFixed(3);
+            let o = orte.get(key);
+            if (!o) { o = { lat: k.lat, lng: k.lng, ort: entry.ort, eintraege: [] }; orte.set(key, o); }
+            o.eintraege.push(entry);
         });
-        markers.addLayers(neue);
+        // große Kreise zuerst zeichnen, damit kleine darüber liegen
+        const liste = Array.from(orte.values()).sort((x, y) => y.eintraege.length - x.eintraege.length);
+        const neue = [];
+        liste.forEach(o => {
+            const n = o.eintraege.length;
+            const quellen = Array.from(new Set(o.eintraege.map(e => e.quelle)));
+            const farbe = quellen.length === 1 ? (EDI_FARBE[quellen[0]] || '#4478A8') : '#444';
+            const m = L.circleMarker([o.lat, o.lng], {
+                renderer: kartenRenderer, radius: Math.min(4 + 1.7 * Math.sqrt(n), 18),
+                color: '#fff', weight: 0.8, fillColor: farbe, fillOpacity: 0.8
+            });
+            m.bindTooltip(`${escHtml(o.ort)} (${n})`, { direction: 'top' });
+            m.bindPopup(() => {
+                const zeilen = o.eintraege.slice(0, 12).map(e =>
+                    `<li>${escHtml(e.titel)} <small>(${escHtml(e.zeit || 'ohne Datum')}; ${escHtml(e.quelle)})</small></li>`).join('');
+                const rest = n > 12 ? `<li><i>… und ${n - 12} weitere</i></li>` : '';
+                return `<b>${escHtml(o.ort)}</b>: ${n} ${n === 1 ? 'Weistum' : 'Weistümer'}
+                    <ul style="margin:4px 0 6px 16px;padding:0;max-height:180px;overflow:auto">${zeilen}${rest}</ul>
+                    <button onclick="window.filterByLocation('${(o.ort || '').replace(/'/g, "\\'")}')" style="cursor: pointer;">Nur diesen Ort anzeigen</button>`;
+            }, { maxWidth: 360 });
+            neue.push(m);
+        });
+        neue.forEach(m => markers.addLayer(m));
 
         // 3. Karte auf die Marker zentrieren (optional)
         if (neue.length > 0) {
